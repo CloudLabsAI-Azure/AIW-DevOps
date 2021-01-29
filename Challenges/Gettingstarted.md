@@ -24,7 +24,7 @@
 3. Now enter the following password and click on **Sign in**.
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-5. If you see the pop-up **Get Started with Azure Devops*, Check the Privacy Statement box and click **continue**
+5. If you see the pop-up **Get Started with Azure Devops**, Check the Privacy Statement box and click **continue**
 
 6. Click on the **Next** button present in the bottom-right corner of this lab guide.
 
