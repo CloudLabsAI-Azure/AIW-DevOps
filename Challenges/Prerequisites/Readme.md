@@ -10,7 +10,21 @@ If you rather watch a video with step by step instructions, you can do that here
 
 The workshop builds upon an existing code base. Before you start the workshop, this code base needs to be forked or cloned. 
 
-1. Fork the [CodeToCloud-Source](https://github.com/xpiritbv/CodeToCloud-Source) Repo into a public repo on your own account.
+1. Sign in to the [Github](https://github.com/login) using the **GitHub Credential** provided under the **Environment details->Licenses** tab.
+
+   ![](/Assets/Licensestab.png)
+
+2. Navigate to [CodeToCloud-Source](https://github.com/xpiritbv/CodeToCloud-Source) Repo to fork it into a account you logged in the previous step.
+
+3. Click on **Fork**  at the top right corner
+   
+   ![](/Assets/fork.png)
+   
+4. From your forked repository under the **Settings** tab rename the forked repository to **CodeToCloud-Source-UniqueID** and click on **Rename**.
+   
+   ![](/Assets/renamerepo.png)
+
+>Get the UniqueID value from the **Envrionment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be be CodeToCloud-Source-296566
 
 ## GitHub Codespace
 
