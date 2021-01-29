@@ -24,7 +24,7 @@ The workshop builds upon an existing code base. Before you start the workshop, t
    
    ![](/Assets/renamerepo.png)
 
->Get the UniqueID value from the **Envrionment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
+>Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
 
 ## GitHub Codespace
 
@@ -104,7 +104,7 @@ To set this up, you need to perform these steps
 
 #### Create Azure DevOps Personal Access Token
 
-1. Login to `https://dev.azure.com/youraccount` or create a new account on `https://dev.azure.com`
+1. Login to `https://dev.azure.com/youraccount` using the lab credentials.
 1. Create a Personal Access Token as [described here](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page)
 1. Keep this Personal Access token somewhere safe for later use. **DO NOT COMMIT THIS TO YOUR REPO!**
 
