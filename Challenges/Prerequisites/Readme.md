@@ -14,13 +14,13 @@ The workshop builds upon an existing code base. Before you start the workshop, t
 
    ![](/Assets/Licensestab.png)
 
-2. Navigate to [CodeToCloud-Source](https://github.com/xpiritbv/CodeToCloud-Source) Repo to fork it into a account you logged in the previous step.
+2. Navigate to [CodeToCloud-Source](https://github.com/xpiritbv/CodeToCloud-Source) repository to fork it into a account you logged in the previous step.
 
-3. Click on **Fork**  at the top right corner
+3. Click on **Fork** from the top right corner
    
    ![](/Assets/fork.png)
    
-4. From your forked repository under the **Settings** tab rename the forked repository to **CodeToCloud-Source-UniqueID** and click on **Rename**.
+4. Then from your forked repository under the **Settings** tab rename the forked repository to **CodeToCloud-Source-UniqueID**, Click on **Rename**.
    
    ![](/Assets/renamerepo.png)
 
@@ -31,13 +31,18 @@ The workshop builds upon an existing code base. Before you start the workshop, t
 The workshop is built with and targeted at development with GitHub Codespace. A full featured IDE in the cloud. In order to start working you need to create a Codespace.
 
 1. Navigate to your forked repository on GitHub
-2. Create a Code Space in your forked repo
 
-![](/Assets/CodeSpace.png)
+2. Under the **Code** dropdown click on **Open with Codespaces** then **+New Codespace**  to create a Code Space in your forked repo.
 
-3. Your GitHub Codespace will be created
+![](/Assets/CodeSpaces.png)
 
-![](/Assets/Codespace-creation.png)
+3. Preparation and Configuration of the Codespace takes around 3 minutes.
+
+![](/Assets/Codespace-initiation.png)
+
+4. Once your GitHub Codespace is created you should be able to see the files and a welcome message under the Terminal.
+
+![](/Assets/Codespace-files.png)
 
 Visual Studio Code doesn't pass a couple of specific of keystrokes to the terminal, this may make it harder to quit docker once you've started a container interactively. You can add the [custom keybindings specified here](/.devcontainer/keybindings.json) to [your Visual Studio Code settings](https://code.visualstudio.com/docs/getstarted/keybindings#_advanced-customization). This remaps `ctrl-q` and `ctrl-p` when the terminal has focus.
 
