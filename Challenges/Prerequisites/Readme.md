@@ -59,8 +59,8 @@ To set this up, you need to perform these steps
 ### Setup your settings file and PowerShell Profile
 
 1. Open your GitHub Codespace 
-1. In the terminal type `pwsh`
-1. Then run `.workshop/setup.ps1` which will ask for:
+2. In the terminal type `pwsh`
+3. Then run `.workshop/setup.ps1` which will ask for:
     1. The location of your repository
     2. Your GitHub Personal Access Token with the following scopes (see instructions below):
        * repo
@@ -77,16 +77,30 @@ To set this up, you need to perform these steps
     6. Your unique suffix (short, only lower case letters). This will be used to create the name of the resource group and resources in Azure.
     7. Whether to create/recreate work items in Azure Boards to which the commits and pull-requests will be linked.
 
-1. A local `settings.json` file has been created in the `.workshop` folder and is automatically ignored by git. **DO NOT COMMIT THIS TO YOUR REPO!**
-1. This file is automatically loaded by the containers PowerShell Profile and pre-populates a number of global variables.
+4. A local `settings.json` file has been created in the `.workshop` folder and is automatically ignored by git. **DO NOT COMMIT THIS TO YOUR REPO!**
+5. This file is automatically loaded by the containers PowerShell Profile and pre-populates a number of global variables.
 
 #### Create GitHub Personal Access Token
 
-1. Login to your GitHub Account
-1. Create a Personal Access Token as [described here](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
-1. Keep this Personal Access token somewhere safe for later use. **DO NOT COMMIT THIS TO YOUR REPO!**
+1. Ensure you are logged in to your GitHub Account.
 
-![Permissions GH](/Assets/Permissions-GH.png)
+2. Create a Personal Access Token as described below:
+
+- In the upper-right corner of any page, click your profile photo, then click **Settings** and in the left sidebar click **Developer settings**.
+
+  ![Permissions GH](/Assets/Settings_pat.png)
+
+- Then in the left sidebar, click **Personal access tokens** to select the scopes or permissions you would like to grant this token.
+  
+  ![Permissions GH](/Assets/PAT.png)
+
+- Click **Generate new token**.
+
+  ![Permissions GH](/Assets/gentoken.png)
+
+3. Click on Copy icon to copy the token to your clipboard and save it on your notepad. For security reasons, after you navigate off the page, you will not be able to see the token again. **DO NOT COMMIT THIS TO YOUR REPO!**
+
+  ![Permissions GH](/Assets/copytoken.png)
 
 #### Create Azure DevOps Personal Access Token
 
