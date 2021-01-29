@@ -24,7 +24,7 @@ The workshop builds upon an existing code base. Before you start the workshop, t
    
    ![](/Assets/renamerepo.png)
 
->Get the UniqueID value from the **Envrionment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be be CodeToCloud-Source-296566
+>Get the UniqueID value from the **Envrionment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
 
 ## GitHub Codespace
 
