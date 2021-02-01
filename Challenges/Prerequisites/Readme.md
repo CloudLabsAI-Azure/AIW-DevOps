@@ -108,50 +108,6 @@ To set this up, you need to perform these steps
 1. Create a Personal Access Token as [described here](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page)
 1. Keep this Personal Access token somewhere safe for later use. **DO NOT COMMIT THIS TO YOUR REPO!**
 
-## Run Start and Solution Scripts
-
-When you go through the challenges or step by steps, you will see something like this
-
->This challenge needs some prerequisites. Run the following command in your Terminal windows of your GitHub >Codespace to set this up.
-
-```
-Workshop-Step Start "DEVWF-T00X"
-```
-
-When you see this, execute the following steps
-
-* In your Codespace, open a `pwsh` terminal
-* Run the command specified, in this case `Workshop-Step Start "DEVWF-T00X"`
-* A Pull Request with scripts and instructions will be created for you.
-
-You can open the pull request by following the link on the last line the logs:
-
-```plain
-git push origin users/donovan/update-deployment-file --force
-Enumerating objects: 8, done.
-Counting objects: 100% (8/8), done.
-Delta compression using up to 32 threads
-Compressing objects: 100% (5/5), done.
-Writing objects: 100% (5/5), 1.21 KiB | 1.21 MiB/s, done.
-Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-remote: 
-remote: Create a pull request for 'users/donovan/update-deployment-file' on GitHub by visiting:
-remote:      https://github.com/yourorganisation/CodeToCloud-Source/pull/new/users/donovan/update-deployment-file
-remote:
-remote:
-remote:
-remote: GitHub found 17 vulnerabilities on yourorganisation/CodeToCloud-Source's default branch (6 high, 4 moderate, 7 low). To find out more, visit:   
-remote:      https://github.com/yourorganisation/CodeToCloud-Source/network/alerts
-remote:
-To https://github.com/yourorganisation/CodeToCloud-Source.git
- * [new branch]      users/donovan/update-deployment-file -> users/donovan/update-deployment-file
- 
-Creating pull request for users/donovan/update-deployment-file into main in yourorganisation/CodeToCloud-Source
-
-https://github.com/yourorganisation/CodeToCloud-Source/pull/14
-```
-
 ## Variables
 
 In some scripts we use variables like `$resourceGroupName` and `$webappName`. Based on the settings.json file, that is stored in your `.workshop` folder, we generated a PowerShell Profile for you. The values stored in `settings.json` are automatically loaded into your PowerShell console.
