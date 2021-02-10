@@ -10,21 +10,23 @@ If you rather watch a video with step by step instructions, you can do that here
 
 The workshop builds upon an existing code base. Before you start the workshop, this code base needs to be forked or cloned. 
 
-1. Sign in to the [Github](https://github.com/login) using the **GitHub Credential** provided under the **Environment details->Licenses** tab.
+1.  Sign in to the [Github](https://github.com/login) using the **GitHub Credentials** provided under the **Environment details->Licenses** tab.
 
-   ![](/Assets/Licensestab.png)
+   ![](/Assets/envdetails.png)
+   
+2. If prompted with **Device Verification** dialog box, sign in to [Outlook](https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1612964287&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3d7fc62ab0-70f6-eaeb-5aff-cfbc63845381&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015) using the lab credentials.
 
-2. Navigate to [CodeToCloud-Source](https://github.com/xpiritbv/CodeToCloud-Source) repository to fork it into a account you logged in the previous step.
+   ![](/Assets/code.png)
 
-3. Click on **Fork** from the top right corner
+3. Get the code from Outlook Inbox and click on **Verify**  in the **Device Verification** dialog box. After providing the code you will be successfully logged in to Github.
+
+4. Navigate to [CodeToCloud-Source](https://github.com/xpiritbv/CodeToCloud-Source) repository to fork it into a account you logged in the previous step.
+
+3. Click on **Fork** from the top right corner.
    
    ![](/Assets/fork.png)
    
-4. Then from your forked repository under the **Settings** tab rename the forked repository to **CodeToCloud-Source-UniqueID**, Click on **Rename**.
-   
-   ![](/Assets/renamerepo.png)
-
->Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
+4. Fork the repository to the account named **cloudlabsgituserXXX**.
 
 ## GitHub Codespace
 
