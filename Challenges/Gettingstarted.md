@@ -7,12 +7,10 @@
 2. To get the lab environment details, you can select the **Environment details** tab, you can locate the **Environment details** tab in the upper right corner. Additionally, the credentials will also be emailed to your email address provided during registration.
 
    ![](/Assets/Environmentdetails.png)
-   
-  >**Note:** You will see **UniqueID** value on the **Environment details** tab, please use it wherever you see UniqueID in the lab steps. This is a 6 digit unique ID associated with each lab deployment. 
  
-3. Sign in to the [Github](https://github.com/login) using the **GitHub Credential** provided under the **Environment details->Licenses** tab.
+3. Sign in to the [Github](https://github.com/login) using the **GitHub Credentials** provided under the **Environment details->Licenses** tab.
 
-   ![](/Assets/Licensestab.png)
+   ![](/Assets/envdetails.png)
 
 ## Log-in to the Devops
 
