@@ -14,7 +14,9 @@
    
 4. If prompted with **Device Verification** tab , sign in to [Outlook](https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1612964287&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3d7fc62ab0-70f6-eaeb-5aff-cfbc63845381&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015) using the lab credentials.
 
-5. Get the code from Outlook Inbox and provide in the **Device Verification** tab.
+   ![](/Assets/code.png)
+   
+5. Get the code from Outlook Inbox and provide in the **Device Verification** tab. After providing the code you will be successfully logged in to Github.
 
 ## Log-in to the Devops
 
