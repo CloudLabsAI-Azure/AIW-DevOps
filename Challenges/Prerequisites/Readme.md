@@ -26,7 +26,7 @@ The workshop builds upon an existing code base. Before you start the workshop, t
    
    ![](/Assets/fork.png)
    
-4. Fork the repository to the account named **cloudlabsgituserXXX**.
+4. Ensure to fork the repository to the account named **cloudlabsgituserXXX**.
 
 ## GitHub Codespace
 
