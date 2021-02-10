@@ -16,7 +16,7 @@
 
    ![](/Assets/code.png)
    
-5. Get the code from Outlook Inbox and click on **Verify**  in the **Device Verification** dialog box. fter providing the code you will be successfully logged in to Github.
+5. Get the code from Outlook Inbox and click on **Verify**  in the **Device Verification** dialog box. After providing the code you will be successfully logged in to Github.
 
 ## Log-in to the Devops
 
