@@ -107,7 +107,33 @@ To set this up, you need to perform these steps
 #### Create Azure DevOps Personal Access Token
 
 1. Login to `https://dev.azure.com/youraccount` using the lab credentials.
-1. Create a Personal Access Token as [described here](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page)
+1. Create project named **CodeToCloudWorkshop-UniquiID** 
+
+   ![create project](/Assets/azuredevops-project.png)
+   
+
+>Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
+
+3. Go to **User settings** and then select Personal Access Tokens
+
+   
+   ![select pat](/Assets/azuredevops-pat.png)
+   
+4. Click on **+NewToken **   
+   
+   ![new token](/Assets/azuredevops-newtoken.png)
+   
+5. Create token named **UniqueID-Token** and provide the following permissions
+   * Work Items: Read & Write
+   * Build: Read & Execute
+   * Project & Team: Read, Write & Manage
+
+   ![create token](/Assets/azuredevops-createtoken.png)
+   
+6. Copy the value of generated token and save in the notepad .
+
+   ![copy token](/Assets/azuredevops-copypat.png)
+   
 1. Keep this Personal Access token somewhere safe for later use. **DO NOT COMMIT THIS TO YOUR REPO!**
 
 ## Variables
