@@ -119,7 +119,7 @@ To set this up, you need to perform these steps
    
    ![select pat](/Assets/azuredevops-pat.png)
    
-4. Click on **+NewToken **   
+4. Click on +NewToken   
    
    ![new token](/Assets/azuredevops-newtoken.png)
    
