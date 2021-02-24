@@ -20,7 +20,7 @@ The workshop builds upon an existing code base. Before you start the workshop, t
 
 3. Get the code from Outlook Inbox and click on **Verify**  in the **Device Verification** dialog box. After providing the code you will be successfully logged in to Github.
 
-4. Navigate to [CodeToCloud-Source](https://github.com/xpiritbv/CodeToCloud-Source) repository to fork it into a account you logged in the previous step.
+4. Navigate to **https://github.com/xpiritbv/CodeToCloud-Source** repository to fork it into a account you logged in the previous step.
 
 3. Click on **Fork** from the top right corner.
    
