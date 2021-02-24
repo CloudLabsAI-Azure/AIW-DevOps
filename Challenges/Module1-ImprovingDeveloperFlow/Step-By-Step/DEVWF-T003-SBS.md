@@ -14,7 +14,7 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
 3. In your explorer, navigate to the `content-api` folder and create a new file called `Dockerfile` 
    we can create Docker file by using command ```vi Dockerfile``` after this **i** to insert the content then **Esc** and then **:wq**
 
-4. Open the Gist (containing the example definition of the API Dockerfile), [from this location](https://gist.github.com/renevanosnabrugge/b2390f11c45671f6d0a9c6c9bb2c01ca) and paste the contents in to your newly created Dockerfile
+4. Open the Gist (containing the example definition of the API Dockerfile), from this location ```https://gist.github.com/renevanosnabrugge/b2390f11c45671f6d0a9c6c9bb2c01ca``` and paste the contents in to your newly created Dockerfile
 
 5. In your Terminal window, navigate to the `content-api` directory
 
@@ -38,9 +38,9 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
    docker images
    ```
 
-8. Repeat steps 3-7 but store the Dockerfile in the folder `content-web`, call the Docker image `fabrikam-web` and [use this Gist](https://gist.github.com/renevanosnabrugge/251e01fa380c10c8282ffc7f11ff0526) to get the contents of the Dockerfile
+8. Repeat steps 3-7 but store the Dockerfile in the folder `content-web`, call the Docker image `fabrikam-web` and use this Gist```https://gist.github.com/renevanosnabrugge/251e01fa380c10c8282ffc7f11ff0526``` to get the contents of the Dockerfile
 
-9. Repeat steps 3-7 but store the Dockerfile in the folder `content-init`, call the Docker image `fabrikam-init` and [use this Gist](https://gist.github.com/renevanosnabrugge/5178c88a09e8c6cdd66a2eb0dc6dcba2) to get the contents of the Dockerfile
+9. Repeat steps 3-7 but store the Dockerfile in the folder `content-init`, call the Docker image `fabrikam-init` and use this Gist```https://gist.github.com/renevanosnabrugge/5178c88a09e8c6cdd66a2eb0dc6dcba2``` to get the contents of the Dockerfile
 
 10. Now that the images have been successfully built, you should be able to see them in your terminal window, when executing the `docker images` command.
 
