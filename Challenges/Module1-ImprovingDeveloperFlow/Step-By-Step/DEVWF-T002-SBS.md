@@ -32,7 +32,7 @@ If you rather watch a video with step by step instructions, you can do that here
 
    ![In this screenshot of the console window, docker container list has been typed and run at the command prompt, and the “api” container is in the list. Below this the log output is shown.](/Assets/Ex1-Task1.4.png)
 
-1. To initialize the local database with test content, first navigate to the content-init directory and run npm install.
+1. To initialize the local database with test content, first navigate to the **content-init** by using the following command ```cd content-init``` directory and run npm install.
 
    ```bash
    npm install
