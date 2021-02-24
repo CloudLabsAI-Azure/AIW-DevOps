@@ -60,6 +60,7 @@ If you rather watch a video with step by step instructions, you can do that here
    db.speakers.find()
    db.sessions.find()
    quit()
+   exit
    ```
 
    This should produce output similar to the following:
