@@ -30,11 +30,11 @@ In this challenge you are going to shorten the feedback loop and ensure that sta
 
 ## Links & Information
 
-* [Getting started with GitHub Container Registry](https://docs.github.com/en/packages/getting-started-with-github-container-registry)
-* [Publishing a package using an action](https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/using-github-packages-with-github-actions#publishing-a-package-using-an-action)
-* [Migrating to GitHub Container Registry for Docker images](https://docs.github.com/en/packages/getting-started-with-github-container-registry/migrating-to-github-container-registry-for-docker-images)
-* [Pushing and pulling Docker images](https://docs.github.com/en/packages/managing-container-images-with-github-container-registry/pushing-and-pulling-docker-images)
-* [Publish containers to GitHub Container Registry with GitHub Actions](https://medium.com/cooking-with-azure/publish-containers-to-github-container-registry-with-github-actions-4e39700ae14c)
+* Getting started with GitHub Container Registry```https://docs.github.com/en/packages/getting-started-with-github-container-registry```
+* Publishing a package using an action```https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/using-github-packages-with-github-actions#publishing-a-package-using-an-action```
+* Migrating to GitHub Container Registry for Docker images```https://docs.github.com/en/packages/getting-started-with-github-container-registry/migrating-to-github-container-registry-for-docker-images```
+* Pushing and pulling Docker images```https://docs.github.com/en/packages/managing-container-images-with-github-container-registry/pushing-and-pulling-docker-images```
+* Publish containers to GitHub Container Registry with GitHub Actions```https://medium.com/cooking-with-azure/publish-containers-to-github-container-registry-with-github-actions-4e39700ae14c```
 
 ## Solution
 
@@ -43,9 +43,3 @@ If you are stuck or you want to progress to the next challenge, there is a solut
 ```powershell
 Workshop-Step Solution "DEVWF-T007"
 ```
-
-To read or view a step by step explanation of this challenge, please visit [this page](/Challenges/Module1-ImprovingDeveloperFlow/Step-By-Step/DEVWF-T007-SBS.md)
-
-### Next Step
-
-When you are done, move to the [next challenge](/Challenges/Module2-MovingToTheCloud/MovingToTheCloud.md)
