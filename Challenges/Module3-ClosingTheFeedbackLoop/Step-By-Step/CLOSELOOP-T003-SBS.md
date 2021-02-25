@@ -21,18 +21,18 @@ on:
 
 1. Navigate to your Azure DevOps Project that was created in the [prerequisites setup](/Challenges/Prerequisites/Readme.md), and create a new Pipeline
 
-![](/Assets/NewPipeline.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/NewPipeline.png)
 
 2. In the Connect Tab, choose GitHub
-![](/Assets/GHCOnnection.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/GHCOnnection.png)
 
 3. Select your GitHub repository. Azure DevOps will redirect you to authorize yourself to GitHub. Login and select the repository that you want to have enable to access from Azure DevOps
 
-![](/Assets/authorizeGH.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/authorizeGH.png)
 
 4. In the Configure Tab, choose the Starter Pipeline and Save the file to the GitHub repository \
 
-![](/Assets/starterpipeline.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/starterpipeline.png)
 
 ## Setup Service Connection in your Azure DevOps Project
 
@@ -40,7 +40,7 @@ Before we can start building the build and release pipelines, we need to setup a
 
 1. Navigate to your Azure DevOps Project that was created in the [prerequisites setup](/Challenges/Prerequisites/Readme.md). In the Project Settings, open the Service Connections Tab.
 
-![](/Assets/ServiceConnection.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/ServiceConnection.png)
 
 2. Create a new [Docker Registry] Service Connection, and set the values
 * Docker Registry = https://ghcr.io
@@ -48,7 +48,7 @@ Before we can start building the build and release pipelines, we need to setup a
 * Docker Password = <Your GitHub Personal Access Token>
 * Service connection name = GitHub Container Registry
 
-![](/Assets/NewServiceConnectionDetails.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/NewServiceConnectionDetails.png)
 
 ## Create the Build Stage
 
@@ -64,7 +64,7 @@ First we need to create the build stage in the Azure DevOps pipeline. Instead of
 
 4. In the side bar, find the Docker compose task, and configure it. After that add it to your pipeline. Set the following fields
 
-![](/Assets/Docker%20Compose%20Task.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Docker%20Compose%20Task.png)
 
 * Container Registry Type = Container Registry
 * Docker Registry Service Connection = GitHub Container Registry (created in previous step)
@@ -147,11 +147,11 @@ Now that we have split the build and deployment we need to add the deployment st
 ```
 
 6. The deploy-infrastructure.ps1 uses an environment variable $(CR_PAT). You need to set this as secret variable in the pipeline. Press the variables button on top of the pipeline editor 
-![](/Assets/varButtron.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/varButtron.png)
 
 Add a secret variable CR_PAT and set it to secret.
 
-![](/Assets/secretVar.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/secretVar.png)
 
 ## Adding Manual Approval
 
@@ -159,10 +159,10 @@ Now that we have a pipeline that builds and deploys, we can add a manual approva
 
 1. In the menu under pipelines, select `[Environments]` and select production
 
-![](/Assets/2020-10-16-15-30-29.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-16-15-30-29.png)
 
 2. Select the 3 dots, to see the options of this environment
-![](/Assets/2020-10-16-15-31-56.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-16-15-31-56.png)
 
 3. Choose Approvals and Checks. Add a user, and press Create
 
