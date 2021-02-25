@@ -45,7 +45,7 @@ To enable Application Insights we need an Application Insights Resource in our r
    appInsights.start();
    ```
 
-   ![A screenshot of the code editor showing updates in context of the app.js file](/Assets/hol-2019-10-02_12-33-29.png)
+   ![A screenshot of the code editor showing updates in context of the app.js file](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/hol-2019-10-02_12-33-29.png)
 
 3. Save changes and push these changes to your repository so that GitHub Actions CI will build a new image.
 
