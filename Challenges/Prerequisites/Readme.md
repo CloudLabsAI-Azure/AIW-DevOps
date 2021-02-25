@@ -12,11 +12,11 @@ The workshop builds upon an existing code base. Before you start the workshop, t
 
 1.  Sign in to the [Github](https://github.com/login) using the **GitHub Credentials** provided under the **Environment details->Licenses** tab.
 
-   ![](/Assets/envdetails.png)
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/envdetails.png)
    
 2. If prompted with **Device Verification** dialog box, open Microsoft edge Browser in incognito mode and sign in to [Outlook](https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1612964287&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3d7fc62ab0-70f6-eaeb-5aff-cfbc63845381&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015) using the lab credentials.
 
-   ![](/Assets/code.png)
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/code.png)
 
 3. Get the code from Outlook Inbox and click on **Verify**  in the **Device Verification** dialog box. After providing the code you will be successfully logged in to Github.
 
@@ -24,7 +24,7 @@ The workshop builds upon an existing code base. Before you start the workshop, t
 
 3. Click on **Fork** from the top right corner.
    
-   ![](/Assets/fork.png)
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/fork.png)
    
 4. Ensure to fork the repository to the account named **cloudlabsgituserXXX**.
 
@@ -36,15 +36,15 @@ The workshop is built with and targeted at development with GitHub Codespace. A 
 
 2. Under the **Code** dropdown click on **Open with Codespaces** then **+New Codespace**  to create a Code Space in your forked repo.
 
-   ![](/Assets/CodeSpaces.png)
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/CodeSpaces.png)
 
 3. Preparation and Configuration of the Codespace takes around 3 minutes.
 
-   ![](/Assets/Codespace-initiation.png)
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Codespace-initiation.png)
 
 4. Once your GitHub Codespace is created you should be able to see the files and a welcome message under the Terminal.
 
-   ![](/Assets/Codespace-files.png)
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Codespace-files.png)
 
    Visual Studio Code doesn't pass a couple of specific of keystrokes to the terminal, this may make it harder to quit docker once you've started a container interactively. You can add the [custom keybindings specified here](/.devcontainer/keybindings.json) to [your Visual Studio Code settings](https://code.visualstudio.com/docs/getstarted/keybindings#_advanced-customization). This remaps `ctrl-q` and `ctrl-p` when the terminal has focus.
 
@@ -90,26 +90,26 @@ To set this up, you need to perform these steps
 
 - In the upper-right corner of any page, click your profile photo, then click **Settings** and in the left sidebar click **Developer settings**.
 
-  ![Permissions GH](/Assets/Settings_pat.png)
+  ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Settings_pat.png)
 
 - Then in the left sidebar, click **Personal access tokens** to select the scopes or permissions you would like to grant this token.
   
-  ![Permissions GH](/Assets/PAT.png)
+  ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/PAT.png)
 
 - Click **Generate new token**.
 
-  ![Permissions GH](/Assets/gentoken.png)
+  ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/gentoken.png)
 
 3. Click on Copy icon to copy the token to your clipboard and save it on your notepad. For security reasons, after you navigate off the page, you will not be able to see the token again. **DO NOT COMMIT THIS TO YOUR REPO!**
 
-  ![Permissions GH](/Assets/copytoken.png)
+  ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/copytoken.png)
 
 #### Create Azure DevOps Personal Access Token
 
 1. Login to `https://dev.azure.com/youraccount` using the lab credentials.
 1. Create project named **CodeToCloudWorkshop-UniquiID** 
 
-   ![create project](/Assets/azuredevops-project.png)
+   ![create project](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-project.png)
    
 
 >Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
@@ -117,22 +117,22 @@ To set this up, you need to perform these steps
 3. Go to **User settings** and then select Personal Access Tokens
 
    
-   ![select pat](/Assets/azuredevops-pat.png)
+   ![select pat](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-pat.png)
    
 4. Click on +NewToken   
    
-   ![new token](/Assets/azuredevops-newtoken.png)
+   ![new token](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-newtoken.png)
    
 5. Create token named **UniqueID-Token** and provide the following permissions
    * Work Items: Read & Write
    * Build: Read & Execute
    * Project & Team: Read, Write & Manage
 
-   ![create token](/Assets/azuredevops-createtoken.png)
+   ![create token](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-createtoken.png)
    
 6. Copy the value of generated token and save in the notepad .
 
-   ![copy token](/Assets/azuredevops-copypat.png)
+   ![copy token](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-copypat.png)
    
 1. Keep this Personal Access token somewhere safe for later use. **DO NOT COMMIT THIS TO YOUR REPO!**
 
