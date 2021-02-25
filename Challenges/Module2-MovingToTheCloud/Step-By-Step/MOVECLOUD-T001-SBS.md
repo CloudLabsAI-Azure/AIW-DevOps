@@ -22,13 +22,13 @@ az account set --subscription <your subscription guid>
 
 1. From your GitHub repository open your Codespace
 
-   ![](/Assets/OpenCodeSpace.png)
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/OpenCodeSpace.png)
 
 2. In the file explorer, create a new folder called `infrastructure`
 
 3. Create a new file called `deploy-infrastructure.ps1`
 
-   ![](/Assets/newfolderinfra.png)
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/newfolderinfra.png)
 
 4. To make automation of all resources a bit easier, add these variables in the `deploy-infrastructure.ps1`file
 
@@ -60,9 +60,9 @@ Create an Azure Resource Group to hold the resources that you create in this han
 
 3. When this completes, the Azure Portal shows your Resource Group.
 
-   ![Resource group created](/Assets/2020-10-09_16-36-24.png) 
+   ![Resource group created](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-09_16-36-24.png) 
 
-   ![In this screenshot of the Azure Portal, the fabmedical- Resource group is listed.](/Assets/b4-image8.png)
+   ![In this screenshot of the Azure Portal, the fabmedical- Resource group is listed.](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/b4-image8.png)
 
 ### Create a CosmosDB
 
@@ -136,4 +136,4 @@ You have already run the separate steps from the steps a number of times. The fa
 
 1. Open the Azure Portal, and validate if the CosmosDB, the App Service Plan and Azure Web App have been created. 
 
-![Resources created in Azure](/Assets/2020-10-15-10-32-42.png)
+![Resources created in Azure](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-15-10-32-42.png)
