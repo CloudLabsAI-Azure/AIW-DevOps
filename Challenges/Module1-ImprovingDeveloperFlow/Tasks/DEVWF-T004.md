@@ -34,14 +34,7 @@ In this challenge you will merge the Pull Request [Example for Multi-Staged Dock
 
 ## Links & Information
 
-* [Link GitHub commits, pull requests, and issues to work items](https://docs.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops)
-* [Use multi-stage builds](https://docs.docker.com/develop/develop-/Assets/multistage-build/)
-* [Creating a Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+* Link GitHub commits, pull requests, and issues to work items```https://docs.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops```
+* Use multi-stage builds```https://docs.docker.com/develop/develop-/Assets/multistage-build/```
+* Creating a Pull Request```https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request```
 
-## Solution
-
-To read or view a step by step explanation of this challenge, please visit [this page](/Challenges/Module1-ImprovingDeveloperFlow/Step-By-Step/DEVWF-T004-SBS.md)
-
-### Next Step
-
-When you are done, move to the [next challenge](DEVWF-T005.md)
