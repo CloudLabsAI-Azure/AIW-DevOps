@@ -21,13 +21,13 @@ In this task your are going to create a continuous deployment pipeline in GitHub
 
 4. On the Conversation Tab, press the Merge Pull Request Button, to merge the files in to the main branch. Link the Pull Request to your Azure Boards Work item for Module 3 by typing AB#Module1WorkItemID in the title or description of the Pull Request Commit Message. 
 
-      ![Shows the button for merging a Pull Request in GitHub](/Assets/mergePullRequest.png)
+      ![Shows the button for merging a Pull Request in GitHub](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/mergePullRequest.png)
 
 Now your repository contains the new file.
 
 6. In your GitHub Codespace, update your files to the latest version by pulling them.
 
-      ![](/Assets/2020-10-05-12-10-11.png)
+      ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-12-10-11.png)
 
 ## Create a new GitHub Action Workflow that builds and pushes with Docker Compose
 
