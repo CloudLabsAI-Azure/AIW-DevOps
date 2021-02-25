@@ -21,13 +21,13 @@ In this task you are going to create a new Docker Compose file that contains the
 
 4. On the Conversation Tab, press the Merge Pull Request Button, to merge the files in to the main branch. Link the Pull Request to your Azure Boards Work item for Module 1 by typing `AB#` followed by the workitem id for Module 1 (example: `AB#123`) in the title or description of the Pull Request Commit Message. 
 
-    ![Shows the button for merging a Pull Request in GitHub](/Assets/mergePullRequest.png)
+    ![Shows the button for merging a Pull Request in GitHub](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/mergePullRequest.png)
 
 Now your repository contains 3 new "Docker Compose" files.
 
 6. In your GitHub Codespace, update your files to the latest version by pulling them.
 
-    ![](/Assets/2020-10-05-12-10-11.png)
+    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-12-10-11.png)
 
 7. Change the <yourgithubaccount> in the docker-compose files to your GitHub Account. Open your PowerShell terminal window. From the root folder, start the application.
 
@@ -66,10 +66,10 @@ Now your repository contains 3 new "Docker Compose" files.
 
 10. Test the web application using the port forward method. In the Remote Explorer, forward port 3000 and open the browser by clicking the globe icon next to the port. 
 
-    ![](/Assets/OpenBrowser.png)
+    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/OpenBrowser.png)
 
 11. When you are done, commit and push your changes to your GitHub repository.
 
-    ![](/Assets/commitandpush.png)
+    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/commitandpush.png)
 
 
