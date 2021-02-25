@@ -17,14 +17,7 @@ In this challenge you are going to use your [CodeToCloud-Source] repository that
 
 ## Links & Information
 
-* [Connect Azure Boards to GitHub Repository](https://github.com/marketplace/azure-boards)
-* [Install and configure the Azure Boards app for GitHub](https://docs.microsoft.com/en-us/azure/devops/boards/github/install-github-app?view=azure-devops)
-* [Link GitHub commits, pull requests, and issues to work items](https://docs.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops)
+* Connect Azure Boards to GitHub Repository ```https://github.com/marketplace/azure-boards```
+* Install and configure the Azure Boards app for GitHub```https://docs.microsoft.com/en-us/azure/devops/boards/github/install-github-app?view=azure-devops```
+* Link GitHub commits, pull requests, and issues to work items```https://docs.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops```
 
-## Solution
-
-To read or view a step by step explanation of this challenge, please visit [this page](/Challenges/Module1-ImprovingDeveloperFlow/Step-By-Step/DEVWF-T001-SBS.md)
-
-### Next Step
-
-When you are done, move to the [next challenge](DEVWF-T002.md)
