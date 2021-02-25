@@ -23,7 +23,7 @@ docker run -ti  -e MONGODB_CONNECTION="mongodb://xxx.documents.azure.com:10255/c
 ```
 4. In the Azure Portal, navigate to the Web Application and open the Configuration Blade. In the configuration blade add a new Application Setting and call this MONGODB_CONNECTION. Add the MongoDB Connection String as a value.
 
-![](/Assets/AppSetting.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/AppSetting.png)
 
 If you rather want to run this as code, you can use the command
 
@@ -40,7 +40,7 @@ Fill in the following data:
 
 As file, choose the `docker-compose.yml` file that you created earlier, and press Save.
 
-![](/Assets/containerblade.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/containerblade.png)
 
 6. The Azure Web App will no create two containers in the web app. Navigate to the Web app https://$webappname.azurewebsites.net to validate if the application is working
 
