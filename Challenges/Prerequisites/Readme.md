@@ -14,7 +14,7 @@ The workshop builds upon an existing code base. Before you start the workshop, t
 
    ![](/Assets/envdetails.png)
    
-2. If prompted with **Device Verification** dialog box, sign in to [Outlook] using incognito window(https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1612964287&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3d7fc62ab0-70f6-eaeb-5aff-cfbc63845381&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015) using the lab credentials.
+2. If prompted with **Device Verification** dialog box, open Microsoft edge Browser in incognito mode and sign in to [Outlook](https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1612964287&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3d7fc62ab0-70f6-eaeb-5aff-cfbc63845381&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015) using the lab credentials.
 
    ![](/Assets/code.png)
 
