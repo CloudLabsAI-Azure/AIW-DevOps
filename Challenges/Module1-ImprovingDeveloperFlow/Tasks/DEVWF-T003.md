@@ -6,9 +6,9 @@ In the proposed solution architecture Fabrikam wants to move towards the Azure C
 
 ## Challenge
 
-In this challenge you will create a container for the API and WEB application. For that you need to create a Dockerfile in the content-api and the content-web folder that builds and runs the API and WEB application. One of the developers is very eager about this and already started work in the evening and shared [this gist for the api](https://gist.github.com/renevanosnabrugge/b2390f11c45671f6d0a9c6c9bb2c01ca) and [this gist for the web app](https://gist.github.com/renevanosnabrugge/251e01fa380c10c8282ffc7f11ff0526) with you that builds and runs the application. Make sure you embed this in the source code and run the API and WEB app in the container.
+In this challenge you will create a container for the API and WEB application. For that you need to create a Dockerfile in the content-api and the content-web folder that builds and runs the API and WEB application. One of the developers is very eager about this and already started work in the evening and shared this gist for the api```https://gist.github.com/renevanosnabrugge/b2390f11c45671f6d0a9c6c9bb2c01ca``` and this gist for the web app```https://gist.github.com/renevanosnabrugge/251e01fa380c10c8282ffc7f11ff0526``` with you that builds and runs the application. Make sure you embed this in the source code and run the API and WEB app in the container.
 
-You also decide it is convenient to have a container for the Initialization of the database contents. There is [a gist created](https://gist.github.com/renevanosnabrugge/5178c88a09e8c6cdd66a2eb0dc6dcba2) for that as well. 
+You also decide it is convenient to have a container for the Initialization of the database contents. There is a gist created```https://gist.github.com/renevanosnabrugge/5178c88a09e8c6cdd66a2eb0dc6dcba2``` for that as well. 
 
 ## Validation
 
@@ -31,9 +31,9 @@ You also decide it is convenient to have a container for the Initialization of t
 
 ## Links & Information
 
-* [Build and Run your image](https://docs.docker.com/get-started/part2/)
-* [docker build](https://docs.docker.com/engine/reference/commandline/build/)
-* [docker run](https://docs.docker.com/engine/reference/run/)
+* Build and Run your image```https://docs.docker.com/get-started/part2/```
+* docker build```https://docs.docker.com/engine/reference/commandline/build/```
+* docker run```https://docs.docker.com/engine/reference/run/```
 
 ## Solution
 
@@ -43,8 +43,3 @@ If you are stuck or you want to progress to the next challenge, there is a solut
 Workshop-Step Solution "DEVWF-T003"
 ```
 
-To read or view a step by step explanation of this challenge, please visit [this page](/Challenges/Module1-ImprovingDeveloperFlow/Step-By-Step/DEVWF-T003-SBS.md)
-
-### Next Step
-
-When you are done, move to the [next challenge](DEVWF-T004.md)
