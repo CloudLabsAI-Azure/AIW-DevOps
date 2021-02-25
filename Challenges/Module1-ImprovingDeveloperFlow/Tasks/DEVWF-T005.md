@@ -26,16 +26,8 @@ In this challenge you will enable two important security features. DependaBot an
 
 ## Links & Information
 
-* [About Code Scanning](https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/about-code-scanning)
-* [How DependaBot Works](https://dependabot.com/#how-it-works)
-* [Enable Code Scanning](https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/enabling-code-scanning-for-a-repository)
+* About Code Scanning```https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/about-code-scanning```
+* How DependaBot Works```https://dependabot.com/#how-it-works```
+* Enable Code Scanning```https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/enabling-code-scanning-for-a-repository)```
 
 ![](/Assets/2020-09-17-13-13-35.png)
-
-## Solution
-
-To read or view a step by step explanation of this challenge, please visit [this page](/Challenges/Module1-ImprovingDeveloperFlow/Step-By-Step/DEVWF-T005-SBS.md)
-
-### Next Step
-
-When you are done, move to the [next challenge](DEVWF-T006.md)
