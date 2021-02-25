@@ -18,10 +18,10 @@ In this module you will learn to:
 
 ## Tasks
 
-* [DEVWF-T001 Get started with the work and create visibility](Tasks/DEVWF-T001.md)
-* [DEVWF-T002 Running the application locally](Tasks/DEVWF-T002.md)
-* [DEVWF-T003 Containerize the Application](Tasks/DEVWF-T003.md)
-* [DEVWF-T004 Optimize containers with a multi staged Docker File](Tasks/DEVWF-T004.md)
-* [DEVWF-T005 Catching Security Vulnerabilities](Tasks/DEVWF-T005.md)
-* [DEVWF-T006 Setting up a local infrastructure](Tasks/DEVWF-T006.md)
-* [DEVWF-T007 Set up Continuous Integration to push container images to GitHub Registry](Tasks/DEVWF-T007.md)
+* DEVWF-T001 Get started with the work and create visibility
+* DEVWF-T002 Running the application locally
+* DEVWF-T003 Containerize the Application
+* DEVWF-T004 Optimize containers with a multi staged Docker File
+* DEVWF-T005 Catching Security Vulnerabilities
+* DEVWF-T006 Setting up a local infrastructure
+* DEVWF-T007 Set up Continuous Integration to push container images to GitHub Registry
