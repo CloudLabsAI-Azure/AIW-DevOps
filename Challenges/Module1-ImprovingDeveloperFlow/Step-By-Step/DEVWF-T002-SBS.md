@@ -95,7 +95,7 @@ If you rather watch a video with step by step instructions, you can do that here
 1. Navigate to the web application directory, run `npm install` and `ng build`.
 
    ```bash
-   cd content-web
+   cd ../content-web
    npm install
    ng build
    ```
