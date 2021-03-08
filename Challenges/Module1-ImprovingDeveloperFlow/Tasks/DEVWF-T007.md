@@ -22,7 +22,7 @@ In this challenge you are going to shorten the feedback loop and ensure that sta
 >
 > Create a PAT token in GitHub and add it as a GitHub secret as CR_PAT to access the GitHub Container registry
 >
-> ![](/Assets/GithubAction-DockerPublish.png)
+> ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/GithubAction-DockerPublish.png)
 >
 > Remove the `test` job from the generated GitHub Action
 >
