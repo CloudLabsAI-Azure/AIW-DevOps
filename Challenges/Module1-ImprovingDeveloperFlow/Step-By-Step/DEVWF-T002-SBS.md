@@ -70,7 +70,7 @@ If you rather watch a video with step by step instructions, you can do that here
 1. Now navigate to the `content-api` directory and run npm install.
 
    ```bash
-   cd content-api
+   cd ../content-api
    npm install
    ```
 
