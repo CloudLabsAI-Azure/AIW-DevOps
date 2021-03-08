@@ -10,7 +10,7 @@ If you rather watch a video with step by step instructions, you can do that here
 
 The workshop builds upon an existing code base. Before you start the workshop, this code base needs to be forked or cloned. 
 
-1.  Sign in to the [Github](https://github.com/login) using the **GitHub Credentials** provided under the **Environment details->Licenses** tab.
+1.  Sign in to the Github ``https://github.com/login`` using the **GitHub Credentials** provided under the **Environment details->Licenses** tab.
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/envdetails.png)
    
