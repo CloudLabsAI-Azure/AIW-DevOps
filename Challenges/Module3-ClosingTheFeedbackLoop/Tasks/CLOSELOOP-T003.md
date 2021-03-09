@@ -40,8 +40,3 @@ If you are stuck or you want to progress to the next challenge, there is a solut
 Workshop-Step Solution "CLOSELOOP-T003"
 ```
 
-To read or view a step by step explanation of this challenge, please visit [this page](/Challenges/Module3-ClosingTheFeedbackLoop/Step-By-Step/CLOSELOOP-T003-SBS.md)
-
-### Next Step
-
-When you are done, move to the [next challenge](CLOSELOOP-T004.md)
