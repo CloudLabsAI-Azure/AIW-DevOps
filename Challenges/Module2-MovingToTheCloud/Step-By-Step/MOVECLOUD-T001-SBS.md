@@ -33,7 +33,7 @@ az account set --subscription <your subscription guid>
 4. To make automation of all resources a bit easier, add these variables in the `deploy-infrastructure.ps1`file
 
    ```Powershell
-   $studentprefix = "your 3 letter abbreviation here"
+   $studentprefix = "uniqueID"
    $resourcegroupName = "fabmedical-rg-" + $studentprefix
    $cosmosDBName = "fabmedical-cdb-" + $studentprefix
    $webappName = "fabmedical-web-" + $studentprefix
@@ -41,7 +41,7 @@ az account set --subscription <your subscription guid>
    $location1 = "westeurope"
    $location2 = "northeurope"
    ```
-
+>Get the UniqueID value from the **Environment details-> Azure Credentials** tab
 ## Create an Azure Resource Group
 
 Create an Azure Resource Group to hold the resources that you create in this hands-on lab. 
