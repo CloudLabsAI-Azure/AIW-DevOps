@@ -26,13 +26,6 @@ In this challenge you will set up an Azure Resource Group containing a CosmosDB 
 >    ```
 > use the `az webapp create -g MyResourceGroup -p MyPlan -n MyUniqueAppName -i nginx` to create an empty web app with a container
 
-## Links & Information
-
-* [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
-* [Manage Resource Group with Azure CLI](https://docs.microsoft.com/en-us/cli/azure/group?view=azure-cli-latest)
-* [Manage CosmosDB with Azure CLI](https://docs.microsoft.com/en-us/cli/azure/cosmosdb?view=azure-cli-latest)
-* [Create an Azure Web App](https://docs.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest#az_webapp_create)
-* [Create a multi-container (preview) app using a Docker Compose configuration](https://docs.microsoft.com/en-us/azure/app-service/quickstart-multi-container)
 
 ## Solution
 
@@ -42,7 +35,3 @@ If you are stuck or you want to progress to the next challenge, there is a solut
 Workshop-Step Solution "MOVECLOUD-T001"
 ```
 
-To read or view a step by step explanation of this challenge, please visit [this page](/Challenges/Module2-MovingToTheCloud/Step-By-Step/MOVECLOUD-T001-SBS.md)
-
-### Next Step
-When you are done, move to the [next challenge](MOVECLOUD-T002.md)
