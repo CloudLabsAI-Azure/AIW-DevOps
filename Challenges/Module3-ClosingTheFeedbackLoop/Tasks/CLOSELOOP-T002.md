@@ -24,10 +24,6 @@ In this challenge your are going to create a continuous deployment pipeline that
 * GitHub secret `AZURE_CREDENTIALS` added that contains the credentials of a Service Principal to deploy application and infrastructure to Azure
 * Application deployed to Azure with `deploy-infrastructure.ps1` script
 
-## Links & Information
-
-* [Login with AzureCLI in GitHub Actions](https://github.com/marketplace/actions/azure-login)
-* [Docker Compose command line]()
 
 ## Solution
 
