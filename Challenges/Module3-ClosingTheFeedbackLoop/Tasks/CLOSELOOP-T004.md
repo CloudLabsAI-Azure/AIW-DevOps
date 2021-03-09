@@ -20,9 +20,6 @@ In this challenge you are going to replace the `:latest` tag in the docker-compo
 > - powershell: (gc .\docker-compose.yml) -replace ':latest',':$(Build.BuildNumber)' | set-content .\docker-compose.yml
 > ```
 
-## Links & Information
-
-* [Evaluate Artifact Policy](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/artifact-policy?view=azure-devops#check-allowed-registries)
 
 ## Solution
 
@@ -32,7 +29,6 @@ If you are stuck or you want to progress to the next challenge, there is a solut
 Workshop-Step Solution "CLOSELOOP-T004"
 ```
 
-To read or view a step by step explanation of this challenge, please visit [this page](/Challenges/Module3-ClosingTheFeedbackLoop/Step-By-Step/CLOSELOOP-T004-SBS.md)
 
 ### Next Step
 
