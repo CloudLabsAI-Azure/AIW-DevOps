@@ -29,7 +29,7 @@ Now your repository contains 3 new "Docker Compose" files.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-12-10-11.png)
 
-7. Change the <yourgithubaccount> in the docker-compose files to your GitHub Account. Open your PowerShell terminal window. From the root folder, start the application.
+7. Change the ``<yourgithubaccount>`` in the docker-compose files to your GitHub Account you can find your GitHub account details in **Environment details < outlook/GitHub credential**. Open your PowerShell terminal window. From the root folder, start the application.
 
     ```bash
     docker-compose -f docker-compose.yml -f local.docker-compose.yml -f docker-compose.init.yml build
