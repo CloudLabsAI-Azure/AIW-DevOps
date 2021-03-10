@@ -49,7 +49,7 @@ services:
 
 ![](NewGHAction.png)
 
-3. Select the Simple Workflow and call the new YAML file docker-publish.yml
+3. Search for **Publish Docker container** workflow  and call the new YAML file docker-publish.yml
 
 ![](simplewf.png)
 
