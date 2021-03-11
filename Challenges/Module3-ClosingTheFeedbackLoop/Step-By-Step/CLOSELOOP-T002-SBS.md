@@ -74,16 +74,11 @@ This step uses the docker-compose.yml and build.docker-compose.yml to build the 
 
 6. Now that the containers have been built and pushed, the Azure Web Application needs to be updated. Before you can interact with Azure, you need to have access to the Azure API with the Azure CLI. Using the Azure Login Task, we can login securely in Azure using a GitHub secret.
 
-In your Codespace terminal, execute the following script to login to Azure, set your subscription and create a Service Principal with access to your resourcegroup.
+7. Go to Environment details click on **Service principle Credentials** copy **Application id(clientId)** , **clientSecret** , **subscriptionId** and **tenantId** 
 
-```PowerShell
-$studentprefix ="your abbreviation here"
-$resourcegroupName = "fabmedical-rg-" + $studentprefix 
-$rg = az group show --name $resourcegroupName | ConvertFrom-Json
-az ad sp create-for-rbac --name "codetocloud-$studentprefix" --sdk-auth --role contributor --scopes $($rg.id)
-```
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/sp-creds-auth.png)
 
-The output of this command looks like this
+Replace the values that you copied in below Json
 ```JSON
 {
   "clientId": "...",
@@ -101,11 +96,11 @@ The output of this command looks like this
 
 Copy the complete JSON output to your clipboard.
 
-7. In your repository settings, navigate to [Secrets] and create a new secret called [AZURE_CREDENTIALS]. Paste the copied value from your clipboard to the value of the secret and save it.
+8. In your repository settings, navigate to [Secrets] and create a new secret called [AZURE_CREDENTIALS]. Paste the copied value from your clipboard to the value of the secret and save it.
 
 ![](secretAZCRED.png)
 
-8. Back in the GitHub Action workflow, add a new step that uses the [AZURE_CREDENTIALS] secret to login to Azure
+9. Back in the GitHub Action workflow, add a new step that uses the [AZURE_CREDENTIALS] secret to login to Azure
       
 ```
   - name: Login on Azure CLI
@@ -114,7 +109,7 @@ Copy the complete JSON output to your clipboard.
       creds: ${{secrets.AZURE_CREDENTIALS}}
 ```          
 
-9. Add a script task to the workflow, that executes the `deploy-infrastrucuture.ps1` file. Take note of the ENV variable you need to add to the stage to get access to the secret variable.
+10. Add a script task to the workflow, that executes the `deploy-infrastrucuture.ps1` file. Take note of the ENV variable you need to add to the stage to get access to the secret variable.
 
 ```YAML
       - name: Deploy Infrastructure
@@ -125,7 +120,7 @@ Copy the complete JSON output to your clipboard.
           .\infrastructure\deploy-infrastructure.ps1 -studentprefix <your abbreviation here>
 ```
 
-10. Commit the workflow file. The GitHub Action will trigger.
+11. Commit the workflow file. The GitHub Action will trigger.
 
 > When you do not want to type all commands try the solution Pull Request by running
 
