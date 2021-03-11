@@ -74,7 +74,7 @@ Now that you have created 3 Docker images for your application, it is time to ru
     docker run -d --name web -p 3000:80 --net fabrikam fabrikam-web
     ```
 
-<Note : If you face error as Port 3000 or Port 3001 is already in use. please follow the steps below:
+Note : If you face error as Port 3000 or Port 3001 is already in use. please follow the steps below:
 
 * Run command **lsof -i : portnumber** , replace portnumber with the port in which you are facing issue
 
