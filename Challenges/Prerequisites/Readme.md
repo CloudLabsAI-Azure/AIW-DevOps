@@ -22,7 +22,7 @@ The workshop builds upon an existing code base. Before you start the workshop, t
 
 4. After Login you can find the repository that you will be using in the lab
 
-      ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/fork.png)
+      ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/github-signin.png)
    
 
 ## GitHub Codespace
