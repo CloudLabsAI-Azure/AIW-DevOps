@@ -103,8 +103,11 @@ To set this up, you need to perform these steps
 
 #### Create Azure DevOps Personal Access Token
 
-1. Login to `https://dev.azure.com/youraccount` using the lab credentials.
-1. Create project named **CodeToCloudWorkshop-UniqueID** 
+1. Login to `https://dev.azure.com/youraccount` using the Azure credentials provided in Environment details.
+
+   ![Azure creds](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azure-creds.png)
+   
+3. Create project named **CodeToCloudWorkshop-UniqueID** 
 
    ![create project](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-project.png)
    
