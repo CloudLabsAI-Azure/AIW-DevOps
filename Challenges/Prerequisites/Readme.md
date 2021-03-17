@@ -37,7 +37,7 @@ The workshop is built with and targeted at development with GitHub Codespace. A 
 
 3. Preparation and Configuration of the Codespace takes around 3 minutes.
 
-   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Codespace-initiation.png)
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/codespace-build.png)
 
 4. Once your GitHub Codespace is created you should be able to see the files and a welcome message under the Terminal.
 
