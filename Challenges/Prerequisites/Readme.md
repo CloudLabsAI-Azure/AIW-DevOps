@@ -20,9 +20,10 @@ The workshop builds upon an existing code base. Before you start the workshop, t
 
 3. Get the code from Outlook Inbox and click on **Verify**  in the **Device Verification** dialog box. After providing the code you will be successfully logged in to Github.
 
-4. After Login you can find the repository that you will be using in the lab
+4. After Login , go to ``https://github.com/xpiritbv/CodeToCloud-Source``
 
-      ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/github-signin.png)
+5. Fork the repo into your account
+
    
 
 ## GitHub Codespace
