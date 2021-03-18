@@ -42,27 +42,8 @@ az account set --subscription <your subscription guid>
    $location2 = "northeurope"
    ```
 >Get the UniqueID value from the **Environment details-> Azure Credentials** tab
-## Create an Azure Resource Group
 
-Create an Azure Resource Group to hold the resources that you create in this hands-on lab. 
-
-1. In the `deploy-infrastructure.ps1` file add a Azure CLI command to create a resource group 
-
-   ```PowerShell
-   az group create -l $location1 -n $resourcegroupName
-   ```
-2. Save the PowerShell file and run it from the terminal:
-
-      ```powershell
-      pushd infrastructure
-      ./deploy-infrastructure.ps1
-      ```
-
-3. When this completes, the Azure Portal shows your Resource Group.
-
-   ![Resource group created](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-09_16-36-24.png) 
-
-   ![In this screenshot of the Azure Portal, the fabmedical- Resource group is listed.](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/b4-image8.png)
+`` Note: A resource group with name **fabmedical-rg-uniqueID** will be pre-created for you.``
 
 ### Create a CosmosDB
 
