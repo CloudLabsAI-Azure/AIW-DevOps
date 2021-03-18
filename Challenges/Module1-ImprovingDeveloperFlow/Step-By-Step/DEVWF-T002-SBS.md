@@ -81,6 +81,8 @@ If you rather watch a video with step by step instructions, you can do that here
     ```
 
     ![In this screenshot, node ./server.js & has been typed and run at the command prompt, which starts the API as a background process.](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/image47.png)
+    
+``Note: If you get the pop-up for forwarded port after the run, please click on open you will be directed to forwarded port. you can skip step 2 and 3 as you already got the forwarded port  ``    
 
 1. Test the API using your browser. In the GitHub Codespace navigate to the Remote Explorer and create a new Forwarded Port
 
