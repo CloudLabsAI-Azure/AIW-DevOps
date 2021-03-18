@@ -22,9 +22,10 @@ The workshop builds upon an existing code base. Before you start the workshop, t
 
 4. After Login , go to ``https://github.com/xpiritbv/CodeToCloud-Source``
 
-5. Fork the repo into your account
+5. Click on fork , select your account with name **github-cloudlabuser-XXX**
 
-   
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/forked-repo.png)
+       
 
 ## GitHub Codespace
 
