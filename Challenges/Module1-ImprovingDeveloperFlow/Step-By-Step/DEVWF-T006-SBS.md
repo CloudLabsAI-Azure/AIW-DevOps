@@ -6,8 +6,6 @@ If you rather watch a video with step by step instructions, you can do that here
 In this task you are going to create a new Docker Compose file that contains the MongoDB, the API and the Web Application.
 
 >This task has a Starter solution, that creates a Pull Request containing some files and instructions. 
->
-> In order to run the automated Starter Solution, you need to go through the [Setup prerequisites](/Challenges/Prerequisites/Readme.md) first!
 
 1. In your GitHub Codespace, open a PowerShell Terminal and run the starter solution. A Pull Request with 2 Docker compose files will be created
 
