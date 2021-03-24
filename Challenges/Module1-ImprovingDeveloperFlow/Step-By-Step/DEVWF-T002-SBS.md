@@ -86,7 +86,7 @@ If you rather watch a video with step by step instructions, you can do that here
 
 1. Test the API using your browser. In the GitHub Codespace navigate to the Remote Explorer and create a new Forwarded Port
 
-    ![Setup port forwarding ](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/PortForward.png)
+    ![Setup port forwarding ](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/updated-port.png)
 
 1. Next to the Forwarded Port, click the the global icon. The forwarded website api will be opened in a new browser window
 
