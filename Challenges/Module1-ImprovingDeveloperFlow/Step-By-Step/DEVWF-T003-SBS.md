@@ -21,6 +21,7 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
     ```bash
     pushd content-api
     ```
+``` Note : Every time you use the pushd command, a single directory is stored for your use. However, you can store multiple directories by using the pushd command multiple times. The directories are stored sequentially in a virtual stack, so if you use the pushd command once, the directory in which you use the command is placed at the bottom of the stack. If you use the command again, the second directory is placed on top of the first one. The process repeats every time you use the pushd command.```
 
 6. From the content-api folder containing the API application files and the new Dockerfile you created, type the following command to create a Docker image for the API application. This command does the following:
 
