@@ -10,6 +10,9 @@ In this task you will run the WEB and API application as a multi-container appli
     ```
     az cosmosdb keys list -n $cosmosDBName -g $resourceGroupName --type connection-strings
     ```
+    
+> **Note**: We have created required infrastructure in Azure now we will be running our docker composition for web container and api container to do that we need connection with             cosmos db and we are doing that by using connection string 
+    
 
 2. Add the contentdb database as part of the connectionstring and add it as as a Kubernetes secret. `....documents.azure.com:10255/contentdb?ssl=true`
 
