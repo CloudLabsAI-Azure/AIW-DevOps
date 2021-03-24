@@ -50,6 +50,8 @@ As file, choose the `docker-compose.yml` file that you created earlier, and pres
 
 7. To update the website from a command line run the following command
 
+> **Note**: You need to use the 2nd personal access token that you created in step by step DEVWF-T007
+
 ```PowerShell
 az webapp config container set `
 --docker-registry-server-password <yourgithub personal access token> `
