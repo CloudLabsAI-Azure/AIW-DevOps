@@ -34,6 +34,3 @@ This replaces the `:latest' tag in the docker-compose.yml file with the build nu
 
 > When you do not want to type all commands try the solution Pull Request by running
 
-```
-Workshop-Step Solution "CLOSELOOP-T004"
-```
