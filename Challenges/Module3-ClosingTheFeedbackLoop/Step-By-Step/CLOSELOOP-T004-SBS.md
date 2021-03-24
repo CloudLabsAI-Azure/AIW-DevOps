@@ -32,5 +32,4 @@ This replaces the `:latest' tag in the docker-compose.yml file with the build nu
 
 9. Run the pipeline to test your changes
 
-> When you do not want to type all commands try the solution Pull Request by running
 
