@@ -91,6 +91,6 @@ Note : If you face error as Port 3000 or Port 3001 is already in use. please fol
 
     ![Screen showing data in the Neuro Web application](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/neuroconf-screen.png)
 
-17. When you are done, commit and push your changes to your GitHub repository.
+17. When you are done, **commit** and **push** your changes to your GitHub repository.
 
     ![Commit and purh your container to the registry](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/commitandpush.png)
