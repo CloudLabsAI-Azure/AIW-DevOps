@@ -169,12 +169,6 @@ Now that we have a pipeline that builds and deploys, we can add a manual approva
 4. Run the pipeline and notice how the pipeline waits before moving to the DeployProd stage
 
 
-> When you do not want to type all commands try the solution Pull Request by running
-
-```
-Workshop-Step Solution "CLOSELOOP-T003"
-```
-
 
  
 
