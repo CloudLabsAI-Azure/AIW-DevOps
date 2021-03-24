@@ -60,6 +60,8 @@ To enable Application Insights we need an Application Insights Resource in our r
 
 To update the website from a command line run the following command
 
+> **Note**: You need to use the 2nd personal access token that you created in step by step DEVWF-T007
+
 ```
 az webapp config container set `
 --docker-registry-server-password <yourgithub personal access token> `
