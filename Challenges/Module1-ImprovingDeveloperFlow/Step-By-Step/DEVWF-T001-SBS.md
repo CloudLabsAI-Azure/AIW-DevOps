@@ -74,3 +74,6 @@ When you already used the Azure Boards integration, you need to manually link th
 4. In Azure Boards, find the work item, and see that the code commit has been linked to the work item
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-11-33-26.png)
+    
+    
+Now you can move on to the next page.
