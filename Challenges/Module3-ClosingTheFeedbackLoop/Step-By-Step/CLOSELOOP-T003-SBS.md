@@ -120,9 +120,9 @@ stages:
 
 Now that we have split the build and deployment we need to add the deployment steps to the pipeline. Before we can deploy anything to Azure, we need to create an Azure Service Connection.
 
-1. Navigate to your Azure DevOps Project that was created in the [prerequisites setup](/Challenges/Prerequisites/Readme.md). In the Project Settings, open the Service Connections Tab.
-2. Create a new [Azure Resource Manager] Service Connection and choose Service Principal (automatic)
-3. Choose your target subscription and resource group and set the Service Connection name to [Fabrikam-Azure]
+1. Navigate to your Azure DevOps Project. In the Project Settings, open the Service Connections Tab.
+2. Create a new [Azure Resource Manager] Service Connection and choose Service Principal (manual)
+3. Choose your target subscription and resource group and get the Service Principal details from Environment Details -> Service Prinicpal details tab and then Service Connection name to [Fabrikam-Azure]. Value of Service Principal Id is the same as Application Id and Service Principal Key value is same as Secret key.
 4. Save the Service Connection
 5. In your pipeline, add the following snippet in the DeployProd stage. This deploys all infrastructure
 
@@ -166,7 +166,7 @@ Now that we have a pipeline that builds and deploys, we can add a manual approva
 2. Select the 3 dots, to see the options of this environment
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-16-15-31-56.png)
 
-3. Choose Approvals and Checks. Add a user, and press Create
+3. Choose Approvals and Checks. Then select Approvals again and Add a user, and press Create
 
 4. Run the pipeline and notice how the pipeline waits before moving to the DeployProd stage
 
