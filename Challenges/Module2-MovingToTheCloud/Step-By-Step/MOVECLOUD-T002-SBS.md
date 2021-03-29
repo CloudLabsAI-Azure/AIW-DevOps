@@ -39,7 +39,9 @@ az webapp config appsettings set -n $webappName -g $resourcegroupName --settings
 
 Fill in the following data:
 * Server URL: https://ghcr.io 
-```Note: if you are facing issue with due to url please use https://docker.pkg.github.com```
+
+```Note: if you are facing issue  due to url please use https://docker.pkg.github.com```
+
 * Login: notapplicable
 * Password: Your GitHub Personal Access Token
 
