@@ -64,8 +64,17 @@ If you rather watch a video with step by step instructions, you can do that here
    show dbs
    use contentdb
    show collections
+   ```
+   
+   ```
    db.speakers.find()
+   ```
+   
+   ```
    db.sessions.find()
+   ```
+   
+   ```
    quit()
    ```
    
