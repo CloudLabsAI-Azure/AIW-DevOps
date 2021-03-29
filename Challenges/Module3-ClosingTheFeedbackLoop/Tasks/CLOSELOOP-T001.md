@@ -27,11 +27,3 @@ In this challenge you will set up Application Insights to monitor your applicati
 > Re-deploy the web application by deleting the pod. Kubernetes will automatically pull the latest version `kubectl delete pods <pod >name>`
 
 
-## Solution
-
-If you are stuck or you want to progress to the next challenge, there is a solution prepared for you. When you run the following command, a Pull Request with the files and instructions will be created for you. 
-
-```powershell
-Workshop-Step Solution "CLOSELOOP-T001"
-```
-
