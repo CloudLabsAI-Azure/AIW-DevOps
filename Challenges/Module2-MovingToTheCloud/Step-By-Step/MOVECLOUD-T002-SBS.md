@@ -32,18 +32,18 @@ In this task you will run the WEB and API application as a multi-container appli
 ```
 docker run -ti  -e MONGODB_CONNECTION="mongodb://xxx.documents.azure.com:10255/contentdb?ssl=true&replicaSet=globaldb" ghcr.io/<yourgithubaccount>/fabrikam-init
 ```
-4. In the Azure Portal, navigate to the Web Application and open the Configuration Blade. In the configuration blade add a new Application Setting and call this MONGODB_CONNECTION. Add the MongoDB Connection String as a value.
+4. In the Azure Portal, navigate to the Web Application fabmedical-web-UniqueId and open the Configuration Blade. In the configuration blade, add a new Application Setting and call this MONGODB_CONNECTION. Add the MongoDB Connection String as a value and then save the settings.
 
-![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/AppSetting.png)
+  ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/AppSetting.png)
 
-If you rather want to run this as code, you can use the command
+  If you rather want to run this as code, you can use the command. You can choose to do using one of the approaches.
 
-```
-az webapp config appsettings set -n $webappName -g $resourcegroupName --settings MONGODB_CONNECTION="mongodb://xxx.documents.azure.com:10255/contentdb?ssl=true&replicaSet=globaldb"
-```
+    ```
+    az webapp config appsettings set -n $webappName -g $resourcegroupName --settings MONGODB_CONNECTION="mongodb://xxx.documents.azure.com:10255/contentdb?ssl=true&replicaSet=globaldb"
+    ```
 > **Note**: If you exited the session in which you declared values for $webappName and $resourcegroupname , you need to declare that with their name.
 
-5. In the Azure Portal, navigate to the Web Application and open the Container Blade. In the Container blade, select the Docker Compose Tab. Select Private Registry under Image Source. 
+5. In the Azure Portal, navigate to the Web Application fabmedical-web-UniqueId and open the Container Blade. In the Container blade, select the Docker Compose Tab. Select Private Registry under Image Source. 
 
 Fill in the following data:
 * Server URL: https://ghcr.io 
@@ -53,7 +53,7 @@ Fill in the following data:
 * Login: notapplicable
 * Password: Your GitHub Personal Access Token
 
-As file, select the content  `docker-compose.yml` file that you created earlier, and paste in the configuration.
+As file, copy the content  `docker-compose.yml` file that you created earlier, and paste in the configuration.
 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/containerblade.png)
 
