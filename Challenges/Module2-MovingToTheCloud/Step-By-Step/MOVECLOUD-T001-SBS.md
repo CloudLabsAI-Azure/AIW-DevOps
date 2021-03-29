@@ -21,6 +21,10 @@ az login
 az account set --subscription <your subscription guid>
 ```
 
+   > You can find the subscription Id under the.Environment Details -> Service Principal Details tab. 
+
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/spdetails.gif)
+
 ## Prepare your Codespace
 
 1. From your GitHub repository open your Codespace
