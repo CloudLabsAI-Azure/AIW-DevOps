@@ -5,16 +5,20 @@ If you rather watch a video with step by step instructions, you can do that here
 
 In this task, you will create 3 Dockerfiles that will be used to build and run the WEB, API and INIT application as a containerized application.
 
-1. From your GitHub repository open your Codespace
+1. From your GitHub repository open your Codespace if it is not already
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/OpenCodeSpace.png)
 
 2. In the Terminal window, open a PowerShell Terminal by typing `pwsh`
 
-3. In your explorer, navigate to the `content-api` folder and create a new file called `Dockerfile` 
+3. In your explorer on the GitHub Codespace, navigate to the `content-api` folder and create a new file called `Dockerfile` 
    we can create Docker file by using command ```vi Dockerfile``` after this **i** to insert the content then **Esc** and then **:wq**
 
-4. Open the Gist (containing the example definition of the API Dockerfile), from this location```https://gist.github.com/renevanosnabrugge/b2390f11c45671f6d0a9c6c9bb2c01ca```and paste the contents in to your newly created Dockerfile
+4. Open the Gist (containing the example definition of the API Dockerfile), from the location given below and paste the contents in to your newly created Dockerfile.
+
+    ```
+    https://gist.github.com/renevanosnabrugge/b2390f11c45671f6d0a9c6c9bb2c01ca
+    ```
 
 5. In your Terminal window, navigate to the **content-api** directory
 
