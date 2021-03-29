@@ -28,7 +28,7 @@ on:
 
 3. Select your GitHub repository. Azure DevOps will redirect you to authorize yourself to GitHub. Login and select the repository that you want to have enable to access from Azure DevOps
 
-![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/authorizeGH.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/authorizeGH1.png)
 
 4. In the Configure Tab, choose the Starter Pipeline and Save the file to the GitHub repository \
 
