@@ -25,11 +25,4 @@ In this challenge your are going to create a continuous deployment pipeline that
 * Application deployed to Azure with `deploy-infrastructure.ps1` script
 
 
-## Solution
-
-If you are stuck or you want to progress to the next challenge, there is a solution prepared for you. When you run the following command, a Pull Request with the files and instructions will be created for you. 
-
-```powershell
-Workshop-Step Solution "CLOSELOOP-T002"
-```
 
