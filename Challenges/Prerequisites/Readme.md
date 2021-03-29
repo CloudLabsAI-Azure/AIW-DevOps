@@ -20,7 +20,7 @@ The workshop builds upon an existing codebase. Before you start the workshop, th
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/code.png)
 
-4. Get the code from Outlook Inbox and click on **Verify**  in the **Device Verification** dialog box. After providing the code you will be successfully logged in to Github.
+4. From the Outlook Inbox, you can find the verfication code and then click on **Verify** in the **Device Verification** dialog box that is opened in the different browser window. After providing the code you will be successfully logged in to Github.
 
 5. After Login, open a new tab in the browser windows where you are already logged in to GitHub and go to ``https://github.com/xpiritbv/CodeToCloud-Source``
 
