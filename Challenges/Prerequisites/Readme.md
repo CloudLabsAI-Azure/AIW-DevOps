@@ -1,28 +1,28 @@
 # Prerequisites for the Code To Cloud Workshop
 
-This workshop is targeted for students in a instructor-led training. To make it challenging for the students, the workshop contains challenges that can also be done individually. To make sure students do not get stuck, there are scripts available with instructions to "automatically" fix a challenge, so students can continue. The workshop also contains extensive Step-By-Step videos and written instructions. There are also videos that explain the concepts that are used in the exercises.
+This workshop is targeted at students in instructor-led training. To make it challenging for the students, the workshop contains challenges that can also be done individually. To make sure students do not get stuck, there are scripts available with instructions to "automatically" fix a challenge, so students can continue. The workshop also contains extensive Step-By-Step videos and written instructions. There are also videos that explain the concepts that are used in the exercises.
 
 # Video
 If you rather watch a video with step by step instructions, you can do that here
 [![Step by Step Video](https://img.youtube.com/vi/STzJSPvtim4/0.jpg)](https://www.youtube.com/watch?v=STzJSPvtim4)
 
-## Code base
+## Codebase
 
-The workshop builds upon an existing code base. Before you start the workshop, this code base needs to be forked or cloned. 
+The workshop builds upon an existing codebase. Before you start the workshop, this codebase needs to be forked or cloned. 
 
 1.  On the Virtual Machine provided on the left of the screen, click on Microsoft Edge and complete the initial getting started prompts. Then, sign in to the Github ``https://github.com/login`` using the **Outlook/GitHub Credential** provided under the **Environment details** tab
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/env-creds.png)
    
-2. If prompted with **Device Verification** dialog box, open Microsoft edge Browser in **incognito mode** ( you can open incognito mode by clicking on the three dots "..." Icon  at the top right of the browser within the virtual machine and then select New InPrivate window) and sign in to Outlook by navigating to https://outlook.com using the **Outlook/GitHub Credential** provided under the **Environment details** tab 
+2. If prompted with the **Device Verification** dialog box, open Microsoft edge Browser in **incognito mode** ( you can open incognito mode by clicking on the three dots "..." icon  at the top right of the browser within the virtual machine and then select New InPrivate window) and sign in to Outlook by navigating to https://outlook.com using the **Outlook/GitHub Credential** provided under the **Environment details** tab 
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/code.png)
 
 3. Get the code from Outlook Inbox and click on **Verify**  in the **Device Verification** dialog box. After providing the code you will be successfully logged in to Github.
 
-4. After Login , go to ``https://github.com/xpiritbv/CodeToCloud-Source``
+4. After Login, open a new tab in the browser windows where you are already logged in to GitHub and go to ``https://github.com/xpiritbv/CodeToCloud-Source``
 
-5. Click on fork , select your account with name **github-cloudlabuser-UniqueID**
+5. Then, click on Fork at the top right, select your account with the name **github-cloudlabuser-UniqueID**
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/forked-repo.png)
 
@@ -31,11 +31,11 @@ UniqueID value is provided under the Environment details-> Azure Credentials tab
 
 ## GitHub Codespace
 
-The workshop is built with and targeted at development with GitHub Codespace. A full featured IDE in the cloud. In order to start working you need to create a Codespace.
+The workshop is built with and targeted at development with GitHub Codespace, a full-featured IDE in the cloud. To start working, you need to create a Codespace.
 
-1. Navigate to your forked repository on GitHub
+1. Navigate to your forked repository on GitHub - **github-cloudlabuser-UniqueID/CodeToCloud-Source**
 
-2. Under the **Code** dropdown click on **Open with Codespaces** then **+New Codespace**  to create a Code Space in your forked repo.
+2. Now, click on the **Code** dropdown, then click on **Open with Codespaces** and then on **+New Codespace**  to create a Code Space in your forked repo.
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/CodeSpaces.png)
 
@@ -43,15 +43,15 @@ The workshop is built with and targeted at development with GitHub Codespace. A 
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/codespace-build.png)
 
-4. Once your GitHub Codespace is created you should be able to see the files and a welcome message under the Terminal.
+4. Once your GitHub Codespace is created, you should be able to see the files and a welcome message under the Terminal.
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Codespace-files.png)
 
-   Visual Studio Code doesn't pass a couple of specific of keystrokes to the terminal, this may make it harder to quit docker once you've started a container interactively. You can add the custom keybindings  [your Visual Studio Code settings](https://code.visualstudio.com/docs/getstarted/keybindings#_advanced-customization). This remaps `ctrl-q` and `ctrl-p` when the terminal has focus.
+   Visual Studio Code doesn't pass a couple of specific keystrokes to the terminal, this may make it harder to quit docker once you've started a container interactively. You can add the custom keybindings  [your Visual Studio Code settings](https://code.visualstudio.com/docs/getstarted/keybindings#_advanced-customization). This remaps `ctrl-q` and `ctrl-p` when the terminal has focus.
 
 ## Set up workshop scripts
 
-Furthermore, the workshop provides starter and solution scripts. These scripts are served as a Pull Request with instructions in your Git Repository. In order to make this work, and to make the scripts work we have set up a container and some helper scripts, that you can execute in the workshop.
+Furthermore, the workshop provides starter and solution scripts. These scripts are served as a Pull Request with instructions in your Git Repository. To make this work, and to make the scripts work we have set up a container and some helper scripts, that you can execute in the workshop.
 
 To set this up, you need to perform these steps
 
@@ -81,11 +81,11 @@ To set this up, you need to perform these steps
     7. Whether to create/recreate work items in Azure Boards to which the commits and pull-requests will be linked.
 
 4. A local `settings.json` file has been created in the `.workshop` folder and is automatically ignored by git. **DO NOT COMMIT THIS TO YOUR REPO!**
-5. This file is automatically loaded by the containers PowerShell Profile and pre-populates a number of global variables.
+5. This file is automatically loaded by the containers PowerShell Profile and pre-populates several global variables.
 
 #### Create GitHub Personal Access Token
 
-1. Ensure you are logged in to your GitHub Account.
+1. Ensure you are logged in to your GitHub account.
 
 2. Create a Personal Access Token as described below:
 
@@ -101,13 +101,13 @@ To set this up, you need to perform these steps
 
   ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/gentoken.png)
 
-3. Click on Copy icon to copy the token to your clipboard and save it on your notepad. For security reasons, after you navigate off the page, you will not be able to see the token again. **DO NOT COMMIT THIS TO YOUR REPO!**
+3. Click on the Copy icon to copy the token to your clipboard and save it on your notepad. For security reasons, after you navigate off the page, you will not be able to see the token again. **DO NOT COMMIT THIS TO YOUR REPO!**
 
   ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/copytoken.png)
 
 #### Create Azure DevOps Personal Access Token
 
-1. Login to `https://dev.azure.com/youraccount` using the Azure credentials provided in Environment details.
+1. log in to `https://dev.azure.com/youraccount` using the Azure credentials provided in Environment details.
 
    ![Azure creds](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azure-creds.png)
    
@@ -134,7 +134,7 @@ To set this up, you need to perform these steps
 
    ![create token](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-createtoken.png)
    
-6. Copy the value of generated token and save in the notepad .
+6. Copy the value of the generated token and save it in the notepad.
 
    ![copy token](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-copypat.png)
    
@@ -142,7 +142,7 @@ To set this up, you need to perform these steps
 
 ## Variables
 
-In some scripts we use variables like `$resourceGroupName` and `$webappName`. Based on the settings.json file, that is stored in your `.workshop` folder, we generated a PowerShell Profile for you. The values stored in `settings.json` are automatically loaded into your PowerShell console.
+In some scripts, we use variables like `$resourceGroupName` and `$webappName`. Based on the settings.json file, that is stored in your `.workshop` folder, we generated a PowerShell Profile for you. The values stored in `settings.json` are automatically loaded into your PowerShell console.
 
 Available variables (loaded into `$global:` and `$env` scopes):
 
