@@ -10,11 +10,11 @@ If you rather watch a video with step by step instructions, you can do that here
 
 The workshop builds upon an existing code base. Before you start the workshop, this code base needs to be forked or cloned. 
 
-1.  Sign in to the Github ``https://github.com/login`` using the **Outlook/GitHub Credential** provided under the **Environment details** tab.
+1.  On the Virtual Machine provided on the left of the screen, click on Microsoft Edge and complete the initial getting started prompts. Then, sign in to the Github ``https://github.com/login`` using the **Outlook/GitHub Credential** provided under the **Environment details** tab
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/env-creds.png)
    
-2. If prompted with **Device Verification** dialog box, open Microsoft edge Browser in incognito mode and sign in to [Outlook](https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1612964287&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3d7fc62ab0-70f6-eaeb-5aff-cfbc63845381&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015) using the lab credentials.
+2. If prompted with **Device Verification** dialog box, open Microsoft edge Browser in **incognito mode** ( you can open incognito mode by clicking on the three dots "..." Icon  at the top right of the browser within the virtual machine and then select New InPrivate window) and sign in to Outlook by navigating to https://outlook.com using the **Outlook/GitHub Credential** provided under the **Environment details** tab 
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/code.png)
 
@@ -22,9 +22,11 @@ The workshop builds upon an existing code base. Before you start the workshop, t
 
 4. After Login , go to ``https://github.com/xpiritbv/CodeToCloud-Source``
 
-5. Click on fork , select your account with name **github-cloudlabuser-XXX**
+5. Click on fork , select your account with name **github-cloudlabuser-UniqueID**
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/forked-repo.png)
+
+UniqueID value is provided under the Environment details-> Azure Credentials tab.
        
 
 ## GitHub Codespace
