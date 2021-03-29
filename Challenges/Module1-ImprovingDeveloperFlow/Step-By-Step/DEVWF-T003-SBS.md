@@ -53,11 +53,15 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
     https://gist.github.com/renevanosnabrugge/251e01fa380c10c8282ffc7f11ff0526
     ```
 
+        > Note: Ensure to change the directory to **content-web** in the step 3 and Step 5.
+    
 9. Repeat steps 3-7 but store the Dockerfile in the folder **content-init**, call the Docker image **fabrikam-init** and use the below Gist to get the contents of the Dockerfile
 
     ```
     https://gist.github.com/renevanosnabrugge/5178c88a09e8c6cdd66a2eb0dc6dcba2
     ```
+
+        > Note: Ensure to change the directory to content-web in the step 3 and Step 5.
 
 10. Now that the images have been successfully built, you should be able to see them in your terminal window, when executing the `docker images` command.
 
