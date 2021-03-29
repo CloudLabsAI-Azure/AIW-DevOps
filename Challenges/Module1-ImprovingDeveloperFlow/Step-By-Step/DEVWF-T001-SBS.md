@@ -40,11 +40,11 @@ There are 2 possible scenarios for this Step by Step
 
 When you already used the Azure Boards integration, you need to manually link the GitHub repository and the Azure DevOps Project.
 
-1. In your GitHub Repository, navigate to your profile and choose [Settings]. In the Settings page, navigate to the [Applications] tab and choose the [Configure] Button for the Azure Boards application.
+1. Navigate back to your GitHub Repository, then go to your profile and choose [Settings]. In the Settings page, navigate to the [Applications] tab on the left and choose the [Configure] Button for the Azure Boards application.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-11-42-34.png)
 
-2. In the [Repository Access] section, choose your repository and hit Save
+2. In the [Repository Access] section, choose your repository and hit Save. If it's already saved, you can skip to Test Integration Section.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-11-43-21.png)
 
