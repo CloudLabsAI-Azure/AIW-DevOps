@@ -14,15 +14,17 @@ The workshop builds upon an existing codebase. Before you start the workshop, th
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/env-creds.png)
    
-2. If prompted with the **Device Verification** dialog box, open Microsoft edge Browser in **incognito mode** ( you can open incognito mode by clicking on the three dots "..." icon  at the top right of the browser within the virtual machine and then select New InPrivate window) and sign in to Outlook by navigating to https://outlook.com using the **Outlook/GitHub Credential** provided under the **Environment details** tab 
+2. If prompted with the **Device Verification** dialog box, open Microsoft edge Browser in **incognito mode** ( you can open incognito mode by clicking on the three dots "..." icon  at the top right of the browser within the virtual machine and then select New InPrivate window)
+
+3. Npw, sign in to Outlook by navigating to https://outlook.com using the **Outlook/GitHub Credential** provided under the **Environment details** tab 
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/code.png)
 
-3. Get the code from Outlook Inbox and click on **Verify**  in the **Device Verification** dialog box. After providing the code you will be successfully logged in to Github.
+4. Get the code from Outlook Inbox and click on **Verify**  in the **Device Verification** dialog box. After providing the code you will be successfully logged in to Github.
 
-4. After Login, open a new tab in the browser windows where you are already logged in to GitHub and go to ``https://github.com/xpiritbv/CodeToCloud-Source``
+5. After Login, open a new tab in the browser windows where you are already logged in to GitHub and go to ``https://github.com/xpiritbv/CodeToCloud-Source``
 
-5. Then, click on Fork at the top right, select your account with the name **github-cloudlabuser-UniqueID**
+6. Then, click on Fork at the top right, select your account with the name **github-cloudlabuser-UniqueID**
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/forked-repo.png)
 
