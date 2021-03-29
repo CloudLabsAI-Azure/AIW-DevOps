@@ -36,10 +36,3 @@ In this challenge you are going to shorten the feedback loop and ensure that sta
 * Pushing and pulling Docker images```https://docs.github.com/en/packages/managing-container-images-with-github-container-registry/pushing-and-pulling-docker-images```
 * Publish containers to GitHub Container Registry with GitHub Actions```https://medium.com/cooking-with-azure/publish-containers-to-github-container-registry-with-github-actions-4e39700ae14c```
 
-## Solution
-
-If you are stuck or you want to progress to the next challenge, there is a solution prepared for you. When you run the following command, a Pull Request with the files and instructions will be created for you. 
-
-```powershell
-Workshop-Step Solution "DEVWF-T007"
-```
