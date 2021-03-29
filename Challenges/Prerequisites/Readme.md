@@ -71,21 +71,26 @@ To set this up, you need to perform these steps
 
   ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Settings_pat.png)
 
-- Then in the left sidebar, click **Personal access tokens** to select the scopes or permissions you would like to grant this token.
+- Then in the left sidebar, click **Personal access tokens** and select Generate new token button on the right. Provide the GitHub password if prompted. 
+
+3. Select the scopes or permissions you would like to grant this token
+
+    - Note: Provide the following text in the note field, UniquedId-token. Rreplace UniqueID with the value given in Environment Details -> Azure Credentials tab.
+    - Select worklow, write:packages, delete:packages, read:org
   
   ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/PAT.png)
 
-- Click **Generate new token**.
+- Click **Generate token**.
 
   ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/gentoken.png)
 
-3. Click on the Copy icon to copy the token to your clipboard and save it on your notepad. For security reasons, after you navigate off the page, you will not be able to see the token again. **DO NOT COMMIT THIS TO YOUR REPO!**
+4. Click on the Copy icon to copy the token to your clipboard and save it on your notepad. For security reasons, after you navigate off the page, you will not be able to see the token again. **DO NOT COMMIT THIS TO YOUR REPO!**
 
   ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/copytoken.png)
 
 #### Create Azure DevOps Personal Access Token
 
-1. log in to `https://dev.azure.com/youraccount` using the Azure credentials provided in Environment details.
+1. log in to `https://dev.azure.com/` using the Azure credentials provided in Environment details.
 
    ![Azure creds](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azure-creds.png)
    
