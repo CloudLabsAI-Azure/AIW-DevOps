@@ -4,12 +4,6 @@ The entire application is now running in containers. Developers gained a lot of 
 
 You and your team of consultants see that Docker containers are truly embraced. You find the time right to introduce the possibility to run a entire application that consists of multiple components at once. For that, you introduce `docker-compose` to the DevOps team. This allows the team to define a composition of containers, that can be build, started, and stopped all at once.
 
-## Before you start this challenge
-
-This challenge needs some prerequisites. Run the following command in your Terminal windows of your GitHub Codespace to set this up.
-```
-Workshop-Step Start "DEVWF-T006"
-```
 
 ## Challenge 
 
