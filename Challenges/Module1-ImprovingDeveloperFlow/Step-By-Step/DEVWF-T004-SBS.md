@@ -42,9 +42,9 @@ Now your repository contains 3 new "multi-staged" docker file.
        cd /workspaces/CodeToCloud-Source/content-api
        ```
       
-       ```bash
-       docker build -t fabrikam-api .
-       ```
+      ```
+      docker build -t fabrikam-api .
+      ```
 
 8. Do the same for the `content-web` and the `content-init` containers
 
