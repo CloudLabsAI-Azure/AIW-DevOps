@@ -167,3 +167,4 @@ If you ever manually change the values in the `settings.json`, opening a fresh P
 Invoke-expression $profile
 ```
 
+Now, you can move to the next page.
