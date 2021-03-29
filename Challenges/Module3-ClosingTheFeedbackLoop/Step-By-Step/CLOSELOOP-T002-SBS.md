@@ -5,9 +5,6 @@ If you rather watch a video with step by step instructions, you can do that here
 
 In this task your are going to create a continuous deployment pipeline in GitHub Actions that triggers after the Continuous Integration build has been completed. 
 
-> This task has a Starter solution, that creates a Pull Request containing some files and instructions. 
->
-> In order to run the automated Starter Solution, you need to go through the [Setup prerequisites](/Challenges/Prerequisites/Readme.md) first!
 
 1. In your GitHub Codespace, open a PowerShell Terminal and run the starter solution. A Pull Request with a new `deploy-infrastructure.ps1` will be created
 
@@ -31,9 +28,9 @@ Now your repository contains the new file.
 
 ## Create a new GitHub Action Workflow that builds and pushes with Docker Compose
 
-1. When we start to use docker-compose as our mechanism to build and push containers, we need to give docker compose instructions where to find the Docker files that can be used to build the images. We already have a `docker-compose.yml` file in our repository, but this contains the name of the images, and not the instructions to build the containers. 
+When we start to use docker-compose as our mechanism to build and push containers, we need to give docker compose instructions where to find the Docker files that can be used to build the images. We already have a `docker-compose.yml` file in our repository, but this contains the name of the images, and not the instructions to build the containers. 
 
-Add a `build.docker-compose.yml` file to the root of your repository and add the following contents
+1. Navigate to the codespace and add a `build.docker-compose.yml` file to the root of your repository and add the following contents. And then commit and push the file.
 
 ```YAML
 version: "3.4"
@@ -53,6 +50,8 @@ services:
 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/simplewf.png)
 
+  > Note: If you don't see **Publish Docker container** workflow in the page, click on **More continuous integration workflows...** and you will be able to view the Workflow.
+
 4. Change the `name` property to [Docker Compose Build and Deploy]. And add the following code snippet below the  `- uses: actions/checkout@v2` step
 
 ```YAML
@@ -62,7 +61,7 @@ services:
 
 This step logs in to your GitHub Container Registry with the CR_PAT secret that you created earlier
 
-5. Add a script step that uses `docker-compose` to build and push the images to the repository
+5. Add a script step below the previous one that uses `docker-compose` to build and push the images to the repository
 
 ```YAML
   - name: Build and Push image
