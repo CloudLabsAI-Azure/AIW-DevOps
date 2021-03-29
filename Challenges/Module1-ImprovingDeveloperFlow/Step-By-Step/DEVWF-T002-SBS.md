@@ -54,6 +54,9 @@ If you rather watch a video with step by step instructions, you can do that here
 
    ```bash
    docker exec -ti mongo bash
+   ```
+   
+   ```
    mongo
    ```
 
@@ -64,6 +67,9 @@ If you rather watch a video with step by step instructions, you can do that here
    db.speakers.find()
    db.sessions.find()
    quit()
+   ```
+   
+   ```
    exit
    ```
 
@@ -75,6 +81,9 @@ If you rather watch a video with step by step instructions, you can do that here
 
    ```bash
    cd ../content-api
+   ```
+   
+   ```
    npm install
    ```
 
@@ -102,6 +111,9 @@ If you rather watch a video with step by step instructions, you can do that here
 
    ```bash
    cd ../content-web
+   ```
+   
+   ```
    npm install
    ng build
    ```
@@ -119,3 +131,6 @@ If you rather watch a video with step by step instructions, you can do that here
 1. Your application should show data in the Speakers menu item
 
     ![Verify that speaker data is shown](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/neuroconf-screen.png)
+    
+    
+Now, you can move on to the next page.
