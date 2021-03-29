@@ -84,3 +84,6 @@ services:
 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/validate-webapp.gif)
 
+
+Now, you can move on to the next page.
+
