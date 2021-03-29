@@ -47,11 +47,11 @@ services:
 
 2. To use docker compose in our build, we are going to add a new GitHub Action workflow. In your GitHub repository, open the [Actions] Tab and create a new GitHub Action.
 
-![](NewGHAction.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/NewGHAction.png)
 
 3. Search for **Publish Docker container** workflow  and call the new YAML file docker-publish.yml
 
-![](simplewf.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/simplewf.png)
 
 4. Change the `name` property to [Docker Compose Build and Deploy]. And add the following code snippet below the  `- uses: actions/checkout@v2` step
 
@@ -98,7 +98,7 @@ Copy the complete JSON output to your clipboard.
 
 8. In your repository settings, navigate to [Secrets] and create a new secret called [AZURE_CREDENTIALS]. Paste the copied value from your clipboard to the value of the secret and save it.
 
-![](secretAZCRED.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/secretAZCRED.png)
 
 9. Back in the GitHub Action workflow, add a new step that uses the [AZURE_CREDENTIALS] secret to login to Azure
       
