@@ -130,3 +130,6 @@ You have already run the separate steps from the steps a number of times. The fa
 1. Open the Azure Portal, and validate if the CosmosDB, the App Service Plan and Azure Web App have been created. 
 
 ![Resources created in Azure](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-15-10-32-42.png)
+
+
+Now, you can move on the next page.
