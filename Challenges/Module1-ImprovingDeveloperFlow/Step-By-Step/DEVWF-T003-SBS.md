@@ -114,7 +114,11 @@ Note : If you face error as Port 3000 or Port 3001 is already in use. please fol
  
 * run the command **kill -9 processid**
 
+    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/port-issue.gif)
+
 15. In your GitHub Codespace, navigate to the Remote Explorer and forward the ports `3000` and `3001` to make them available on the web. Click the Globe Icon to navigate to the Web Application (port 3000).
+
+    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/port-forward.gif)
 
     ![![Screen showing the remote explorer where ports 3000 and 3001 are forwarded.]](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/OpenBrowser.png)
 
