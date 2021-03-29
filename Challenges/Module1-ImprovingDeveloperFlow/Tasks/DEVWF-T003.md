@@ -35,11 +35,3 @@ You also decide it is convenient to have a container for the Initialization of t
 * docker build```https://docs.docker.com/engine/reference/commandline/build/```
 * docker run```https://docs.docker.com/engine/reference/run/```
 
-## Solution
-
-If you are stuck or you want to progress to the next challenge, there is a solution prepared for you. When you run the following command, a Pull Request with the files and instructions will be created for you.
-
-```powershell
-Workshop-Step Solution "DEVWF-T003"
-```
-
