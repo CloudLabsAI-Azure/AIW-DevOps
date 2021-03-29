@@ -6,13 +6,6 @@ You and your team advice to start using multi staged Docker files. This way you 
 
 To help them out your team creates a Pull Request that contains the multi staged Docker file for the WEB, API and INIT applications.
 
-## Before you start this challenge
-
-This challenge needs some prerequisites. Run the following command in your Terminal windows of your GitHub Codespace to set this up.
-
-```bash
-Workshop-Step Start "DEVWF-T004"
-```
 
 ## Challenge
 
