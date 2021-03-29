@@ -32,10 +32,3 @@ The Pull Request called `Docker compose file for running API and MongoDB (DEVWF-
 * Overview of Docker Compose```https://docs.docker.com/compose/```
 * Extending files with Docker Compose```https://docs.docker.com/compose/extends/```
 
-## Solution
-
-If you are stuck or you want to progress to the next challenge, there is a solution prepared for you. When you run the following command, a Pull Request with the files and instructions will be created for you. 
-
-```powershell
-Workshop-Step Solution "DEVWF-T006"
-```
