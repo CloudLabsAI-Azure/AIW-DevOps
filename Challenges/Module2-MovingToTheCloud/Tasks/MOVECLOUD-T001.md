@@ -27,11 +27,4 @@ In this challenge you will set up an Azure Resource Group containing a CosmosDB 
 > use the `az webapp create -g MyResourceGroup -p MyPlan -n MyUniqueAppName -i nginx` to create an empty web app with a container
 
 
-## Solution
-
-If you are stuck or you want to progress to the next challenge, there is a solution prepared for you. When you run the following command, a Pull Request with the files and instructions will be created for you. 
-
-```powershell
-Workshop-Step Solution "MOVECLOUD-T001"
-```
 
