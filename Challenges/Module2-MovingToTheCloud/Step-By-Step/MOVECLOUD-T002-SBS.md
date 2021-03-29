@@ -38,7 +38,8 @@ az webapp config appsettings set -n $webappName -g $resourcegroupName --settings
 5. In the Azure Portal, navigate to the Web Application and open the Container Blade. In the Container blade, select the Docker Compose Tab. Select Private Registry under Image Source. 
 
 Fill in the following data:
-* Server URL: https://ghcr.io
+* Server URL: https://ghcr.io 
+```Note: if you are facing issue with due to url please use https://docker.pkg.github.com```
 * Login: notapplicable
 * Password: Your GitHub Personal Access Token
 
