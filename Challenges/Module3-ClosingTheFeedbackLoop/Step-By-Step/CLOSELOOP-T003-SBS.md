@@ -9,7 +9,7 @@ In this challenge you are going to setup a CI/CD pipeline in Azure DevOps that g
 
 When we commit a change to our repository, we want to make sure, the Azure DevOps pipeline will build and deploy the changes. The already existing GitHub Actions should not be triggered anymore. 
 
-1. In your GitHub Codespace, open the `docker-publish.yml` workflow file. Replace `branches: ...` with the following statement
+1. In your GitHub Codespace, open the `docker-publish.yml` workflow file. Replace `branches: ...` with the following statement and then commit and push the file.
 
 ```yaml
 on:
@@ -19,7 +19,7 @@ on:
 ```
 ## Configure an Azure DevOps Pipeline
 
-1. Navigate to your Azure DevOps Project that was created in the [prerequisites setup](/Challenges/Prerequisites/Readme.md), and create a new Pipeline
+1. Navigate to your Azure DevOps( https://dev.azure.com ) Project  that was created in the first Step, and create a new Pipeline.
 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/NewPipeline.png)
 
