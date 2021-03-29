@@ -18,11 +18,4 @@ In this challenge you are going to setup a CI/CD pipeline in Azure DevOps that g
 * Secret added for GitHub Container Registry
 * Environment production added to the pipeline with a manual approval
 
-## Solution
-
-If you are stuck or you want to progress to the next challenge, there is a solution prepared for you. When you run the following command, a Pull Request with the files and instructions will be created for you. 
-
-```powershell
-Workshop-Step Solution "CLOSELOOP-T003"
-```
 
