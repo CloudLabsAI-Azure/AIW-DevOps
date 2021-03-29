@@ -30,6 +30,8 @@ on:
 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/authorizeGH1.png)
 
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/authorizeGH.png)
+
 4. In the Configure Tab, choose the Starter Pipeline and Save the file to the GitHub repository \
 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/starterpipeline.png)
