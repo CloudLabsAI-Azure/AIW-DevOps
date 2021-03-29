@@ -12,7 +12,10 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
 2. In the Terminal window, open a PowerShell Terminal by typing `pwsh`
 
 3. In your explorer on the GitHub Codespace, navigate to the `content-api` folder and create a new file called `Dockerfile`.
-   We can create Docker file by using command ```vi Dockerfile``` after this **i** to insert the content then **Esc** and then **:wq**
+
+    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/create-dockerfile.gif)
+    
+   We can also create Docker file by using command ```vi Dockerfile``` after this **i** to insert the content then **Esc** and then **:wq**
 
 4. Open the Gist (containing the example definition of the API Dockerfile), from the location given below and paste the contents in to your newly created Dockerfile.
 
