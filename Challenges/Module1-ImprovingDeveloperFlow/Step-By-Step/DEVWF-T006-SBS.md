@@ -39,7 +39,7 @@ Now your repository contains 3 new "Docker Compose" files.
     docker-compose -f docker-compose.yml -f local.docker-compose.yml -f docker-compose.init.yml up
     ```
 
-9. To include the web application to the docker-compose file, add the following YAML snippet to the `docker-compose.yml`**please make sure to replace ``<your github account>`` with the github username provided in Credentials section of lab environment**
+9. To include the web application to the docker-compose file, add the following YAML snippet to the `docker-compose.yml`. **Please make sure to replace ``<your github account>`` with the github username**
 
     ```YAML
     web:
@@ -60,6 +60,8 @@ Now your repository contains 3 new "Docker Compose" files.
         image: local-fabrikam-web
     ```
 
+    > Please note that the yaml is space and indent sensitive. 
+    
 10. Build and run the docker-compose file again 
 
     ```bash
