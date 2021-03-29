@@ -11,8 +11,8 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
 
 2. In the Terminal window, open a PowerShell Terminal by typing `pwsh`
 
-3. In your explorer on the GitHub Codespace, navigate to the `content-api` folder and create a new file called `Dockerfile` 
-   we can create Docker file by using command ```vi Dockerfile``` after this **i** to insert the content then **Esc** and then **:wq**
+3. In your explorer on the GitHub Codespace, navigate to the `content-api` folder and create a new file called `Dockerfile`.
+   We can create Docker file by using command ```vi Dockerfile``` after this **i** to insert the content then **Esc** and then **:wq**
 
 4. Open the Gist (containing the example definition of the API Dockerfile), from the location given below and paste the contents in to your newly created Dockerfile.
 
@@ -20,10 +20,14 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
     https://gist.github.com/renevanosnabrugge/b2390f11c45671f6d0a9c6c9bb2c01ca
     ```
 
-5. In your Terminal window, navigate to the **content-api** directory
+5. In your Terminal window, navigate to the **content-api** directory and then execute the next command.
+
+    ```
+    cd /workspaces/CodeToCloud-Source/content-api
+    ```
 
     ```bash
-    pushd content-api
+    pushd
     ```
 ``` Note : Every time you use the pushd command, a single directory is stored for your use. However, you can store multiple directories by using the pushd command multiple times. The directories are stored sequentially in a virtual stack, so if you use the pushd command once, the directory in which you use the command is placed at the bottom of the stack. If you use the command again, the second directory is placed on top of the first one. The process repeats every time you use the pushd command.```
 
@@ -43,9 +47,17 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
    docker images
    ```
 
-8. Repeat steps 3-7 but store the Dockerfile in the folder **content-web**, call the Docker image **fabrikam-web** and use this     Gist```https://gist.github.com/renevanosnabrugge/251e01fa380c10c8282ffc7f11ff0526``` to get the contents of the Dockerfile
+8. Repeat steps 3-7 but store the Dockerfile in the folder **content-web**, call the Docker image **fabrikam-web** and use the below Gist to get the contents of the Dockerfile
 
-9. Repeat steps 3-7 but store the Dockerfile in the folder **content-init**, call the Docker image **fabrikam-init** and use this Gist ```https://gist.github.com/renevanosnabrugge/5178c88a09e8c6cdd66a2eb0dc6dcba2``` to get the contents of the Dockerfile
+    ```
+    https://gist.github.com/renevanosnabrugge/251e01fa380c10c8282ffc7f11ff0526
+    ```
+
+9. Repeat steps 3-7 but store the Dockerfile in the folder **content-init**, call the Docker image **fabrikam-init** and use the below Gist to get the contents of the Dockerfile
+
+    ```
+    https://gist.github.com/renevanosnabrugge/5178c88a09e8c6cdd66a2eb0dc6dcba2
+    ```
 
 10. Now that the images have been successfully built, you should be able to see them in your terminal window, when executing the `docker images` command.
 
