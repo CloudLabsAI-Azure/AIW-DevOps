@@ -63,8 +63,3 @@ To address the issues and progress towards the goals, Susan asks a high-end cons
 * Solution that does not incur a direct vendor-lock in
 * As much re-use of existing code base
 * Complete an implementation of the proposed solution for a single tenant to train the team and perfect the process.
-
-## Tasks
-
-* [Design Cloud Architecture and DevOps Roadmap for Fabrikam Medical Conferences](Tasks/INTRO-T001.md)
-* [Present the solution to the Fabrikam Medical Conferences Board](Tasks/INTRO-T002.md)
