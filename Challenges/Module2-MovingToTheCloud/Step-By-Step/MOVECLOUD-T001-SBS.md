@@ -11,33 +11,34 @@ In this task you are going to create cloud infrastructure, so that your applicat
 
 We can create all these resources manually, but since we want to do this "the DevOps way", we are going to create all resources as Infrastructure as Code. In this Step by Step we chose to create all resources with the Azure CLI and store it in a file.
 
-Before you run any of the snippets in the terminal, make sure you login to your Azure account with 
 
-```bash 
-az login
-```
+## Prepare your Codespace
 
-```
-az account set --subscription <your subscription guid>
-```
+1. From your GitHub repository open your Codespace if not already open
+
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/OpenCodeSpace.png)
+
+2. Before you run any of the snippets in the terminal, make sure you login to your Azure account with 
+
+   ```bash 
+   az login
+   ```
+
+   ```
+   az account set --subscription <your subscription guid>
+   ```
 
    > You can find the subscription Id under the.Environment Details -> Service Principal Details tab. 
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/spdetails.gif)
 
-## Prepare your Codespace
+3. In the file explorer, create a new folder called `infrastructure`
 
-1. From your GitHub repository open your Codespace
-
-   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/OpenCodeSpace.png)
-
-2. In the file explorer, create a new folder called `infrastructure`
-
-3. Create a new file called `deploy-infrastructure.ps1`
+4. Create a new file called `deploy-infrastructure.ps1`
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/newfolderinfra.png)
 
-4. To make automation of all resources a bit easier, add these variables in the `deploy-infrastructure.ps1`file
+5. To make automation of all resources a bit easier, add these variables in the `deploy-infrastructure.ps1`file
 
    ```Powershell
    $studentprefix = "uniqueID"
