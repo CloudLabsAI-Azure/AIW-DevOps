@@ -30,6 +30,13 @@ Now your repository contains the new file.
 
 When we start to use docker-compose as our mechanism to build and push containers, we need to give docker compose instructions where to find the Docker files that can be used to build the images. We already have a `docker-compose.yml` file in our repository, but this contains the name of the images, and not the instructions to build the containers. 
 
+Before performing the next steps, you will need to enable the Improved Container Support so as to use GitHub Container Registry.
+      - In the upper-right corner of any page, click your profile photo, then click Feature preview.
+      - On the left, select "Improved container support", then click Enable.
+      
+ ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/enable-container-support.gif)
+
+
 1. Navigate to the codespace and add a `build.docker-compose.yml` file to the root of your repository and add the following contents. And then commit and push the file.
 
 ```YAML
