@@ -69,5 +69,8 @@ Now your repository contains 3 new "Docker Compose" files.
 11. When you are done, commit and push your changes to your GitHub repository.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/commitandpush.png)
+    
+    
+Now, you can move on to the next page.
 
 
