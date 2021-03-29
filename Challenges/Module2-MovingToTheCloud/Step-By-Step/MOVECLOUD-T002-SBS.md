@@ -46,31 +46,41 @@ docker run -ti  -e MONGODB_CONNECTION="mongodb://xxx.documents.azure.com:10255/c
 5. In the Azure Portal, navigate to the Web Application fabmedical-web-UniqueId and open the Container Blade. In the Container blade, select the Docker Compose Tab. Select Private Registry under Image Source. 
 
 Fill in the following data:
-* Server URL: https://ghcr.io 
+* Server URL: https://docker.pkg.github.com
 
 ```Note: if you are facing issue  due to url please use https://docker.pkg.github.com```
 
-* Login: notapplicable
+* Login: github-cloudlabsuser-000
 * Password: Your GitHub Personal Access Token
+
+> Note: Replace 000 with the value of your GitHub account
 
 As file, copy the content  `docker-compose.yml` file that you created earlier, and paste in the configuration.
 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/containerblade.png)
 
-6. The Azure Web App will no create two containers in the web app. Navigate to the Web app https://$webappname.azurewebsites.net to validate if the application is working
+  Here is the sample docker-compose.yml:
 
-7. To update the website from a command line run the following command
-
-> **Note**: You need to use the 2nd personal access token that you created in step by step DEVWF-T007
-
-```PowerShell
-az webapp config container set `
---docker-registry-server-password <yourgithub personal access token> `
---docker-registry-server-url https://ghcr.io `
---docker-registry-server-user notapplicable `
---multicontainer-config-file docker-compose.yml `
---multicontainer-config-type COMPOSE `
---name $webappName `
---resource-group $resourcegroupName 
+```yaml
+version: "3.4"
+services:
+  api:
+    image: docker.pkg.github.com/github-cloudlabsuser-000/codetocloud-source/fabrikam-api:latest
+    ports:
+      - "3001:3001"
+  web:
+    image: docker.pkg.github.com/github-cloudlabsuser-000/codetocloud-source/fabrikam-web:latest
+    depends_on:
+       - api
+    environment:
+        CONTENT_API_URL: http://api:3001
+    ports:
+       - "3000:80"
 ```
+
+> Note: Replace 000 with the value of your GitHub account. Please note that we are referring to the repository docker.pkg.github.com.
+
+6. The Azure Web App will now create two containers in the web app. Navigate to the Web app https://$webappname.azurewebsites.net to validate if the application is working.
+
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/validate-webapp.gif)
 
