@@ -101,7 +101,7 @@ In this section, you create and configure an App Service Plan and an Azure Web A
 3. Save the PowerShell file and run it from the terminal:
 
       ```powershell
-      pushd infrastructure
+      pushd
       ./deploy-infrastructure.ps1
       ```
 
