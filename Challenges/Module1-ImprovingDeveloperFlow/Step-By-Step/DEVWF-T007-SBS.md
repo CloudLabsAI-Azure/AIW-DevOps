@@ -9,7 +9,7 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
 
 2. From the left menu, select [Secrets].
 
-3. Select the [New secret] button.
+3. Select the [New repository secret] button.
 
     ![Settings link, Secrets link, and New secret button are highlighted.](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-08-24-21-45-42.png)
 
@@ -88,3 +88,5 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
 15. When you are done, pull the changes from your GitHub repository.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-12-10-11.png)
+    
+ Now, you can move on to the next page.
