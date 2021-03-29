@@ -63,8 +63,12 @@ When you already used the Azure Boards integration, you need to manually link th
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-11-30-12.png)
 
-3. Make a textual change, and commit the change with a message that contains the Azure Boards Work Item ID, in the following format AB#WorkItemID
+3. Make a textual change, and commit the change with a message that contains the Azure Boards Work Item ID, in the following format 
 
+    ```
+    AB#WorkItemID
+    ```
+    
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/boards-commit-integration.png)
 
 4. In Azure Boards, find the work item, and see that the code commit has been linked to the work item
