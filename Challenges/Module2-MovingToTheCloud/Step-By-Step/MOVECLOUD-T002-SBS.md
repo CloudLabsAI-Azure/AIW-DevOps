@@ -42,7 +42,7 @@ Fill in the following data:
 * Login: notapplicable
 * Password: Your GitHub Personal Access Token
 
-As file, choose the `docker-compose.yml` file that you created earlier, and press Save.
+As file, select the content  `docker-compose.yml` file that you created earlier, and paste in the configuration.
 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/containerblade.png)
 
