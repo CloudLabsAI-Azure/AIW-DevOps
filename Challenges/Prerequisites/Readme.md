@@ -61,30 +61,6 @@ To set this up, you need to perform these steps
 * Create GitHub Personal Access Token
 * Create Azure DevOps Personal Access Token
 
-### Setup your settings file and PowerShell Profile
-
-1. Open your GitHub Codespace 
-2. In the terminal type `pwsh`
-3. Then run `.workshop/setup.ps1` which will ask for:
-    1. The location of your repository
-    2. Your GitHub Personal Access Token with the following scopes (see instructions below):
-       * repo
-       * read:packages
-       * write:packages
-       * read:org
-       * workflow
-    3. The name of your Azure DevOps organization
-    4. Your Azure DevOps Personal Access Token with the following scopes:
-       * Work Items: Read & Write
-       * Build: Read & Execute
-       * Project & Team: Read, Write & Manage
-    5. The name of the Project in Azure DevOps. The project will be automatically created if it doesn't exist yet. If the students must use pre-created projects, make sure they are using the Basic Process for Azure Boards.
-    6. Your unique suffix (short, only lower case letters). This will be used to create the name of the resource group and resources in Azure.
-    7. Whether to create/recreate work items in Azure Boards to which the commits and pull-requests will be linked.
-
-4. A local `settings.json` file has been created in the `.workshop` folder and is automatically ignored by git. **DO NOT COMMIT THIS TO YOUR REPO!**
-5. This file is automatically loaded by the containers PowerShell Profile and pre-populates several global variables.
-
 #### Create GitHub Personal Access Token
 
 1. Ensure you are logged in to your GitHub account.
@@ -117,11 +93,9 @@ To set this up, you need to perform these steps
 
    ![create project](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-project.png)
    
-
 >Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
 
 3. Go to **User settings** and then select Personal Access Tokens
-
    
    ![select pat](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-pat.png)
    
@@ -136,13 +110,40 @@ To set this up, you need to perform these steps
 
    ![create token](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-createtoken.png)
    
-6. Copy the value of the generated token and save it in the notepad.
+6. Copy the value of the generated token and save it in the notepad where you have stored the GitHub Personal Access Token.
 
    ![copy token](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-copypat.png)
    
-1. Keep this Personal Access token somewhere safe for later use. **DO NOT COMMIT THIS TO YOUR REPO!**
+7. Keep this Personal Access token safe for later use. **DO NOT COMMIT THIS TO YOUR REPO!**
+
+### Setup your settings file and PowerShell Profile
+
+1. Now, Open your GitHub Codespace 
+2. In the terminal type `pwsh`
+3. Then run `.workshop/setup.ps1` which will ask for:
+    1. The location of your repository
+    2. Your GitHub Personal Access Token with the following scopes (see instructions below):
+       * repo
+       * read:packages
+       * write:packages
+       * read:org
+       * workflow
+    3. The name of your Azure DevOps organization
+    4. Your Azure DevOps Personal Access Token with the following scopes:
+       * Work Items: Read & Write
+       * Build: Read & Execute
+       * Project & Team: Read, Write & Manage
+    5. The name of the Project in Azure DevOps. The project will be automatically created if it doesn't exist yet. If the students must use pre-created projects, make sure they are using the Basic Process for Azure Boards.
+    6. Your unique suffix (short, only lower case letters). This will be used to create the name of the resource group and resources in Azure.
+    7. Whether to create/recreate work items in Azure Boards to which the commits and pull-requests will be linked.
+
+4. A local `settings.json` file has been created in the `.workshop` folder and is automatically ignored by git. **DO NOT COMMIT THIS TO YOUR REPO!**
+5. This file is automatically loaded by the containers PowerShell Profile and pre-populates several global variables.
+
 
 ## Variables
+
+The following instructions are for addtional informational purpose. There is nothing to be performed as part of the lab.
 
 In some scripts, we use variables like `$resourceGroupName` and `$webappName`. Based on the settings.json file, that is stored in your `.workshop` folder, we generated a PowerShell Profile for you. The values stored in `settings.json` are automatically loaded into your PowerShell console.
 
