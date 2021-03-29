@@ -63,8 +63,3 @@ az webapp config container set `
 --resource-group $resourcegroupName 
 ```
 
-> When you do not want to type all commands try the solution Pull Request by running
-
-```
-Workshop-Step Solution "MOVECLOUD-T002"
-```
