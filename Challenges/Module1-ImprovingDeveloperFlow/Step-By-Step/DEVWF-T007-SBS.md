@@ -53,7 +53,7 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
                 working-directory: content-web
     ```
 
-10. Remove the test job from YAML since we do not need it. Also remove the dependency in the push stage `needs: test`
+10. Remove the test job from YAML since we do not need it. Also remove the dependency in the push stage `needs: test`. You can remove the lines given below from the YAML File
     <s>
     ```YAML
     # Run tests.
