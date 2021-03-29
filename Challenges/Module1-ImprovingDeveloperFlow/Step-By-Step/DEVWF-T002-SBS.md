@@ -50,7 +50,7 @@ If you rather watch a video with step by step instructions, you can do that here
 
    ![This screenshot of the console window shows output from running the database initialization.](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Ex1-Task1.7.png)
 
-1. Confirm that the database now contains test data by connecting to the docker container. You can open a new terminal window if needed
+1. Confirm that the database now contains test data by connecting to the docker container by executing the below commands. You can open a new terminal window if needed
 
    ```bash
    docker exec -ti mongo bash
