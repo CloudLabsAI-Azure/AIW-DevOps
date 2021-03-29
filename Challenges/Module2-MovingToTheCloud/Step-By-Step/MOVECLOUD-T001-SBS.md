@@ -15,6 +15,9 @@ Before you run any of the snippets in the terminal, make sure you login to your 
 
 ```bash 
 az login
+```
+
+```
 az account set --subscription <your subscription guid>
 ```
 
