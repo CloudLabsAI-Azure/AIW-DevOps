@@ -122,8 +122,3 @@ Copy the complete JSON output to your clipboard.
 
 11. Commit the workflow file. The GitHub Action will trigger.
 
-> When you do not want to type all commands try the solution Pull Request by running
-
-```
-Workshop-Step Solution "CLOSELOOP-T002"
-```
