@@ -63,6 +63,8 @@ Now your repository contains 3 new "multi-staged" docker file.
       docker rm -f <containername or id>
       ```
 
+      ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/remove-container.gif)
+
 10. Run all containers and check whether the application still works as expected
 
       ```bash
