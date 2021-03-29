@@ -5,11 +5,16 @@ If you rather watch a video with step by step instructions, you can do that here
 
 In this task you will run the WEB and API application as a multi-container application within an Azure Web App while it connects with the CosmosDB. The INIT container, that was pushed to the registry as well, can be used to populate the CosmosDB. 
 
-1. To be able to access the CosmosDB, you need to add the connectionstring as environment variable to the Azure Web App. Retrieve the connectionstring to the CosmosDB in the portal or use the following command and use the Primary MongoDB ConnectionString.
+1. To be able to access the CosmosDB, you need to add the connectionstring as environment variable to the Azure Web App. Retrieve the connectionstring of the CosmosDB from the Azure portal or use the following command by adding it to the deploy-infrastructure.ps1 and then use the Primary MongoDB ConnectionString.
 
     ```
     az cosmosdb keys list -n $cosmosDBName -g $resourceGroupName --type connection-strings
     ```
+    
+    ```
+    pushd
+   ./deploy-infrastructure.ps1
+   ```
     
 > **Note**: We have created required infrastructure in Azure now we will be running our docker composition for web container and api container to do that we need connection with             cosmos db and we are doing that by using connection string 
     
@@ -19,6 +24,9 @@ In this task you will run the WEB and API application as a multi-container appli
  ```
  $mongodbConnectionString="connectionString=mongodb://xxx.documents.azure.com:10255/contentdb?ssl=true&replicaSet=globaldb"
  ```
+
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/mongoconnstring.gif)
+ 
 3. Fill the cosmos DB by running the init container
 
 ```
