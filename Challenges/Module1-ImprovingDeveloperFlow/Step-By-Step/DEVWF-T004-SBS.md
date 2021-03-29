@@ -21,7 +21,7 @@ In this task, you will merge the Pull Request containing 3 multi-staged Docker f
 
 3. In the Pull Request, check the conversation, Commits, Checks and Files Changed Tabs, and go through the instructions and changes.
 
-4. On the Conversation Tab, press the Merge Pull Request Button, to merge the files in to the main branch. Link the Pull Request to your Azure Boards Work item for Module 1 by typing AB#Module1WorkItemID in the title or description of the Pull Request Commit Message. 
+4. On the Conversation Tab, press the **Merge Pull Request** Button, to merge the files in to the main branch. Link the Pull Request to your Azure Boards Work item for Module 1 by typing AB#Module1WorkItemID in the title or description of the Pull Request Commit Message. 
 
       ![Shows the button for merging a Pull Request in GitHub](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/mergePullRequest.png)
 
