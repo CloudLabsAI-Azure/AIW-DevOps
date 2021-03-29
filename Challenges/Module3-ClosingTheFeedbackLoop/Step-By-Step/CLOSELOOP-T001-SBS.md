@@ -16,7 +16,7 @@ To enable Application Insights we need an Application Insights Resource in our r
 2. Add this code snippet to the file
 
       ```PowerShell
-      $studentsuffix = "your abbreviated name"
+      $studentsuffix = "UniqueId"
       $resourcegroupName = "fabmedical-rg-" + $studentsuffix
       $location1 = "westeurope"
       $appInsights = "fabmedicalai-" + $studentsuffix
@@ -26,8 +26,14 @@ To enable Application Insights we need an Application Insights Resource in our r
 
       Write-Host "AI Instrumentation Key=$($ai.instrumentationKey)"
       ```
+   > Note: Replace UniqueId with the value from Environment Details -> Azure Credentials tab.
 
-3. Run the PowerShell script. Write down the AI Instrumentation Key. An Application Insights Resource will be created in your Azure Resource Group
+3. Run the PowerShell script by executing the command below. Note down the AI Instrumentation Key onto a notepad. An Application Insights Resource will be created in your Azure Resource Group
+
+    ```
+    pushd
+    ./deploy-infrastructure.ps1
+    ```
 
 ## Add Application Insights SDK to your web application
 
@@ -53,26 +59,15 @@ To enable Application Insights we need an Application Insights Resource in our r
    git add .
    git commit -m "Added Application Insights"
    git push
+   ```
 
 ## Deploy new version of the container to the cluster
 
 1. When the GitHub Action CI completed, (re)deploy the web container to the web application.
 
-To update the website from a command line run the following command
+2. Visit the Resource and check if Application Insights is created and you will be able to see instrumentation data.
 
-> **Note**: You need to use the 2nd personal access token that you created in step by step DEVWF-T007
 
-```
-az webapp config container set `
---docker-registry-server-password <yourgithub personal access token> `
---docker-registry-server-url https://ghcr.io `
---docker-registry-server-user notapplicable `
---multicontainer-config-file docker-compose.yml `
---multicontainer-config-type COMPOSE `
---name $webappName `
---resource-group $resourcegroupName 
-```
-
-2. Visit the website and check Application Insights in the Azure Portal to see instrumentation data.
+Now, you can move on to the next page.
 
 
