@@ -61,7 +61,7 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
     https://gist.github.com/renevanosnabrugge/5178c88a09e8c6cdd66a2eb0dc6dcba2
     ```
 
-     > Note: Ensure to change the directory to content-web in step 3 and Step 5.
+     > Note: Ensure to change the directory to **content-init** in step 3 and Step 5.
 
 10. Now that the images have been successfully built, you should be able to see them in your terminal window, when executing the `docker images` command.
 
