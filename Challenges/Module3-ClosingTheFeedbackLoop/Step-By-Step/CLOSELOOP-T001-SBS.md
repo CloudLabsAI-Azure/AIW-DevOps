@@ -75,8 +75,4 @@ az webapp config container set `
 
 2. Visit the website and check Application Insights in the Azure Portal to see instrumentation data.
 
-> When you do not want to type all commands try the solution Pull Request by running
 
-```
-Workshop-Step Solution "CLOSELOOP-T001"
-```
