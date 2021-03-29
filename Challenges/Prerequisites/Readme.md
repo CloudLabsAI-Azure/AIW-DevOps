@@ -104,14 +104,14 @@ To set this up, you need to perform these steps
    
    ![select pat](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-pat.png)
    
-4. Click on +NewToken   
+4. Click on **+ New Token**   
    
    ![new token](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-newtoken.png)
    
 5. Create token named **UniqueID-Token** and provide the following permissions
    * Work Items: Read & Write
    * Build: Read & Execute
-   * Project & Team: Read, Write & Manage
+   * Project & Team: Read, Write & Manage  ( To view Project & Team, click on **Show all scopes** just above Create button )
 
    ![create token](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-createtoken.png)
    
