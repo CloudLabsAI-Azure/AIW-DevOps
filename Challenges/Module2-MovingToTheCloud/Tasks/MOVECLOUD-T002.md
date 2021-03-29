@@ -40,11 +40,4 @@ In this challenge you will run the WEB and API application in an Azure Web App, 
 >    ```
 
 
-## Solution
-
-If you are stuck or you want to progress to the next challenge, there is a solution prepared for you. When you run the following command, a Pull Request with the files and instructions will be created for you. 
-
-```powershell
-Workshop-Step Solution "MOVECLOUD-T002"
-```
 
