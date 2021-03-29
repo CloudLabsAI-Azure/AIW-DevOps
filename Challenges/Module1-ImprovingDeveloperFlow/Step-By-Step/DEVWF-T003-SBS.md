@@ -74,11 +74,19 @@ Now that you have created 3 Docker images for your application, it is time to ru
 
 11. Make sure you remove all running images to avoid conflict with ports in use. When you run `docker ps -a` you see all containers that are running or are stopped. Remove all containers, except the `cloudenvimage`. The `cloudenvimage` contains you GitHub Codespace. 
 
+    ```
+    docker ps -a
+    ```
+    
     ```bash
     docker rm -f <containername or id>
     ```
 
-12. Check if your `fabrikam` network is still around by running the command `docker network ls`
+12. Check if your `fabrikam` network is still around by running the command 
+
+    ```
+    docker network ls
+    ````
 
 13. Start the MongoDB container and the `fabrikam-init` container you just created and run them on the `fabrikam network` to prepare the database. The command does the following.
 
