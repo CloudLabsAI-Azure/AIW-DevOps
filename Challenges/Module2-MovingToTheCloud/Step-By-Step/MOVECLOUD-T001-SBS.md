@@ -34,6 +34,8 @@ We can create all these resources manually, but since we want to do this "the De
 
 3. In the file explorer, create a new folder called `infrastructure`
 
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/create-f-infra.gif)
+
 4. Create a new file called `deploy-infrastructure.ps1`
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/newfolderinfra.png)
