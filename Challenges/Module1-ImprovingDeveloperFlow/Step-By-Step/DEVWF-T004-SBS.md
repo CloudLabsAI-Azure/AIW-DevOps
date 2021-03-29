@@ -13,6 +13,8 @@ In this task, you will merge the Pull Request containing 3 multi-staged Docker f
       Workshop-Step Start "DEVWF-T004"
       ```
 
+      ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/devwf004.gif)
+
 2. In your GitHub repository, navigate to the Tab Pull Requests and open the Pull Request with DEVWF-T004 in the title
 
       ![Shows the menu item for navigating to the Pull Request](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/PullRequestDEVWF-T004.png)
