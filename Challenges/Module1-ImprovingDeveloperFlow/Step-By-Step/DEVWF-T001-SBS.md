@@ -12,7 +12,12 @@ There are 2 possible scenarios for this Step by Step
 
 ## You have never used the Azure Boards integration before
 
-1. On the GitHub Marketplace, navigate to ```https://github.com/marketplace/azure-boards```. 
+1. On the GitHub Marketplace, navigate to 
+
+    ``` 
+    https://github.com/marketplace/azure-boards
+    ```
+
 2. On the bottom of the page, select Install it for free.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/newABIntegration.png)
