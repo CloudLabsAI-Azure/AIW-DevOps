@@ -22,7 +22,7 @@ The workshop builds upon an existing codebase. Before you start the workshop, th
 
 4. From the Outlook Inbox, you can find the verfication code and then click on **Verify** in the **Device Verification** dialog box that is opened in the different browser window. After providing the code you will be successfully logged in to Github.
 
-5. After Login, open a new tab in the browser windows where you are already logged in to GitHub and go to ``https://github.com/xpiritbv/CodeToCloud-Source``
+5. After Login, open a new tab in the browser window where you are already logged in to GitHub and navigate to ``https://github.com/xpiritbv/CodeToCloud-Source``
 
 6. Then, click on Fork at the top right, select your account with the name **github-cloudlabuser-UniqueID**
 
@@ -35,7 +35,7 @@ UniqueID value is provided under the Environment details-> Azure Credentials tab
 
 The workshop is built with and targeted at development with GitHub Codespace, a full-featured IDE in the cloud. To start working, you need to create a Codespace.
 
-1. Navigate to your forked repository on GitHub - **github-cloudlabuser-UniqueID/CodeToCloud-Source**
+1. Navigate to your forked repository on GitHub. The name of the forked repository will be in the following format - **github-cloudlabuser-UniqueID/CodeToCloud-Source**
 
 2. Now, click on the **Code** dropdown, then click on **Open with Codespaces** and then on **+New Codespace**  to create a Code Space in your forked repo.
 
