@@ -24,6 +24,7 @@ on:
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/NewPipeline.png)
 
 2. In the Connect Tab, choose GitHub
+
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/GHCOnnection.png)
 
 3. Select your GitHub repository. Azure DevOps will redirect you to authorize yourself to GitHub. Login and select the repository that you want to have enable to access from Azure DevOps
