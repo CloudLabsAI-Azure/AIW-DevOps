@@ -3,7 +3,7 @@
 If you rather watch a video with step by step instructions, you can do that here
 [![Step by Step Video](https://img.youtube.com/vi/YJkaPF5k_O8/0.jpg)](https://www.youtube.com/watch?v=YJkaPF5k_O8)
 
-1. From your GitHub repository open your Codespace if it is not already
+1. From your GitHub repository open your Codespace if it is not already opened
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/OpenCodeSpace.png)
 
