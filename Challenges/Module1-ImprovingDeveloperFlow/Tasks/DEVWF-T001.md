@@ -1,12 +1,12 @@
 # DEVWF-T001 Get started with the work and create visibility
 
-All developers at Fabrikam work for various customers at the same time. Many of them work on customizing and deploying the customer specific websites for the conferences. During the interviews it seemed that there is no central place for all the work that needs to be done or is in progress. This makes it very hard to see the status of a specific project or, in the current context, the status of the cloud transformation.
+All developers at Fabrikam work for various customers at the same time. Many of them work on customizing and deploying customer-specific websites for the conferences. During the interviews, it seemed that there is no central place for all the work that needs to be done or is in progress. This makes it very hard to see the status of a specific project or, in the current context, the status of the cloud transformation.
 
-To overcome this lack of visibility the decision is made to create a separate repository for all the cloud transformation work and connect this with a KanBan board that contains all the work that needs to be done. To provide traceability between the requirements and the actual code changes, there needs to be an integration between the planned work and the commits in the Git repository.of what code changes are done
+To overcome this lack of visibility the decision is made to create a separate repository for all the cloud transformation work and connect this with a KanBan board that contains all the work that needs to be done. To provide traceability between the requirements and the actual code changes, there needs to be an integration between the planned work and the commits in the Git repository of what code changes are done
 
 ## Challenge
 
-In this challenge you are going to use your [CodeToCloud-Source] repository that contains a copy of the current on-premises. This needs to be connected with an Azure Board in Azure DevOps to provide visibility about the work at hand. To ensure everything works a commit in the Git Repository (for example in the readme file) needs to be visible in the Work Item in Azure Boards and vice versa.
+In this challenge, you are going to use your [CodeToCloud-Source] repository that contains a copy of the current on-premises. This needs to be connected with an Azure Board in Azure DevOps to provide visibility about the work at hand. To ensure everything works a commit in the Git Repository (for example in the readme file) needs to be visible in the Work Item in Azure Boards and vice versa.
 
 ## Validation
 
