@@ -16,11 +16,11 @@ The workshop builds upon an existing codebase. Before you start the workshop, th
    
 2. If prompted with the **Device Verification** dialog box, open Microsoft edge Browser in **incognito mode** ( you can open incognito mode by clicking on the three dots "..." icon  at the top right of the browser within the virtual machine and then select New InPrivate window)
 
-3. Now, sign in to Outlook by navigating to https://outlook.com using the **Outlook/GitHub Credential** provided under the **Environment details** tab 
+3. Now, sign in to Outlook by navigating to https://outlook.com using the **Outlook/GitHub Credential** provided under the **Environment details** tab to obtain **6-digit** code.
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/code.png)
 
-4. From the Outlook Inbox, you can find the verfication code and then click on **Verify** in the **Device Verification** dialog box that is opened in the different browser window. After providing the code you will be successfully logged in to Github.
+4. From the Outlook Inbox, you can find the **6-digit** verfication code, enter the code and then click on **Verify** in the **Device Verification** dialog box that is opened in the different browser window. After providing the code you will be successfully logged in to Github.
 
 5. After Login, open a new tab in the browser window where you are already logged in to GitHub and navigate to ``https://github.com/xpiritbv/CodeToCloud-Source``
 
