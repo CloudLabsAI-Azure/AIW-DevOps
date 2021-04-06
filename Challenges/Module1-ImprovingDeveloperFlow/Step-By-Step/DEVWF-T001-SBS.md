@@ -18,19 +18,21 @@ There are 2 possible scenarios for this Step by Step
     https://github.com/marketplace/azure-boards
     ```
 
-2. On the bottom of the page, select Install it for free.
+2. On the bottom of the page, select **Install it for free**.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/newABIntegration.png)
 
-3. In the next page, Click "Complete order and begin installation"
+3. On the next page, Click **Complete order and begin installation**
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/CompleteOrder.png)
 
-4. Select the [CodeToCloud-Source] repository and click Install & Authorize.
+4. Select the [CodeToCloud-Source] repository and click **Install & Authorize**.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/ABSelectrepo.png)
 
-5. Login to your Azure DevOps Organization, and select the Team Project that you created in the Prerequisite setup.
+    **Note**: If prompted for GitHub password enter password from the Outlook/GitHub Credential provided under the Environment details tab
+
+5. Login to your Azure DevOps Organization, and select the Team Project that you created in the Prerequisite setup, then click on **Continue**.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-11-24-19.png)
 
