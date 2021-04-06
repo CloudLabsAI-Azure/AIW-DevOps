@@ -45,7 +45,7 @@ The workshop is built with and targeted at development with GitHub Codespace, a 
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/codespace-build.png)
 
-4. Once your GitHub Codespace is created, you should be able to see the files and a welcome message under the Terminal.
+4. Once your GitHub Codespace is created, you should be able to see the files.
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Codespace-files.png)
 
@@ -75,7 +75,7 @@ To set this up, you need to perform these steps
 
 3. Select the scopes or permissions you would like to grant this token
 
-    - Note: Provide the following text in the note field, UniquedId-token. Rreplace UniqueID with the value given in Environment Details -> Azure Credentials tab.
+    - Note: Provide the following text in the note field, **UniquedId-token**. Rreplace UniqueID with the value given in Environment Details -> Azure Credentials tab.
     - Select worklow, write:packages, delete:packages, read:org
   
   ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/PAT.png)
@@ -100,7 +100,7 @@ To set this up, you need to perform these steps
    
 >Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
 
-3. Go to **User settings** and then select Personal Access Tokens
+3. Go to **User settings** and then select **Personal Access Tokens**
    
    ![select pat](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-pat.png)
    
@@ -126,20 +126,20 @@ To set this up, you need to perform these steps
 1. Now, Open your GitHub Codespace 
 2. In the terminal type `pwsh`
 3. Then run `.workshop/setup.ps1` which will ask for:
-    1. The location of your repository - Provide a value in the following format: https://github.com/github-cloudlabsuser-000/CodeToCloud-Source. Make sure to replace 000 with the number of your github repo
-    2. Your GitHub Personal Access Token with the following scopes (see instructions below):
+    1. **Github reporitory url**: The location of your repository - Provide a value in the following format: https://github.com/github-cloudlabsuser-000/CodeToCloud-Source. Make sure to replace 000 with the number of your github repo
+    2. **Github Token**: Your GitHub Personal Access Token with the following scopes (see instructions below):
        * repo
        * read:packages
        * write:packages
        * read:org
        * workflow
-    3. The name of your Azure DevOps organization - Provide **odluserUniqueID**, by replacing UniqueId with the value from the **Environment details-> Azure Credentials** tab
-    4. Your Azure DevOps Personal Access Token with the following scopes:
+    3. **Azure DevOps Organization**: The name of your Azure DevOps organization - Provide **odluserUniqueID**, by replacing UniqueId with the value from the **Environment details-> Azure Credentials** tab
+    4. **Azure DevOps Token**: Your Azure DevOps Personal Access Token with the following scopes:
        * Work Items: Read & Write
        * Build: Read & Execute
        * Project & Team: Read, Write & Manage
-    5. The name of the Project in Azure DevOps. The project will be automatically created if it doesn't exist yet. If the students must use pre-created projects, make sure they are using the Basic Process for Azure Boards - Provide the name that you provided at the time of creation. As per the instructions, it will be in this format: CodeToCloudWorkshop-UniqueId
-    6. Your unique suffix (short, only lower case letters). This will be used to create the name of the resource group and resources in Azure. - Provide the UniqueID. Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
+    5. **Azure DevOps Project Name**: The name of the Project in Azure DevOps. The project will be automatically created if it doesn't exist yet. If the students must use pre-created projects, make sure they are using the Basic Process for Azure Boards - Provide the name that you provided at the time of creation. As per the instructions, it will be in this format: CodeToCloudWorkshop-UniqueId
+    6. **Student**: Your unique suffix (short, only lower case letters). This will be used to create the name of the resource group and resources in Azure. - Provide the UniqueID. Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
     7. Whether to create/recreate work items in Azure Boards to which the commits and pull-requests will be linked - Provide Yes
 
 4. A local `settings.json` file has been created in the `.workshop` folder and is automatically ignored by git. **DO NOT COMMIT THIS TO YOUR REPO!**
