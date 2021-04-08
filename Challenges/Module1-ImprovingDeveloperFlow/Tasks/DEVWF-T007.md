@@ -2,11 +2,11 @@
 
 Developers are working locally with their images to quickly develop the software. However, when they published their containers to start testing, the team notices that there is a lot of differences with their development environments. 
 
-After some research, they find that small bugs occur because the latest version was not used. Main reason is that everybody is building their own container images, and there is not a "golden image" that can be used for testing purposes. You and your team suggest to implement Continuous Integration and to push the latest version of the container image to a Container Registry hosted on GitHub after every change. This container registry can then serve as the repository that contains the latest images to use and deploy on the various environments for testing etc.
+After some research, they find that small bugs occur because the latest version was not used.The main reason is that everybody is building their container images, and there is not a "golden image" that can be used for testing purposes. You and your team suggest implementing Continuous Integration and to push the latest version of the container image to a Container Registry hosted on GitHub after every change. This container registry can then serve as the repository that contains the latest images to use and deploy on the various environments for testing etc.
 
 ## Challenge
 
-In this challenge you are going to shorten the feedback loop and ensure that stable images are centrally available. For that you are going to set up a Continuous Integration Build with GitHub Actions, that builds the Docker image and pushes that to the GitHub Container Registry. 
+In this challenge, you are going to shorten the feedback loop and ensure that stable images are centrally available. For that, you are going to set up a Continuous Integration Build with GitHub Actions, that builds the Docker image and pushes that to the GitHub Container Registry. 
 
 ## Validation
 
