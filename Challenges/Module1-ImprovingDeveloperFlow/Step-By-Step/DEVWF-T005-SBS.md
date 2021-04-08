@@ -3,7 +3,7 @@
 If you rather watch a video with step by step instructions, you can do that here
 [![Step by Step Video](https://img.youtube.com/vi/rjdF-JjZm6Q/0.jpg)](https://www.youtube.com/watch?v=rjdF-JjZm6Q)
 
-In this task, you will enable the GitHub security features for your repository we can do that by navigating to security tab .
+In this task, you will enable the GitHub security features for your repository we can do that by navigating to the Security tab.
 
 1. In your GitHub repository, navigate to the [Security] Tab. Press the [Enable Dependabot alerts] button and the [Set up Code Scanning] button
 
@@ -29,7 +29,7 @@ In this task, you will enable the GitHub security features for your repository w
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-13-03-26.png)
 
-8. In the Pull Requests, find the the Dependabot Security patch, and merge the Pull Request to your main branch
+8. In the Pull Requests, find the Dependabot Security patch, and merge the Pull Request to your main branch
 
 9. To solve a Code Scanning issue, navigate to the Security Tab and press **View Alerts** next to Code Scanning alerts.
 
