@@ -3,7 +3,7 @@
 If you rather watch a video with step by step instructions, you can do that here
 [![Step by Step Video](https://img.youtube.com/vi/2FgK5SNVFCA/0.jpg)](https://www.youtube.com/watch?v=2FgK5SNVFCA)
 
-In this task, you will use YAML to define 3 GitHub Actions workflows that builds your Docker images and pushes it to a GitHub Container Registry automatically.
+In this task, you will use YAML to define 3 GitHub Actions workflows that build your Docker images and pushes them to a GitHub Container Registry automatically.
 
 1. In your GitHub repository, and select the [Settings] tab.
 
@@ -42,7 +42,7 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
       IMAGE_NAME: fabrikam-web
     ```
 
-9. Add a working directory to the [Build Image] and [Push image to GitHub Container Registry] step. This ensure the Docker file can be found
+9. Add a working directory to the [Build Image] and [Push image to GitHub Container Registry] step. This ensures the Docker file can be found
 
     ```YAML
             - name: Build image
@@ -80,7 +80,7 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
 
     ![Screen that shows that the GitHub action build succeeded](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/buildsucceed.png)
 
-13. Next, setup the `content-api` workflow and the `content-init` workflow. Call the files `fabrikam-api.yml` and `fabrikam-init.yml` and change the container names also to `fabrikam-api` and `fabrikam-init`
+13. Next, set up the `content-api` workflow and the `content-init` workflow. Call the files `fabrikam-api.yml` and `fabrikam-init.yml` and change the container names also to `fabrikam-api` and `fabrikam-init`
 
 14. Navigate to the packages in your GitHub account and see if the container images are present.
     ![Overview of all packages of a GitHub account](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/packages.png)
