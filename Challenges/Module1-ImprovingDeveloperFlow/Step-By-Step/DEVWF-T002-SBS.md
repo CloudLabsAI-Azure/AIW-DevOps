@@ -7,7 +7,7 @@ If you rather watch a video with step by step instructions, you can do that here
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/OpenCodeSpace.png)
 
-1. In the Terminal window, open a PowerShell Terminal by typing `pwsh`
+1. In the Terminal window, open a PowerShell Terminal by typing `push`
 
 1. Type the following command to create a Docker network named `fabrikam`:
 
@@ -104,13 +104,13 @@ If you rather watch a video with step by step instructions, you can do that here
 
    ![In this screenshot, node ./server.js & has been typed and run at the command prompt, which starts the API as a background process.](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/image47.png)
     
-    ``Note: If you get the pop-up for forwarded port after the run, please click on open, and then you will be directed to forwarded port. You can skip step 11 and 12 as you already got the forwarded port and you can move on to Step 13 ``    
+    ``Note: If you get the pop-up for forwarded port after the run, please click on open, and then you will be directed to the forwarded port. You can skip step 11 and 12 as you already got the forwarded port and you can move on to Step 13 ``    
 
-1. Test the API using your browser. In the GitHub Codespace navigate to the Remote Explorer and create a new Forwarded Port
+1. Test the API using your browser. In the GitHub, Codespace navigate to the Remote Explorer and create a new Forwarded Port
 
     ![Setup port forwarding ](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/updated-port.png)
 
-1. Next to the Forwarded Port, click the the global icon. The forwarded website api will be opened in a new browser window
+1. Next to the Forwarded Port, click the global icon. The forwarded website api will be opened in a new browser window
 
 1. Add `/speakers` to the URL.
 
