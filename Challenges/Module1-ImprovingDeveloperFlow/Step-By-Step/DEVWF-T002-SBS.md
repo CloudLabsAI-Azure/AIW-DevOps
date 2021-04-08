@@ -7,7 +7,7 @@ If you rather watch a video with step by step instructions, you can do that here
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/OpenCodeSpace.png)
 
-1. In the Terminal window, open a PowerShell Terminal by typing `push`
+1. In the Terminal window, open a PowerShell Terminal by typing `pwsh`
 
 1. Type the following command to create a Docker network named `fabrikam`:
 
