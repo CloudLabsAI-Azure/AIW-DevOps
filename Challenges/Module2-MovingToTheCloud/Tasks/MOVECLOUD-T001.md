@@ -4,7 +4,7 @@ Susan wants to move to the cloud. An Azure subscription has been created and kno
 
 ## Challenge
 
-In this challeng,e you will set up an Azure Resource Group containing a CosmosDB and an Azure Web App that can run containers. To simplify automation you can use the Azure CLI to set this up. The script that you create needs to be saved in an [**infrastructure**] folder of the [**CodeToCloud-Source**] repository to ensure repeatability and the possibility to run this from within the pipeline
+In this challenge, you will set up an Azure Resource Group containing a CosmosDB and an Azure Web App that can run containers. To simplify automation you can use the Azure CLI to set this up. The script that you create needs to be saved in an [**infrastructure**] folder of the [**CodeToCloud-Source**] repository to ensure repeatability and the possibility to run this from within the pipeline
 
 ## Validation
 
