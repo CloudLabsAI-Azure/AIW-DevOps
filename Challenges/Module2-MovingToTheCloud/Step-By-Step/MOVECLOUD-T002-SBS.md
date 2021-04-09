@@ -3,9 +3,9 @@
 If you rather watch a video with step by step instructions, you can do that here
 [![Step by Step Video](https://img.youtube.com/vi/mKH21IgKUSc/0.jpg)](https://www.youtube.com/watch?v=mKH21IgKUSc)
 
-In this task you will run the WEB and API application as a multi-container application within an Azure Web App while it connects with the CosmosDB. The INIT container, that was pushed to the registry as well, can be used to populate the CosmosDB. 
+In this task, you will run the WEB and API application as a multi-container application within an Azure Web App while it connects with the CosmosDB. The INIT container, that was pushed to the registry as well, can be used to populate the CosmosDB. 
 
-1. To be able to access the CosmosDB, you need to add the connectionstring as environment variable to the Azure Web App. Retrieve the connectionstring of the CosmosDB from the Azure portal or use the following command by adding it to the deploy-infrastructure.ps1 and then use the Primary MongoDB ConnectionString.
+1. To be able to access the CosmosDB, you need to add the connectionstring as an environment variable to the Azure Web App. Retrieve the connectionstring of the CosmosDB from the Azure portal or use the following command by adding it to the deploy-infrastructure.ps1 and then use the Primary MongoDB ConnectionString.
 
     ```
     az cosmosdb keys list -n $cosmosDBName -g $resourceGroupName --type connection-strings
@@ -16,10 +16,10 @@ In this task you will run the WEB and API application as a multi-container appli
    ./deploy-infrastructure.ps1
    ```
     
-> **Note**: We have created required infrastructure in Azure now we will be running our docker composition for web container and api container to do that we need connection with             cosmos db and we are doing that by using connection string 
+> **Note**: We have created the required infrastructure in Azure now we will be running our docker composition for web container and api container to do that we need a connection with             cosmos db and we are doing that by using a connection string 
     
 
-2. Add the contentdb database as part of the connectionstring and add it as as a Kubernetes secret. `....documents.azure.com:10255/contentdb?ssl=true`
+2. Add the contentdb database as part of the connectionstring and add it as a Kubernetes secret. `....documents.azure.com:10255/contentdb?ssl=true`
 
  ```
  $mongodbConnectionString="connectionString=mongodb://xxx.documents.azure.com:10255/contentdb?ssl=true&replicaSet=globaldb"
@@ -55,7 +55,7 @@ Fill in the following data:
 
 > Note: Replace 000 with the value of your GitHub account
 
-As file, copy the content  `docker-compose.yml` file that you created earlier, and paste in the configuration.
+As a file, copy the content  `docker-compose.yml` file that you created earlier and paste into the configuration.
 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/containerblade.png)
 
