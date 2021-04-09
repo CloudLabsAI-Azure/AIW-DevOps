@@ -18,6 +18,7 @@ This replaces the `:latest' tag in the docker-compose.yml file with the build nu
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-16-15-30-29.png)
 
 3. Select the 3 dots, to see the options of this environment
+   
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-16-15-31-56.png)
 
 4. Choose Approvals and Checks. and choose the Evaluate Artifact policy
