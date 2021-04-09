@@ -1,7 +1,7 @@
 # Step by Step CLOSELOOP-T004
 
 If you rather watch a video with step by step instructions, you can do that here
-[![Step by Step Video](https://img.youtube.com/vi/4CPX2A3DR9I/0.jpg)](https://www.youtube.com/watch?v=4CPX2A3DR9I)
+   [![Step by Step Video](https://img.youtube.com/vi/4CPX2A3DR9I/0.jpg)](https://www.youtube.com/watch?v=4CPX2A3DR9I)
 
 
 In this challenge, you are going to replace the `:latest` tag in the docker-compose file with the build number from the pipeline. You will also add an automated check to the pipeline to validate if images are only coming from your own GitHub repository using an automated policy. 
@@ -15,10 +15,10 @@ This replaces the `:latest' tag in the docker-compose.yml file with the build nu
 
 2. In the menu under pipelines, select [Environments] and select production
 
-![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-16-15-30-29.png)
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-16-15-30-29.png)
 
 3. Select the 3 dots, to see the options of this environment
-![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-16-15-31-56.png)
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-16-15-31-56.png)
 
 4. Choose Approvals and Checks. and choose the Evaluate Artifact policy
 
