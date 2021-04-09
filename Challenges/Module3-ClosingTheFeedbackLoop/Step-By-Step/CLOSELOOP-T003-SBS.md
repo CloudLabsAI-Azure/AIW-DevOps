@@ -3,7 +3,7 @@
 If you rather watch a video with step by step instructions, you can do that here
 [![Step by Step Video](https://img.youtube.com/vi/uvtSyui9l_I/0.jpg)](https://www.youtube.com/watch?v=uvtSyui9l_I)
 
-In this challenge you are going to setup a CI/CD pipeline in Azure DevOps that gets the sources from GitHub. The pipeline will have 1 deployment stage that deploys to the production environment. This has an manual approval gate.
+In this challenge, you are going to set up a CI/CD pipeline in Azure DevOps that gets the sources from GitHub. The pipeline will have 1 deployment stage that deploys to the production environment. This has a manual approval gate.
 
 ## Disable GitHub Actions
 
@@ -19,7 +19,7 @@ on:
 ```
 ## Configure an Azure DevOps Pipeline
 
-1. Navigate to your Azure DevOps( https://dev.azure.com ) Project  that was created in the first Step, and create a new Pipeline.
+1. Navigate to your Azure DevOps( https://dev.azure.com ) Project that was created in the first step, and create a new Pipeline.
 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/NewPipeline.png)
 
@@ -27,7 +27,7 @@ on:
 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/GHCOnnection.png)
 
-3. Select your GitHub repository. Azure DevOps will redirect you to authorize yourself to GitHub. Login and select the repository that you want to have enable to access from Azure DevOps
+3. Select your GitHub repository. Azure DevOps will redirect you to authorize yourself to GitHub. Login and select the repository that you want to have enabled to access from Azure DevOps
 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/authorizeGH1.png)
 
@@ -39,7 +39,7 @@ on:
 
 ## Setup Service Connection in your Azure DevOps Project
 
-Before we can start building the build and release pipelines, we need to setup a connection between Azure DevOps and the GitHub Container Registry so that we can push our Docker images when they have been built.
+Before we can start building the build and release pipelines, we need to set up a connection between Azure DevOps and the GitHub Container Registry so that we can push our Docker images when they have been built.
 
 1. Navigate to your Azure DevOps Project that was created in the [prerequisites setup](/Challenges/Prerequisites/Readme.md). In the Project Settings, open the Service Connections Tab.
 
@@ -55,17 +55,17 @@ Before we can start building the build and release pipelines, we need to setup a
 
 ## Create the Build Stage
 
-First we need to create the build stage in the Azure DevOps pipeline. Instead of using command line options like in GitHub Actions, Azure DevOps has a marketplace task that can run docker compose commands in a secure manner.
+First, we need to create the build stage in the Azure DevOps pipeline. Instead of using command-line options like in GitHub Actions, Azure DevOps has a marketplace task that can  securely run docker compose command.
 
 1. In your Azure DevOps Project, Edit the pipeline you created in the previous step.
 2. Remove all steps. Keep the `steps:` keyword in the file
-3. First we need to make sure we checkout all sources from GitHub. Add the following snippet after `steps:` to do this.
+3. First we need to make sure we check out all sources from GitHub. Add the following snippet after `steps:` to do this.
 
 ```YAML
 - checkout: self
 ```
 
-4. In the side bar, find the Docker compose task, and configure it. After that add it to your pipeline. Set the following fields
+4. In the sidebar, find the Docker compose task, and configure it. After that add it to your pipeline. Set the following fields
 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Docker%20Compose%20Task.png)
 
@@ -97,11 +97,11 @@ First we need to create the build stage in the Azure DevOps pipeline. Instead of
           additionalImageTags: '$(Build.BuildNumber)
 ```
 
-6. Run the build. This builds and pushes a latest version to the GitHub Container registry.
+6. Run the build. This builds and pushes the latest version to the GitHub Container registry.
 
 ## Adding Stages to the pipeline
 
-Now we have all steps (checkout, build and push) complete we can focus on deployment. But before we do that, we need to create 2 stages in our pipeline to distinguish between what is done during build and during deployment.
+Now we have all steps (checkout, build and push) complete we can focus on deployment. But before we do that, we need to create 2 stages in our pipeline to distinguish between what is done during the build and deployment.
 
 1. Open the pipeline in edit mode, and add the following snippet to create 2 stages. A build stage, with the existing steps, and an empty deploy stage
 
@@ -123,7 +123,7 @@ Now that we have split the build and deployment we need to add the deployment st
 
 1. Navigate to your Azure DevOps Project. In the Project Settings, open the Service Connections Tab.
 2. Create a new [Azure Resource Manager] Service Connection and choose Service Principal (manual)
-3. Choose your target subscription and resource group and get the Service Principal details from Environment Details -> Service Prinicpal details tab and then Service Connection name to [Fabrikam-Azure]. Value of Service Principal Id is the same as Application Id and Service Principal Key value is same as Secret key.
+3. Choose your target subscription and resource group and get the Service Principal details from Environment Details -> Service Principal details tab and then Service Connection name to [Fabrikam-Azure]. Value of Service Principal Id is the same as Application Id and Service Principal Key value is same as Secret key.
 4. Save the Service Connection
 5. In your pipeline, add the following snippet in the DeployProd stage. This deploys all infrastructure
 
@@ -149,7 +149,7 @@ Now that we have split the build and deployment we need to add the deployment st
                   CR_PAT: $(CR_PAT)
 ```
 
-6. The deploy-infrastructure.ps1 uses an environment variable $(CR_PAT). You need to set this as secret variable in the pipeline. Press the variables button on top of the pipeline editor 
+6. The deploy-infrastructure.ps1 uses an environment variable $(CR_PAT). You need to set this as a secret variable in the pipeline. Press the variables button on top of the pipeline editor 
 ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/varButtron.png)
 
 Add a secret variable CR_PAT and set it to secret.
