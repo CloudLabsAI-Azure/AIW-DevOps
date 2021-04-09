@@ -11,12 +11,12 @@ When we commit a change to our repository, we want to make sure, the Azure DevOp
 
 1. In your GitHub Codespace, open the `docker-publish.yml` workflow file. Replace `branches: ...` with the following statement and then commit and push the file.
 
-```yaml
-on:
-  push:
-    branches-ignore:
-      - '**'
-```
+   ```yaml
+   on:
+     push:
+       branches-ignore:
+         - '**'
+   ```
 ## Configure an Azure DevOps Pipeline
 
 1. Navigate to your Azure DevOps( https://dev.azure.com ) Project that was created in the first step, and create a new Pipeline.
@@ -61,9 +61,9 @@ First, we need to create the build stage in the Azure DevOps pipeline. Instead o
 2. Remove all steps. Keep the `steps:` keyword in the file
 3. First we need to make sure we check out all sources from GitHub. Add the following snippet after `steps:` to do this.
 
-```YAML
-- checkout: self
-```
+   ```YAML
+   - checkout: self
+   ```
 
 4. In the sidebar, find the Docker compose task, and configure it. After that add it to your pipeline. Set the following fields
 
@@ -78,24 +78,24 @@ First, we need to create the build stage in the Azure DevOps pipeline. Instead o
 
 5. Repeat step 3 and add another Docker compose task. Set the Action to Push Service Images
 
-```YAML
-      - task: DockerCompose@0
-        inputs:
-          containerregistrytype: 'Container Registry'
-          dockerRegistryEndpoint: 'My GitHub Container Registry'
-          dockerComposeFile: '**/docker-compose.yml'
-          additionalDockerComposeFiles: 'build.docker-compose.yml'
-          action: 'Build services'
-          additionalImageTags: '$(Build.BuildNumber)'
-      - task: DockerCompose@0
-        inputs:
-          containerregistrytype: 'Container Registry'
-          dockerRegistryEndpoint: 'My GitHub Container Registry'
-          dockerComposeFile: '**/docker-compose.yml'
-          additionalDockerComposeFiles: 'build.docker-compose.yml'
-          action: 'Push services'
-          additionalImageTags: '$(Build.BuildNumber)
-```
+   ```YAML
+         - task: DockerCompose@0
+           inputs:
+             containerregistrytype: 'Container Registry'
+             dockerRegistryEndpoint: 'My GitHub Container Registry'
+             dockerComposeFile: '**/docker-compose.yml'
+             additionalDockerComposeFiles: 'build.docker-compose.yml'
+             action: 'Build services'
+             additionalImageTags: '$(Build.BuildNumber)'
+         - task: DockerCompose@0
+           inputs:
+             containerregistrytype: 'Container Registry'
+             dockerRegistryEndpoint: 'My GitHub Container Registry'
+             dockerComposeFile: '**/docker-compose.yml'
+             additionalDockerComposeFiles: 'build.docker-compose.yml'
+             action: 'Push services'
+             additionalImageTags: '$(Build.BuildNumber)
+   ```
 
 6. Run the build. This builds and pushes the latest version to the GitHub Container registry.
 
@@ -105,17 +105,17 @@ Now we have all steps (checkout, build and push) complete we can focus on deploy
 
 1. Open the pipeline in edit mode, and add the following snippet to create 2 stages. A build stage, with the existing steps, and an empty deploy stage
 
-```YAML
-stages:
-  - stage: build
-    jobs:
-    - job: 'BuildAndpublish'
-      displayName: 'Build and Publish'
-      steps:
-            ...
-  - stage: DeployProd
-    dependsOn: build
-```
+   ```YAML
+   stages:
+     - stage: build
+       jobs:
+       - job: 'BuildAndpublish'
+         displayName: 'Build and Publish'
+         steps:
+               ...
+     - stage: DeployProd
+       dependsOn: build
+   ```
 
 ## Adding deployment to Azure 
 
@@ -127,27 +127,27 @@ Now that we have split the build and deployment we need to add the deployment st
 4. Save the Service Connection
 5. In your pipeline, add the following snippet in the DeployProd stage. This deploys all infrastructure
 
-```YAML
-  - stage: DeployProd
-    dependsOn: build
-    jobs:
-    - deployment: infrastructure
-      environment: production
-      strategy:
-        runOnce:
-          deploy:
-            steps:
-              - checkout: self
-              - task: AzureCLI@2
-                inputs:
-                  azureSubscription: 'Fabrikam-Azure'
-                  scriptType: 'pscore'
-                  scriptLocation: 'scriptPath'
-                  scriptPath: './infrastructure/deploy-infrastructure.ps1'
-                  arguments: '<your abbreviation>'
-                env:
-                  CR_PAT: $(CR_PAT)
-```
+   ```YAML
+     - stage: DeployProd
+       dependsOn: build
+       jobs:
+       - deployment: infrastructure
+         environment: production
+         strategy:
+           runOnce:
+             deploy:
+               steps:
+                 - checkout: self
+                 - task: AzureCLI@2
+                   inputs:
+                     azureSubscription: 'Fabrikam-Azure'
+                     scriptType: 'pscore'
+                     scriptLocation: 'scriptPath'
+                     scriptPath: './infrastructure/deploy-infrastructure.ps1'
+                     arguments: '<your abbreviation>'
+                   env:
+                     CR_PAT: $(CR_PAT)
+   ```
 
 6. The deploy-infrastructure.ps1 uses an environment variable $(CR_PAT). You need to set this as a secret variable in the pipeline. Press the variables button on top of the pipeline editor 
    
