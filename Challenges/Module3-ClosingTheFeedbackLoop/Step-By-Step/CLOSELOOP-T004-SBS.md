@@ -4,7 +4,7 @@ If you rather watch a video with step by step instructions, you can do that here
 [![Step by Step Video](https://img.youtube.com/vi/4CPX2A3DR9I/0.jpg)](https://www.youtube.com/watch?v=4CPX2A3DR9I)
 
 
-In this challenge you are going to replace the `:latest` tag in the docker-compose file with the build number from the pipeline. You will also add an automated check to the pipeline to validate if images are only coming from your own GitHub repository using an automated policy. 
+In this challenge, you are going to replace the `:latest` tag in the docker-compose file with the build number from the pipeline. You will also add an automated check to the pipeline to validate if images are only coming from your own GitHub repository using an automated policy. 
 
 1. Open your Azure Pipeline in Edit mode. Under the `checkout` task in the DeployProd stage, add the following snippet
 
