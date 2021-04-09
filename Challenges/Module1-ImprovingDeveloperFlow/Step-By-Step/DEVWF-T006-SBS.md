@@ -3,7 +3,7 @@
 If you rather watch a video with step by step instructions, you can do that here
 [![Step by Step Video](https://img.youtube.com/vi/ADth4SspHxE/0.jpg)](https://www.youtube.com/watch?v=ADth4SspHxE)
 
-In this task you are going to create a new Docker Compose file that contains the MongoDB, the API and the Web Application.
+In this task, you are going to create a new Docker Compose file that contains the MongoDB, the API, and the Web Application.
 
 >This task has a Starter solution, that creates a Pull Request containing some files and instructions. 
 
@@ -15,9 +15,9 @@ In this task you are going to create a new Docker Compose file that contains the
 
 2. In your GitHub repository, navigate to the Tab Pull Requests and open the Pull Request with DEVWF-T006 in the title
 
-3. In the Pull Request, check the conversation, Commits, Checks and Files Changed Tabs, and go through the instructions and changes.
+3. In the Pull Request, check the conversation, Commits, Checks, and Files Changed Tabs, and go through the instructions and changes.
 
-4. On the Conversation Tab, press the **Merge Pull Request** Button, to merge the files in to the main branch. **Link the Pull Request** to your Azure Boards Work item for Module 1 **by typing** `AB#` followed by the workitem id for Module 1 (example: `AB#123`) in the title or description of the Pull Request Commit Message. 
+4. On the Conversation Tab, press the **Merge Pull Request** Button, to merge the files into the main branch. **Link the Pull Request** to your Azure Boards Work item for Module 1 **by typing** `AB#` followed by the workitem id for Module 1 (example: `AB#123`) in the title or description of the Pull Request Commit Message. 
 
     ![Shows the button for merging a Pull Request in GitHub](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/mergePullRequest.png)
 
@@ -27,7 +27,7 @@ Now your repository contains 3 new "Docker Compose" files.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-12-10-11.png)
 
-7. Change the ``<yourgithubaccount>`` in both the docker-compose files to your GitHub Account Username. You can find your GitHub account details from the profile tab in the GitHub or from the repository URL. 
+7. Change the ``<yourgithubaccount>`` in both the docker-compose files to your GitHub Account Username. You can find your GitHub account details from the profile tab in GitHub or from the repository URL. 
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/githubusername-compose.gif)
 
@@ -39,7 +39,7 @@ Now your repository contains 3 new "Docker Compose" files.
     docker-compose -f docker-compose.yml -f local.docker-compose.yml -f docker-compose.init.yml up
     ```
 
-9. To include the web application to the docker-compose file, add the following YAML snippet to the `docker-compose.yml`. **Please make sure to replace ``<your github account>`` with the github username**
+9. To include the web application to the docker-compose file, add the following YAML snippet to the `docker-compose.yml`. **Please make sure to replace ``<your github account>`` with the GitHub username**
 
     ```YAML
     web:
@@ -60,7 +60,7 @@ Now your repository contains 3 new "Docker Compose" files.
         image: local-fabrikam-web
     ```
 
-    > Please note that the yaml is space and indent sensitive. 
+    > Please note that the YAML is space and indent sensitive. 
     
 10. Build and run the docker-compose file again 
 
