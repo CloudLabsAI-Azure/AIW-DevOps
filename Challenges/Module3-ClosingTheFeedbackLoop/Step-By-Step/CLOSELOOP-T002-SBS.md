@@ -75,7 +75,7 @@ Before performing the next steps, you will need to enable the Improved Container
           run: |  
             docker-compose -f docker-compose.yml -f build.docker-compose.yml build
             docker-compose -f docker-compose.yml -f build.docker-compose.yml push
-      ```
+            ```
   This step uses the docker-compose.yml and build.docker-compose.yml to build the containers with the Docker files and push them to the GitHub Container Registry
 
 6. Now that the containers have been built and pushed, the Azure Web Application needs to be updated. Before you can interact with Azure, you need to have access to the Azure API with the Azure CLI. Using the Azure Login Task, we can login securely in Azure using a GitHub secret.
