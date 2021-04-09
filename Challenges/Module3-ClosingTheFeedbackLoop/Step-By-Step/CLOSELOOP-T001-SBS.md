@@ -30,36 +30,36 @@ To enable Application Insights we need an Application Insights resource in our r
 
 3. Run the PowerShell script by executing the command below. Note down the AI Instrumentation Key onto a notepad. An Application Insights Resource will be created in your Azure Resource Group
 
-    ```
-    pushd
-    ./deploy-infrastructure.ps1
-    ```
+       ```
+       pushd
+       ./deploy-infrastructure.ps1
+       ```
 
 ## Add Application Insights SDK to your web application
 
 1. First we need to install support for Application Insights in the web application. In your Codespace terminal navigate to the content-web directory and install the application insights SDK.
 
-   ```bash
-   npm install applicationinsights --save
-   ```
+      ```bash
+      npm install applicationinsights --save
+      ```
 
 2. To let the application know where to send the instrumentation data, open the `app.js` file in the content-web folder and add the following lines immediately after `express` is instantiated, substitute `AI Instrumentation Key` with the instrumentation key from the output of the `setup-appinsights.ps1` script.
 
-   ```javascript
-   const appInsights = require("applicationinsights");
-   appInsights.setup("AI Instrumentation Key");
-   appInsights.start();
-   ```
+      ```javascript
+      const appInsights = require("applicationinsights");
+      appInsights.setup("AI Instrumentation Key");
+      appInsights.start();
+      ```
 
    ![A screenshot of the code editor showing updates in context of the app.js file](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/hol-2019-10-02_12-33-29.png)
 
 3. Save changes and push these changes to your repository so that GitHub Actions CI will build a new image.
 
-   ```bash
-   git add .
-   git commit -m "Added Application Insights"
-   git push
-   ```
+      ```bash
+      git add .
+      git commit -m "Added Application Insights"
+      git push
+      ```
 
 ## Deploy the new version of the container to the cluster
 
