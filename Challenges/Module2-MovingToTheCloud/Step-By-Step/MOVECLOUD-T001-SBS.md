@@ -1,9 +1,9 @@
 # Step by Step MOVECLOUD-T001
 
 If you rather watch a video with step by step instructions, you can do that here
-[![Step by Step Video](https://img.youtube.com/vi/Q2H9LFzWetQ/0.jpg)](https://www.youtube.com/watch?v=Q2H9LFzWetQ)
+   [![Step by Step Video](https://img.youtube.com/vi/Q2H9LFzWetQ/0.jpg)](https://www.youtube.com/watch?v=Q2H9LFzWetQ)
 
-In this task you are going to create cloud infrastructure, so that your application can run on a cluster in the cloud. For this task we are going to create:
+In this task, you are going to create cloud infrastructure, so that your application can run on a cluster in the cloud. For this task we are going to create:
 
 * An **Azure Resource Group** that will serve as the container that contains the resources
 * A CosmosDB with Mongo API that can serve as your database
@@ -20,13 +20,13 @@ We can create all these resources manually, but since we want to do this "the De
 
 2. Before you run any of the snippets in the terminal, make sure you login to your Azure account with 
 
-   ```bash 
-   az login
-   ```
+      ```bash 
+      az login
+      ```
 
-   ```
-   az account set --subscription <your subscription guid>
-   ```
+      ```
+      az account set --subscription <your subscription guid>
+      ```
 
    > You can find the subscription Id under the.Environment Details -> Service Principal Details tab. 
 
@@ -42,18 +42,18 @@ We can create all these resources manually, but since we want to do this "the De
 
 5. To make automation of all resources a bit easier, add these variables in the `deploy-infrastructure.ps1`file
 
-   ```Powershell
-   $studentprefix = "uniqueID"
-   $resourcegroupName = "fabmedical-rg-" + $studentprefix
-   $cosmosDBName = "fabmedical-cdb-" + $studentprefix
-   $webappName = "fabmedical-web-" + $studentprefix
-   $planName = "fabmedical-plan-" + $studentprefix
-   $location1 = "westeurope"
-   $location2 = "northeurope"
-   ```
->Get the UniqueID value from the **Environment details-> Azure Credentials** tab
+      ```Powershell
+      $studentprefix = "uniqueID"
+      $resourcegroupName = "fabmedical-rg-" + $studentprefix
+      $cosmosDBName = "fabmedical-cdb-" + $studentprefix
+      $webappName = "fabmedical-web-" + $studentprefix
+      $planName = "fabmedical-plan-" + $studentprefix
+      $location1 = "westeurope"
+      $location2 = "northeurope"
+      ```
+  >Get the UniqueID value from the **Environment details-> Azure Credentials** tab
 
-`` Note: A resource group with name **fabmedical-rg-uniqueID** will be pre-created for you.``
+   `` Note: A resource group with name **fabmedical-rg-uniqueID** will be pre-created for you.``
 
 ### Create a CosmosDB
 
@@ -61,17 +61,17 @@ Azure CosmosDB is a geo-replicated database service running in Azure. This can a
 
 1. In your `deploy-infrastructure.ps1` file add the following command
 
-   ```powershell
-   #Then create a CosmosDB
-   az cosmosdb create --name $cosmosDBName `
-   --resource-group $resourcegroupName `
-   --locations regionName=$location1 failoverPriority=0 isZoneRedundant=False `
-   --locations regionName=$location2 failoverPriority=1 isZoneRedundant=True `
-   --enable-multiple-write-locations `
-   --kind MongoDB 
-   ```
+      ```powershell
+      #Then create a CosmosDB
+      az cosmosdb create --name $cosmosDBName `
+      --resource-group $resourcegroupName `
+      --locations regionName=$location1 failoverPriority=0 isZoneRedundant=False `
+      --locations regionName=$location2 failoverPriority=1 isZoneRedundant=True `
+      --enable-multiple-write-locations `
+      --kind MongoDB 
+      ```
 
-   > This creates a CosmosDB with 2 failover location with a MongoDB API. 
+   > This creates a CosmosDB with 2 failover locations with a MongoDB API. 
 
 2. Save the PowerShell file and run it from the terminal:
 
@@ -84,19 +84,19 @@ Azure CosmosDB is a geo-replicated database service running in Azure. This can a
 
 In this section, you create and configure an App Service Plan and an Azure Web App that hosts a NGINX container with the Azure CLI command line tool.
 
-1. In your `deploy-infrastructure.ps1` file add the following command to create an App Service Plan. The App service plan is basically the pricing tier. Based on the size and features of the chosen plan you pay a certain price. To run containers in an Azure WebApp the plan needs to be a Linux based plan
+1. In your `deploy-infrastructure.ps1` file add the following command to create an App Service Plan. The App service plan is the pricing tier. Based on the size and features of the chosen plan you pay a certain price. To run containers in an Azure WebApp the plan needs to be a Linux based plan
 
-   ```powershell
-   #Create a Azure App Service Plan
-   az appservice plan create --name $planName --resource-group $resourcegroupName --sku S1 --is-linux
-   ```
+      ```powershell
+      #Create a Azure App Service Plan
+      az appservice plan create --name $planName --resource-group $resourcegroupName --sku S1 --is-linux
+      ```
 
 2. In your `deploy-infrastructure.ps1` file add the following command to create an Web App. The Web App can be an application running as files a container, or a multi-container application. To create the Web App initially, create it with a single, NGINX container.
 
-   ```
-   #Create a Azure Web App with NGINX container
-   az webapp create --resource-group $resourcegroupName --plan $planName --name $webappName -i nginx
-   ```
+      ```
+      #Create a Azure Web App with NGINX container
+      az webapp create --resource-group $resourcegroupName --plan $planName --name $webappName -i nginx
+      ```
 
 3. Save the PowerShell file and run it from the terminal:
 
@@ -105,31 +105,31 @@ In this section, you create and configure an App Service Plan and an Azure Web A
       ./deploy-infrastructure.ps1
       ```
 
-## Create the infrastructure from script
+## Create the infrastructure from the script
 
 You have already run the separate steps from the steps a number of times. The fact you can do this over and over again, is called idempotency. If you have not run all the lines in the `deploy-infrastructure.ps1` file, run it now.
 
-> Note: If you have run the previous steps, you can skip to Browse to the Azure Portal sectin
+   > Note: If you have run the previous steps, you can skip to Browse to the Azure Portal section
 
 1. In your terminal window of the Codespace, open a PowerShell terminal by typing `pwsh` and run the `az login` command to login to your azure subscription
 
-   ```powershell
-   az login
-   az account set --subscription <your subscription guid>
-   ```
+      ```powershell
+      az login
+      az account set --subscription <your subscription guid>
+      ```
 
 2. After logging in, run the `deploy-infrastructure.ps1` file.
 
-   ```powershell
-      pushd infrastructure
-      ./deploy-infrastructure.ps1
-   ```
+      ```powershell
+         pushd infrastructure
+         ./deploy-infrastructure.ps1
+      ```
 
 ## Browse to the Azure Portal
 
-1. Open the Azure Portal, and validate if the CosmosDB, the App Service Plan and Azure Web App have been created. 
+1. Open the Azure Portal, and validate if the CosmosDB, the App Service Plan, and Azure Web App have been created. 
 
-![Resources created in Azure](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-15-10-32-42.png)
+   ![Resources created in Azure](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-15-10-32-42.png)
 
 
-Now, you can move on the next page.
+Now, you can move to the next page.

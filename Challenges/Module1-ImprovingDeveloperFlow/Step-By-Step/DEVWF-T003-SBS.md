@@ -3,7 +3,7 @@
 If you rather watch a video with step by step instructions, you can do that here
 [![Step by Step Video](https://img.youtube.com/vi/dHYOyyfUhNQ/0.jpg)](https://www.youtube.com/watch?v=dHYOyyfUhNQ)
 
-In this task, you will create 3 Dockerfiles that will be used to build and run the WEB, API and INIT application as a containerized application.
+In this task, you will create 3 Dockerfiles that will be used to build and run the WEB, API, and INIT application as a containerized application.
 
 1. From your GitHub repository open your Codespace if it is not already
 
@@ -15,9 +15,9 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/create-dockerfile.gif)
     
-   We can also create Docker file by using command ```vi Dockerfile``` after this **i** to insert the content then **Esc** and then **:wq**
+   We can also create a Docker file by using the command ```vi Dockerfile``` after this **i** to insert the content then **Esc** and then **:wq**
 
-4. Open the Gist (containing the example definition of the API Dockerfile), from the location given below and paste the contents in to your newly created Dockerfile.
+4. Open the Gist (containing the example definition of the API Dockerfile), from the location given below and paste the contents into your newly created Dockerfile.
 
     ```
     https://gist.github.com/renevanosnabrugge/b2390f11c45671f6d0a9c6c9bb2c01ca
@@ -32,7 +32,7 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
     ```bash
     pushd
     ```
-``` Note : Every time you use the pushd command, a single directory is stored for your use. However, you can store multiple directories by using the pushd command multiple times. The directories are stored sequentially in a virtual stack, so if you use the pushd command once, the directory in which you use the command is placed at the bottom of the stack. If you use the command again, the second directory is placed on top of the first one. The process repeats every time you use the pushd command.```
+```Note : Every time you use the pushd command, a single directory is stored for your use. However, you can store multiple directories by using the pushd command multiple times. The directories are stored sequentially in a virtual stack, so if you use the pushd command once, the directory in which you use the command is placed at the bottom of the stack. If you use the command again, the second directory is placed on top of the first one. The process repeats every time you use the pushd command.```
 
 6. From the content-api folder containing the API application files and the new Dockerfile you created, type the following command to create a Docker image for the API application. This command does the following:
 
@@ -72,7 +72,7 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
 
 Now that you have created 3 Docker images for your application, it is time to run the application.
 
-11. Make sure you remove all running images to avoid conflict with ports in use. When you run `docker ps -a` you see all containers that are running or are stopped. Remove all containers, except the `cloudenvimage`. The `cloudenvimage` contains you GitHub Codespace. 
+11. Make sure you remove all running images to avoid conflict with ports in use. When you run `docker ps -a` you see all containers that are running or are stopped. Remove all containers, except the `cloudenvimage`. The `cloudenvimage` contains your GitHub Codespace. 
 
     ```
     docker ps -a
@@ -106,11 +106,11 @@ Now that you have created 3 Docker images for your application, it is time to ru
     docker run -d --name web -p 3000:80 --net fabrikam fabrikam-web
     ```
 
-Note : If you face error as Port 3000 or Port 3001 is already in use. please follow the steps below:
+Note : If you face an error as Port 3000 or Port 3001 is already in use. please follow the steps below:
 
 * Run command **lsof -i : portnumber** , replace portnumber with the port in which you are facing issue
 
-* After running the command you will get process id 
+* After running the command you will get the process id 
  
 * run the command **kill -9 processid**
 
