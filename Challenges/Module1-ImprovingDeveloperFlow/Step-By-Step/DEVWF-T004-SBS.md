@@ -37,13 +37,8 @@ Now your repository contains 3 new "multi-staged" docker file.
       - Tags the resulting image with the name content-api (-t)
       - The final dot (".") indicates to use the Dockerfile in this current directory context. By default, this file is expected to have the name "Dockerfile" (case sensitive).
 
-      
-
       ```
       cd /workspaces/CodeToCloud-Source/content-api
-      ```
-      
-      ```
       docker build -t fabrikam-api .
       ```
 
