@@ -16,7 +16,7 @@ The workshop builds upon an existing codebase. Before you start the workshop, th
    
 2. If prompted with the **Device Verification** dialog box, open Microsoft edge Browser in **incognito mode** ( you can open incognito mode by clicking on the three dots "..." icon  at the top right of the browser within the virtual machine and then select New InPrivate window)
 
-3. Now, sign in to Outlook by navigating to https://outlook.com using the **Outlook/GitHub Credential** provided under the **Environment details** tab 
+3. Now, sign in to Outlook by navigating to ```https://outlook.com``` using the **Outlook/GitHub Credential** provided under the **Environment details** tab 
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/code.png)
 
@@ -67,26 +67,26 @@ To set this up, you need to perform these steps
 
 2. Create a Personal Access Token as described below:
 
-- In the upper-right corner of any page, click your profile photo, then click **Settings** and in the left sidebar click **Developer settings**.
+   - In the upper-right corner of any page, click your profile photo, then click **Settings** and in the left sidebar click **Developer settings**.
 
-  ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Settings_pat.png)
+     ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Settings_pat.png)
 
-- Then in the left sidebar, click **Personal access tokens** and select Generate new token button on the right. Provide the GitHub password if prompted. 
+   - Then in the left sidebar, click **Personal access tokens** and select Generate new token button on the right. Provide the GitHub password if prompted. 
 
 3. Select the scopes or permissions you would like to grant this token
 
     - Note: Provide the following text in the note field, UniquedId-token. Rreplace UniqueID with the value given in Environment Details -> Azure Credentials tab.
     - Select worklow, write:packages, delete:packages, read:org
   
-  ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/PAT.png)
+      ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/PAT.png)
 
-- Click **Generate token**.
+    - Click **Generate token**.
 
-  ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/gentoken.png)
+      ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/gentoken.png)
 
 4. Click on the Copy icon to copy the token to your clipboard and save it on your notepad. For security reasons, after you navigate off the page, you will not be able to see the token again. **DO NOT COMMIT THIS TO YOUR REPO!**
 
-  ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/copytoken.png)
+   ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/copytoken.png)
 
 #### Create Azure DevOps Personal Access Token
 
@@ -124,31 +124,41 @@ To set this up, you need to perform these steps
 ### Setup your settings file and PowerShell Profile
 
 1. Now, Open your GitHub Codespace 
+
 2. In the terminal type `pwsh`
+
 3. Then run `.workshop/setup.ps1` which will ask for:
-    1. The location of your repository - Provide a value in the following format: https://github.com/github-cloudlabsuser-000/CodeToCloud-Source. Make sure to replace 000 with the number of your github repo
-    2. Your GitHub Personal Access Token with the following scopes (see instructions below):
+
+    -  **Github reporitory url**: The location of your repository - Provide a value in the following format: ```https://github.com/github-cloudlabsuser-000/CodeToCloud-Source```. Make sure to replace 000 with the number of your github repo.
+    
+    -  **Github Token**: Enter your GitHub Personal Access Token with the following scopes (see instructions below):
        * repo
        * read:packages
        * write:packages
        * read:org
        * workflow
-    3. The name of your Azure DevOps organization - Provide **odluserUniqueID**, by replacing UniqueId with the value from the **Environment details-> Azure Credentials** tab
-    4. Your Azure DevOps Personal Access Token with the following scopes:
+      
+     - **Azure DevOps Organization**: The name of your Azure DevOps organization - Provide **odluserUniqueID**, by replacing UniqueId with the value from the **Environment details-> Azure Credentials** tab
+     
+    - **Azure DevOps Token**: Enter your Azure DevOps Personal Access Token with the following scopes:
        * Work Items: Read & Write
        * Build: Read & Execute
        * Project & Team: Read, Write & Manage
-    5. The name of the Project in Azure DevOps. The project will be automatically created if it doesn't exist yet. If the students must use pre-created projects, make sure they are using the Basic Process for Azure Boards - Provide the name that you provided at the time of creation. As per the instructions, it will be in this format: CodeToCloudWorkshop-UniqueId
-    6. Your unique suffix (short, only lower case letters). This will be used to create the name of the resource group and resources in Azure. - Provide the UniqueID. Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
-    7. Whether to create/recreate work items in Azure Boards to which the commits and pull-requests will be linked - Provide Yes
+       
+    - **Azure DevOps Project Name**: The name of the Project in Azure DevOps. The project will be automatically created if it doesn't exist yet. If the students must use pre-created projects, make sure they are using the Basic Process for Azure Boards - Provide the name that you provided at the time of creation. As per the instructions, it will be in this format: CodeToCloudWorkshop-UniqueId
+    
+    - **Student (personx)**: Your unique suffix (short, only lower case letters). This will be used to create the name of the resource group and resources in Azure. - Provide the UniqueID. Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
+    
+    - **(Re)create workitems?**: Whether to create/recreate work items in Azure Boards to which the commits and pull-requests will be linked - Provide Yes
 
 4. A local `settings.json` file has been created in the `.workshop` folder and is automatically ignored by git. **DO NOT COMMIT THIS TO YOUR REPO!**
+
 5. This file is automatically loaded by the containers PowerShell Profile and pre-populates several global variables.
 
 
 ## Variables
 
-The following instructions are for addtional informational purpose. There is nothing to be performed as part of the lab.
+**Note**: The following instructions are for addtional informational purpose. There is nothing to be performed as part of the lab.
 
 In some scripts, we use variables like `$resourceGroupName` and `$webappName`. Based on the settings.json file, that is stored in your `.workshop` folder, we generated a PowerShell Profile for you. The values stored in `settings.json` are automatically loaded into your PowerShell console.
 
