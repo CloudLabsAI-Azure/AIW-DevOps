@@ -98,7 +98,7 @@ To set this up, you need to perform these steps
 
    ![create project](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-project.png)
    
->Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
+>Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-<inject key="UniqueID" />
 
 3. Go to **User settings** and then select Personal Access Tokens
    
