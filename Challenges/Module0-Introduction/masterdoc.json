@@ -1,0 +1,133 @@
+[
+  {
+    "Name": "AIW-DevOps",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module0-Introduction/Introduction.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Prerequisites/Readme.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/ImprovingDeveloperWorkflow.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Tasks/DEVWF-T001.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Step-By-Step/DEVWF-T001-SBS.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Tasks/DEVWF-T002.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Step-By-Step/DEVWF-T002-SBS.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Tasks/DEVWF-T003.md",
+        "Order": 8
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Step-By-Step/DEVWF-T003-SBS.md",
+        "Order": 9
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Tasks/DEVWF-T004.md",
+        "Order": 10
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Step-By-Step/DEVWF-T004-SBS.md",
+        "Order": 11
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Tasks/DEVWF-T005.md",
+        "Order": 12
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Step-By-Step/DEVWF-T005-SBS.md",
+        "Order": 13
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Tasks/DEVWF-T006.md",
+        "Order": 14
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Step-By-Step/DEVWF-T006-SBS.md",
+        "Order": 15
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Tasks/DEVWF-T007.md",
+        "Order": 16
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module1-ImprovingDeveloperFlow/Step-By-Step/DEVWF-T007-SBS.md",
+        "Order": 17
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module2-MovingToTheCloud/MovingToTheCloud.md",
+        "Order": 18
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module2-MovingToTheCloud/Tasks/MOVECLOUD-T001.md",
+        "Order": 19
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module2-MovingToTheCloud/Step-By-Step/MOVECLOUD-T001-SBS.md",
+        "Order": 20
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module2-MovingToTheCloud/Tasks/MOVECLOUD-T002.md",
+        "Order": 21
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module2-MovingToTheCloud/Step-By-Step/MOVECLOUD-T002-SBS.md",
+        "Order": 22
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module3-ClosingTheFeedbackLoop/ClosingTheFeedbackloop.md",
+        "Order": 23
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module3-ClosingTheFeedbackLoop/Tasks/CLOSELOOP-T001.md",
+        "Order": 24
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module3-ClosingTheFeedbackLoop/Step-By-Step/CLOSELOOP-T001-SBS.md",
+        "Order": 25
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module3-ClosingTheFeedbackLoop/Tasks/CLOSELOOP-T002.md",
+        "Order": 26
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module3-ClosingTheFeedbackLoop/Step-By-Step/CLOSELOOP-T002-SBS.md",
+        "Order": 27
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module3-ClosingTheFeedbackLoop/Tasks/CLOSELOOP-T003.md",
+        "Order": 28
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module3-ClosingTheFeedbackLoop/Step-By-Step/CLOSELOOP-T003-SBS.md",
+        "Order": 29
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module3-ClosingTheFeedbackLoop/Tasks/CLOSELOOP-T004.md",
+        "Order": 30
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/dev/Challenges/Module3-ClosingTheFeedbackLoop/Step-By-Step/CLOSELOOP-T004-SBS.md",
+        "Order": 31
+      }
+
+    ]
+  }
+]
