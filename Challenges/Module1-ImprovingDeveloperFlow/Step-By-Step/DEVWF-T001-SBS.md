@@ -18,9 +18,11 @@ There are 2 possible scenarios for this Step by Step
     https://github.com/marketplace/azure-boards
     ```
 
-2. On the bottom of the page, select Install it for free.
+2. On the bottom of the page, select Install it for free. 
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/newABIntegration.png)
+   
+   **Note**:  If you see the message **You’ve already purchased this on all of your GitHub accounts**  this indicates Azure Boards integration is already used in your account.  You can skip this task and continue with the next task.
 
 3. In the next page, Click "Complete order and begin installation"
 
@@ -40,11 +42,11 @@ There are 2 possible scenarios for this Step by Step
 
 When you already used the Azure Boards integration, you need to manually link the GitHub repository and the Azure DevOps Project.
 
-1. Navigate back to your GitHub Repository, then go to your profile and choose [Settings]. In the Settings page, navigate to the [Applications] tab on the left and choose the [Configure] Button for the Azure Boards application.
+1. Navigate back to your GitHub Repository, then go to your profile and select **Settings**. In the Settings page, navigate to the **Applications** tab on the left and choose the **Configure** Button for the Azure Boards application.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-11-42-34.png)
 
-2. In the [Repository Access] section, choose your repository and hit Save. If it's already saved, you can skip to Test Integration Section.
+2. In the **Repository Access** section, choose your repository and hit Save. If it's already saved, you can skip to Test Integration Section.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-11-43-21.png)
 
@@ -55,7 +57,8 @@ When you already used the Azure Boards integration, you need to manually link th
 4. When the integration succeeded, you will be taken to the Azure Board. 4 Work items are present and you see a "Success" message
 
 ## Test Integration
-1. In the Azure Board, create an Issue called [Test]. Remember the Work Item ID that was assigned when you save the work item.
+
+1. In the Azure Board, create an Issue called **Test**. Remember the Work Item ID that was assigned when you save the work item.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-11-28-12.png)
 
