@@ -24,11 +24,11 @@ There are 2 possible scenarios for this Step by Step
    
    **Note**:  If you see the message **You’ve already purchased this on all of your GitHub accounts**  this indicates Azure Boards integration is already used in your account.  You can skip this task and continue with the next task.
 
-3. In the next page, Click "Complete order and begin installation"
+3. In the next page, Click **Complete order and begin installation**.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/CompleteOrder.png)
 
-4. Select the [CodeToCloud-Source] repository and click Install & Authorize.
+4. Select the **CodeToCloud-Source** repository and click Install & Authorize.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/ABSelectrepo.png)
 
