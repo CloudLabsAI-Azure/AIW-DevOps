@@ -16,19 +16,19 @@ The workshop builds upon an existing codebase. Before you start the workshop, th
    
 2. If prompted with the **Device Verification** dialog box, open Microsoft edge Browser in **incognito mode** ( you can open incognito mode by clicking on the three dots "..." icon  at the top right of the browser within the virtual machine and then select New InPrivate window)
 
-3. Now, sign in to Outlook by navigating to ```https://outlook.com``` using the **Outlook/GitHub Credential** provided under the **Environment details** tab 
+3. Now, sign in to Outlook by navigating to ```https://outlook.com``` using the **Outlook/GitHub Credential** provided under the **Environment details** tab.
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/code.png)
 
-4. From the Outlook Inbox, you can find the verfication code and then click on **Verify** in the **Device Verification** dialog box that is opened in the different browser window. After providing the code you will be successfully logged in to Github.
+4. From the Outlook Inbox, you can find the **6-digit** verification code, enter the code and then click on **Verify** in the **Device Verification** dialog box that is opened in the different browser window. After providing the code you will be successfully logged in to Github.
 
 5. After Login, open a new tab in the browser window where you are already logged in to GitHub and navigate to ``https://github.com/xpiritbv/CodeToCloud-Source``
 
-6. Then, click on Fork at the top right, select your account with the name **github-cloudlabsuser-000**
+6. Then, click on Fork at the top right, select your account with the name **github-cloudlabsuser-000**.
+   
+   **Note**: The 000 value will be unique for you.
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/forked-repo.png)
-
-The 000 value will be unique for you.
        
 
 ## GitHub Codespace
@@ -37,7 +37,7 @@ The workshop is built with and targeted at development with GitHub Codespace, a 
 
 1. Navigate to your forked repository on GitHub. The name of the forked repository will be in the following format - **github-cloudlabuser-000/CodeToCloud-Source**
 
-2. Now, click on the **Code** dropdown, then click on **Open with Codespaces** and then on **+New Codespace**  to create a Code Space in your forked repo.
+2. Now, click on the **Code (1)** dropdown, then click on **Open with Codespaces (2)** and then on **+New Codespace (3)**  to create a Code Space in your forked repo.
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/CodeSpaces.png)
 
@@ -45,7 +45,7 @@ The workshop is built with and targeted at development with GitHub Codespace, a 
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/codespace-build.png)
 
-4. Once your GitHub Codespace is created, you should be able to see the files and a welcome message under the Terminal.
+4. Once your GitHub Codespace is created, you should be able to see the files.
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Codespace-files.png)
 
@@ -67,16 +67,19 @@ To set this up, you need to perform these steps
 
 2. Create a Personal Access Token as described below:
 
-   - In the upper-right corner of any page, click your profile photo, then click **Settings** and in the left sidebar click **Developer settings**.
+   - In the upper-right corner of your GitHub page, click your profile photo, then click **Settings (1)** and in the left sidebar click **Developer settings (2)**.
 
      ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Settings_pat.png)
 
    - Then in the left sidebar, click **Personal access tokens** and select Generate new token button on the right. Provide the GitHub password if prompted. 
+   
+     ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/Settings_pat1.png)
 
 3. Select the scopes or permissions you would like to grant this token
 
-    - Note: Provide the following text in the note field, UniquedId-token. Rreplace UniqueID with the value given in Environment Details -> Azure Credentials tab.
-    - Select worklow, write:packages, delete:packages, read:org
+    - **Note**: Provide the following text in the note field, **<inject key="DeploymentID" />-token**. Replace UniqueID with the value given in Environment Details -> Azure Credentials tab.
+    
+    - **Select scopes**: Select worklow, write:packages, delete:packages, read:org
   
       ![Permissions GH](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/PAT.png)
 
@@ -90,36 +93,41 @@ To set this up, you need to perform these steps
 
 #### Create Azure DevOps Personal Access Token
 
-1. log in to `https://dev.azure.com/` using the Azure credentials provided in Environment details.
+1. Log in to `https://dev.azure.com/` using the Azure credentials provided in the Environment details tab. 
 
    ![Azure creds](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azure-creds.png)
    
-3. Create project named **CodeToCloudWorkshop-UniqueID** 
+2. If you see the pop-up **Get Started with Azure Devops**, Check the Privacy Statement box and click **continue**.
+
+3. Create project named **CodeToCloudWorkshop-<inject key="UniqueID" />** 
 
    ![create project](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-project.png)
-   
->Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-<inject key="UniqueID" />
 
-3. Go to **User settings** and then select Personal Access Tokens
+4. Go to **User settings** and then select **Personal Access Tokens**.
    
    ![select pat](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-pat.png)
    
-4. Click on **+ New Token**   
+5. Click on **+ New Token**   
    
    ![new token](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-newtoken.png)
    
-5. Create token named **UniqueID-Token** and provide the following permissions
-   * Work Items: Read & Write
-   * Build: Read & Execute
-   * Project & Team: Read, Write & Manage  ( To view Project & Team, click on **Show all scopes** just above Create button )
+6. In the Create a new personal access token page enter the following details:
+   
+   - **Name**: Enter **<inject key="UniqueID" />-Token** 
+
+   - **Work Items**: Select Read & Write
+   
+   - **Build**:  Select Read & Execute
+  
+   - **Project & Team**: Select Read, Write & Manage  ( To view Project & Team, click on **Show all scopes** just above Create button )
 
    ![create token](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-createtoken.png)
    
-6. Copy the value of the generated token and save it in the notepad where you have stored the GitHub Personal Access Token.
+7. Copy the value of the generated token and save it in the notepad where you have stored the GitHub Personal Access Token.
 
    ![copy token](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-copypat.png)
    
-7. Keep this Personal Access token safe for later use. **DO NOT COMMIT THIS TO YOUR REPO!**
+8. Keep this Personal Access token safe for later use. **DO NOT COMMIT THIS TO YOUR REPO!**
 
 ### Setup your settings file and PowerShell Profile
 
@@ -138,18 +146,18 @@ To set this up, you need to perform these steps
        * read:org
        * workflow
       
-     - **Azure DevOps Organization**: The name of your Azure DevOps organization - Provide **odluserUniqueID**, by replacing UniqueId with the value from the **Environment details-> Azure Credentials** tab
+     - **Azure DevOps Organization**: The name of your Azure DevOps organization - Provide **odluser<inject key="UniqueID" />**.
      
     - **Azure DevOps Token**: Enter your Azure DevOps Personal Access Token with the following scopes:
        * Work Items: Read & Write
        * Build: Read & Execute
        * Project & Team: Read, Write & Manage
        
-    - **Azure DevOps Project Name**: The name of the Project in Azure DevOps. The project will be automatically created if it doesn't exist yet. If the students must use pre-created projects, make sure they are using the Basic Process for Azure Boards - Provide the name that you provided at the time of creation. As per the instructions, it will be in this format: CodeToCloudWorkshop-UniqueId
+    - **Azure DevOps Project Name**: The name of the Project in Azure DevOps. The project will be automatically created if it doesn't exist yet. If the students must use pre-created projects, make sure they are using the Basic Process for Azure Boards - Provide the name that you provided at the time of creation. As per the instructions, it will be in this format: **CodeToCloudWorkshop-<inject key="UniqueID" />**.
     
-    - **Student (personx)**: Your unique suffix (short, only lower case letters). This will be used to create the name of the resource group and resources in Azure. - Provide the UniqueID. Get the UniqueID value from the **Environment details-> Azure Credentials** tab, Suppose the UniqueID is 296566 the name of the forked repository should be CodeToCloud-Source-296566
+    - **Student (personx)**: Your unique suffix (short, only lower case letters). This will be used to create the name of the resource group and resources in Azure. - Provide the **<inject key="UniqueID" />**.
     
-    - **(Re)create workitems?**: Whether to create/recreate work items in Azure Boards to which the commits and pull-requests will be linked - Provide Yes
+    - **(Re)create workitems?**: Whether to create/recreate work items in Azure Boards to which the commits and pull-requests will be linked - Provide **Yes**
 
 4. A local `settings.json` file has been created in the `.workshop` folder and is automatically ignored by git. **DO NOT COMMIT THIS TO YOUR REPO!**
 
