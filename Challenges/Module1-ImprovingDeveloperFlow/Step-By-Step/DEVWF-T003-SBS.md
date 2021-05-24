@@ -56,7 +56,7 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
     https://gist.github.com/renevanosnabrugge/251e01fa380c10c8282ffc7f11ff0526
     ```
 
-     > Note: Ensure to change the directory to **content-web** in step 3 and Step 5.
+     > Note: Ensure to change the directory to **content-web** in step 3,step 5 and step 6.
     
 9. Repeat steps 3-7 but store the Dockerfile in the folder **content-init**, call the Docker image **fabrikam-init** and use the below Gist to get the contents of the Dockerfile
 
@@ -64,13 +64,13 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
     https://gist.github.com/renevanosnabrugge/5178c88a09e8c6cdd66a2eb0dc6dcba2
     ```
 
-     > Note: Ensure to change the directory to **content-init** in step 3 and Step 5.
+     > Note: Ensure to change the directory to **content-init** in step 3, step 5 and step 6.
 
 10. Now that the images have been successfully built, you should be able to see them in your terminal window, when executing the `docker images` command.
 
     ![In this screenshot of the terminal window, docker images has been typed and it shows the 3 containers that were built.](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/DockerImages-Fabrikam.png)
 
-Now that you have created 3 Docker images for your application, it is time to run the application.
+    Now that you have created 3 Docker images for your application, it is time to run the application.
 
 11. Make sure you remove all running images to avoid conflict with ports in use. When you run `docker ps -a` you see all containers that are running or are stopped. Remove all containers, except the `cloudenvimage`. The `cloudenvimage` contains you GitHub Codespace. 
 
@@ -106,13 +106,13 @@ Now that you have created 3 Docker images for your application, it is time to ru
     docker run -d --name web -p 3000:80 --net fabrikam fabrikam-web
     ```
 
-Note : If you face error as Port 3000 or Port 3001 is already in use. please follow the steps below:
+   **Note** : If you face error as Port 3000 or Port 3001 is already in use. please follow the steps below:
 
-* Run command **lsof -i : portnumber** , replace portnumber with the port in which you are facing issue
+   - Run command **lsof -i:portnumber** , replace portnumber with the port in which you are facing the issue
 
-* After running the command you will get process id 
+   - After running the command you will get process id 
  
-* run the command **kill -9 processid**
+   - Run the command **kill -9 processid**
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/port-issue.gif)
 
