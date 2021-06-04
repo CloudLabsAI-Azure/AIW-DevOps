@@ -35,7 +35,7 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
 
 7. Rename the file to `fabrikam-web.yml`
 8. Delete the content present in your yaml file
-9. Go to this link ```https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/fabrikam-web.yml``` to get the fabrikam-web.yml file updated content . Image name in yaml file should be fabrikam-web.
+9. Go to this link ```https://github.com/CloudlabsAI-Git/code-to-cloud/blob/main/fabrikam-web``` to get the fabrikam-web.yml file updated content . Image name in yaml file should be fabrikam-web.
 
     ```YAML
     env:
@@ -61,7 +61,7 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
 
     ![Screen that shows that the GitHub action build succeeded](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/buildsucceed.png)
 
-13. Next, setup the `content-api` workflow and the `content-init` workflow the same way you setup for fabrikam-web.yml , copy the content from ```https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/fabrikam-web.yml``` and replace the container name and working directory
+13. Next, setup the `content-api` workflow and the `content-init` workflow the same way you setup for fabrikam-web.yml , copy the content from ```https://github.com/CloudlabsAI-Git/code-to-cloud/blob/main/fabrikam-web``` and replace the container name and working directory
 
 14. Navigate to the packages in your GitHub account and see if the container images are present.
     ![Overview of all packages of a GitHub account](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/packages.png)
