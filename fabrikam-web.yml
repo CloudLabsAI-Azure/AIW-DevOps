@@ -1,0 +1,64 @@
+name: fabrikam-web
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+on:
+  push:
+    branches: 
+      - main
+    # Publish `v1.2.3` tags as releases.
+    tags:
+      - v*
+      
+  pull_request:
+     
+env:
+  # TODO: Creates container named ACCOUNT/REPO
+  #       Append /IMAGE-NAME to create a container named ACCOUNT/REPO/IMAGE-NAME
+  IMAGE_NAME: fabrikam-web
+
+jobs:
+ 
+  # Push image to GitHub Packages.
+  # See also https://docs.docker.com/docker-hub/builds/
+  push:
+    # Ensure test job passes before pushing image.
+
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+
+    
+
+    steps:
+      
+      - uses: actions/checkout@v2
+      
+      - name: Build image
+        working-directory: ./content-web
+        run: docker build . --file Dockerfile --tag $IMAGE_NAME
+
+      - name: Log into Github Container Registry
+        run: echo "${{ secrets.CR_PAT }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin 
+
+      - name: Push image into container registry
+        working-directory: ./content-web
+        run: |
+          IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
+          
+          IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
+          
+          VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
+        
+          [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
+        
+          [ "$VERSION" == "main" ] && VERSION=latest
+        
+          echo IMAGE_ID=$IMAGE_ID
+          echo VERSION=$VERSION
+          
+          docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
+          docker push $IMAGE_ID:$VERSION
+        
