@@ -35,8 +35,7 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
 
 7. Rename the file to `fabrikam-web.yml`
 8. Delete the content present in your yaml file
-9. Go to this link ```https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/fabrikam-web.yml``` to get the fabrikam-web.yml file updated content
-11.Image name in yaml file should be fabrikam-web. This is the name of the container image that will be pushed to the GitHub Container Registry
+9. Go to this link ```https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/fabrikam-web.yml``` to get the fabrikam-web.yml file updated content . Image name in yaml file should be fabrikam-web.
 
     ```YAML
     env:
