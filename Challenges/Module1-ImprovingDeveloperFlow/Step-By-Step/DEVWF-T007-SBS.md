@@ -29,12 +29,14 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
 
     ![A screen that shows how to start a new Workflow for GitHub Actions](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/newworkflow.png)
 
-6. Under the Continuous Integration Workflows, find the [Publish Docker Container] workflow and choose [Set up this workflow]
+6. Click on Setup a workflow yourself
 
-    ![A screenshot of the GitHub Action for Publishing Docker Files](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/PublishDocker.png)
+    ![A screenshot of the GitHub Action for Publishing Docker Files](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/worksflow.png)
 
 7. Rename the file to `fabrikam-web.yml`
-8. Change the image name to fabrikam-web. This is the name of the container image that will be pushed to the GitHub Container Registry
+8. Delete the content present in your yaml file
+9. Go to this link ```https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/fabrikam-web.yml``` to get the fabrikam-web.yml file updated content
+11.Image name in yaml file should be fabrikam-web. This is the name of the container image that will be pushed to the GitHub Container Registry
 
     ```YAML
     env:
@@ -42,7 +44,7 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
       IMAGE_NAME: fabrikam-web
     ```
 
-9. Add a working directory to the [Build Image] and [Push image to GitHub Container Registry] step. This ensure the Docker file can be found
+9.  working directory in the [Build Image] and [Push image to GitHub Container Registry] step should be added as below.
 
     ```YAML
             - name: Build image
@@ -53,34 +55,14 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
                 working-directory: content-web
     ```
 
-10. Remove the test job from YAML since we do not need it. Also remove the dependency in the push stage `needs: test`. You can remove the lines given below from the YAML File
-    <s>
-    ```YAML
-    # Run tests.
-    # See also https://docs.docker.com/docker-hub/builds/automated-testing/
-    test:
-        runs-on: ubuntu-latest
 
-    steps:
-        - uses: actions/checkout@v2
-
-        - name: Run tests
-            run: |
-            if [ -f docker-compose.test.yml ]; then
-                docker-compose --file docker-compose.test.yml build
-                docker-compose --file docker-compose.test.yml run sut
-            else
-                docker build . --file Dockerfile
-            fi
-    ```
-    </s>
 
 11. Commit the file to the repository
 12. The GitHub Action is now running and automatically builds and pushes the container
 
     ![Screen that shows that the GitHub action build succeeded](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/buildsucceed.png)
 
-13. Next, setup the `content-api` workflow and the `content-init` workflow. Call the files `fabrikam-api.yml` and `fabrikam-init.yml` and change the container names also to `fabrikam-api` and `fabrikam-init`
+13. Next, setup the `content-api` workflow and the `content-init` workflow the same way you setup for fabrikam-web.yml , copy the content from ```https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/fabrikam-web.yml``` and replace the container name and working directory
 
 14. Navigate to the packages in your GitHub account and see if the container images are present.
     ![Overview of all packages of a GitHub account](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/packages.png)
