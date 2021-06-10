@@ -114,7 +114,7 @@ In this task, you will create 3 Dockerfiles that will be used to build and run t
  
    - Run the command **kill -9 processid**
 
-    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/port-issue.gif)
+     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/port-issue.gif)
 
 15. In your GitHub Codespace, navigate to the Remote Explorer and forward the ports `3000` and `3001` to make them available on the web. Click the Globe Icon to navigate to the Web Application (port 3000).
 
