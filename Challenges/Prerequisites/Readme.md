@@ -155,7 +155,7 @@ To set this up, you need to perform these steps
        
     - **Azure DevOps Project Name**: The name of the Project in Azure DevOps. The project will be automatically created if it doesn't exist yet. If the students must use pre-created projects, make sure they are using the Basic Process for Azure Boards - Provide the name that you provided at the time of creation. As per the instructions, it will be in this format: **<inject key="DevOps Project Name" />**.
     
-    - **Student (personx)**: Your unique suffix (short, only lower case letters). This will be used to create the name of the resource group and resources in Azure. - Provide the **<inject key="UniqueID" />**.
+    - **Student (personx)**: Your unique suffix (short, only lower case letters). This will be used to create the name of the resource group and resources in Azure. - Provide the value **<inject key="UniqueID" />**.
     
     - **(Re)create workitems?**: Whether to create/recreate work items in Azure Boards to which the commits and pull-requests will be linked - Provide **Yes**
 
@@ -166,7 +166,7 @@ To set this up, you need to perform these steps
 
 ## Variables
 
-**Note**: The following instructions are for addtional informational purpose. There is nothing to be performed as part of the lab.
+**Note**: **The following instructions are for addtional informational purpose. There is nothing to be performed as part of the lab.**
 
 In some scripts, we use variables like `$resourceGroupName` and `$webappName`. Based on the settings.json file, that is stored in your `.workshop` folder, we generated a PowerShell Profile for you. The values stored in `settings.json` are automatically loaded into your PowerShell console.
 
