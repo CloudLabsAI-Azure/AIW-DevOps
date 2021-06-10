@@ -66,10 +66,5 @@ Now your repository contains 3 new "multi-staged" docker file.
       docker run -d --name api -p 3001:3001 --net fabrikam fabrikam-api
       docker run -d --name web -p 3000:80 --net fabrikam fabrikam-web
       ```
-
-11. When you are done, navigate to Source Control on the codespace on the left and then click on three dots at the top. Then select commit -> Commit all and finally push your changes to your GitHub repository.
-
-      ![Push from Visual Studio Code](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/commitandpush.png)
-      
-      
+       
 Now, you can move on to the next page.
