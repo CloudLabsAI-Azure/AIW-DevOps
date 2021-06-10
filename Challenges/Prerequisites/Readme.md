@@ -77,7 +77,7 @@ To set this up, you need to perform these steps
 
 3. Select the scopes or permissions you would like to grant this token
 
-    - **Note**: Provide the following text in the note field, **<inject key="DeploymentID" />-token**. Replace UniqueID with the value given in Environment Details -> Azure Credentials tab.
+    - **Note**: Provide the following text in the note field, **<inject key="DevOps Token" />**. 
     
     - **Select scopes**: Select worklow, write:packages, delete:packages, read:org
   
@@ -99,7 +99,7 @@ To set this up, you need to perform these steps
    
 2. If you see the pop-up **Get Started with Azure Devops**, Check the Privacy Statement box and click **continue**.
 
-3. Create project named **CodeToCloudWorkshop-<inject key="UniqueID" />** 
+3. Create project named **<inject key="DevOps Project Name" />** 
 
    ![create project](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azuredevops-project.png)
 
@@ -113,7 +113,7 @@ To set this up, you need to perform these steps
    
 6. In the Create a new personal access token page enter the following details:
    
-   - **Name**: Enter **<inject key="UniqueID" />-Token** 
+   - **Name**: Enter **<inject key="DevOps Token" />** 
 
    - **Work Items**: Select Read & Write
    
@@ -146,14 +146,14 @@ To set this up, you need to perform these steps
        * read:org
        * workflow
       
-     - **Azure DevOps Organization**: The name of your Azure DevOps organization - Provide **odluser<inject key="UniqueID" />**.
+     - **Azure DevOps Organization**: The name of your Azure DevOps organization - Provide **<inject key="Azure DevOps Organization" />**.
      
     - **Azure DevOps Token**: Enter your Azure DevOps Personal Access Token with the following scopes:
        * Work Items: Read & Write
        * Build: Read & Execute
        * Project & Team: Read, Write & Manage
        
-    - **Azure DevOps Project Name**: The name of the Project in Azure DevOps. The project will be automatically created if it doesn't exist yet. If the students must use pre-created projects, make sure they are using the Basic Process for Azure Boards - Provide the name that you provided at the time of creation. As per the instructions, it will be in this format: **CodeToCloudWorkshop-<inject key="UniqueID" />**.
+    - **Azure DevOps Project Name**: The name of the Project in Azure DevOps. The project will be automatically created if it doesn't exist yet. If the students must use pre-created projects, make sure they are using the Basic Process for Azure Boards - Provide the name that you provided at the time of creation. As per the instructions, it will be in this format: **<inject key="DevOps Project Name" />**.
     
     - **Student (personx)**: Your unique suffix (short, only lower case letters). This will be used to create the name of the resource group and resources in Azure. - Provide the **<inject key="UniqueID" />**.
     
