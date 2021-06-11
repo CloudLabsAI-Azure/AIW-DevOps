@@ -5,7 +5,7 @@ If you rather watch a video with step by step instructions, you can do that here
 
 In this task, you will enable the GitHub security features for your repository we can do that by navigating to security tab .
 
-1. In your GitHub repository, navigate to the [Security] Tab. Press the [Enable Dependabot alerts] button and the [Set up Code Scanning] button
+1. In your GitHub repository, navigate to the **Security** Tab. Press the **Enable Dependabot alerts** button and the **Set up Code Scanning** button
 
     ![Enable Dependabot and Code Scanning Alerts](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/securityfeatures.png)
 
@@ -15,15 +15,17 @@ In this task, you will enable the GitHub security features for your repository w
 
     ![Setup this Workflow in CodeQL](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/CodeQLAction.png)
 
-4. Save the workflow by pressing the [Start Commit] button
+4. Save the workflow by pressing the **Start Commit** button
 
 5. To solve a Dependabot issue, navigate to the Security Tab and press View Dependabot Alerts. when there is nothing to see, the Dependabot engine is still running. Wait a few minutes and refresh the screen
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-12-51-55.png)
 
-6. Find the [handlebars] vulnerability and open this by clicking on the title.
-
-    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/handlebars.png)
+6. Find the **handlebars** vulnerability and open this by clicking on the title.
+   
+   **Note** : If you don't see **handlebars** vulnerability this means a pullrequest was automatically created and merged, you can skip step 6-8 and continue from step 9.
+   
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/handlebars.png)
 
 7. Press the Create Dependabot Security update button. This may take a couple of seconds.
 
