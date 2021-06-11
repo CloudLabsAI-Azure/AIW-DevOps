@@ -111,6 +111,7 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
     ```
 
     where the last step can be optimized by putting the image id in lowerscore letters and removing the git ref prefix from version (but this is not mandatory):
+    
     ```
     - name: Push image to GitHub Container Registry
             working-directory: content-web
