@@ -21,7 +21,7 @@ In this task you are going to create a new Docker Compose file that contains the
 
     ![Shows the button for merging a Pull Request in GitHub](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/mergePullRequest.png)
 
-Now your repository contains 3 new "Docker Compose" files.
+  Now your repository contains 3 new "Docker Compose" files.
 
 6. In your GitHub Codespace, update your files to the latest version by pulling them.
 
@@ -51,8 +51,12 @@ Now your repository contains 3 new "Docker Compose" files.
         ports:
             - "3000:80"       
     ```
+    
+    After adding the code the docker-compose.yml file should look similar to the below image.
+    
+    ![](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/docker-compose.png?raw=true)
 
-   and the following YAML snippet to the `local.docker-compose.yml`. That overrides the name of the image
+10. Add the following YAML snippet to the `local.docker-compose.yml`. That overrides the name of the image
 
     ```YAML
     web:
@@ -60,20 +64,22 @@ Now your repository contains 3 new "Docker Compose" files.
         image: local-fabrikam-web
     ```
 
-    > Please note that the yaml is space and indent sensitive. 
+    ![](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/localdocker-init.png?raw=true)
+   
+   > Please note that the yaml is space and indent sensitive. 
     
-10. Build and run the docker-compose file again 
+11. Build and run the docker-compose file again 
 
     ```bash
     docker-compose -f docker-compose.yml -f local.docker-compose.yml -f docker-compose.init.yml build
     docker-compose -f docker-compose.yml -f local.docker-compose.yml -f docker-compose.init.yml up
     ```
 
-11. Test the web application using the port forward method. In the Remote Explorer, forward port 3000 and open the browser by clicking the globe icon next to the port. 
+12. Test the web application using the port forward method. In the Remote Explorer, forward port 3000 and open the browser by clicking the globe icon next to the port. 
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/OpenBrowser.png)
 
-12. When you are done, commit and push your changes to your GitHub repository.
+13. When you are done, commit and push your changes to your GitHub repository.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/commitandpush.png)
     
