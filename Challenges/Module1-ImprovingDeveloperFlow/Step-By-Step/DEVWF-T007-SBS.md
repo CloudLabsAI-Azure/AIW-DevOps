@@ -29,14 +29,13 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
 
     ![A screen that shows how to start a new Workflow for GitHub Actions](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/newworkflow.png)
 
-6. Under the Continuous Integration Workflows, find the [Publish Docker Container] workflow and choose [Set up this workflow]
+6. Click on Setup a workflow yourself
 
-    ![A screenshot of the GitHub Action for Publishing Docker Files](/Assets/PublishDocker.png)
-
+    ![A screenshot of the GitHub Action for Publishing Docker Files](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/worksflow.png)
 
 7. Rename the file to `fabrikam-web.yml`
-
-8. Change the image name to fabrikam-web. This is the name of the container image that will be pushed to the GitHub Container Registry
+8. Delete the content present in your yaml file
+9. Go to this link ```https://github.com/CloudlabsAI-Git/code-to-cloud/blob/main/fabrikam-web``` to get the fabrikam-web.yml file updated content . Image name in yaml file should be fabrikam-web.
 
     ```YAML
     env:
@@ -44,107 +43,31 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
       IMAGE_NAME: fabrikam-web
     ```
 
-9. Add a working directory to the [Build Image] and [Push image to GitHub Container Registry] step. This ensure the Docker file can be found
+9.  working directory in the [Build Image] and [Push image to GitHub Container Registry] step should be added as below.
 
     ```YAML
-    - name: Build image
-        working-directory: content-web
-        run: docker build . --file Dockerfile --tag $IMAGE_NAME
+            - name: Build image
+                working-directory: content-web
+                run: docker build . --file Dockerfile --tag $IMAGE_NAME
 
-    - name: Push image to GitHub Container Registry
-        working-directory: content-web
+            - name: Push image to GitHub Container Registry
+                working-directory: content-web
     ```
 
-10. The workflow for fabrikam-web should look as follows:
-    ```yaml
-    name: Fabrikam Web Build
-
-    on:
-    push:
-        # Publish `main` as Docker `latest` image.
-        branches:
-        - main
-        paths:
-        - 'content-web/**'
-        - '.github/workflows/fabrikam-web.yml'
 
 
-        # Publish `v1.2.3` tags as releases.
-        tags:
-        - v*
-
-    # Run tests for any PRs.
-    pull_request:
-
-    env:
-    # TODO: Change variable to your image name.
-    IMAGE_NAME: fabrikam-web
-
-    jobs:
-    # Push image to GitHub Packages.
-    # See also https://docs.docker.com/docker-hub/builds/
-    push:
-        runs-on: ubuntu-latest
-        if: github.event_name == 'push'
-
-        steps:
-        - uses: actions/checkout@v2
-
-        - name: Build image
-            working-directory: content-web
-            run: docker build . --file Dockerfile --tag $IMAGE_NAME
-
-        - name: Log into GitHub Container Registry
-            run: echo "${{ secrets.CR_PAT }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin
-
-        - name: Push image to GitHub Container Registry
-            working-directory: content-web
-            run: |
-            IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
-            VERSION=${{ github.ref }}
-
-            echo IMAGE_ID=$IMAGE_ID
-            echo VERSION=$VERSION
-
-            docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
-            docker push $IMAGE_ID:$VERSION
-    ```
-
-    where the last step can be optimized by putting the image id in lowerscore letters and removing the git ref prefix from version (but this is not mandatory):
-    
-    ```
-    - name: Push image to GitHub Container Registry
-            working-directory: content-web
-            run: |
-            IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
-            # Change all uppercase to lowercase
-            IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
-            # Strip git ref prefix from version
-            VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
-            # Strip "v" prefix from tag name
-            [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
-            # Use Docker `latest` tag convention
-            [ "$VERSION" == "main" ] && VERSION=latest
-            echo IMAGE_ID=$IMAGE_ID
-            echo VERSION=$VERSION
-            docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
-            docker push $IMAGE_ID:$VERSION
-    ```
-
-11. Commit the file to the repository.
-
+11. Commit the file to the repository
 12. The GitHub Action is now running and automatically builds and pushes the container
 
-    ![Screen that shows that the GitHub action build succeeded](/Assets/buildsucceed.png)
+    ![Screen that shows that the GitHub action build succeeded](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/buildsucceed.png)
 
-13. Next, setup the `content-api` workflow and the `content-init` workflow. Call the files `fabrikam-api.yml` and `fabrikam-init.yml` and change the container names also to `fabrikam-api` and `fabrikam-init`.
-*These workflows are very similar to the one shown above, but `fabrikam-web` should be replaced by `fabrikam-api` et cetera.*
+13. Next, setup the `content-api` workflow and the `content-init` workflow the same way you setup for fabrikam-web.yml , copy the content from ```https://github.com/CloudlabsAI-Git/code-to-cloud/blob/main/fabrikam-web``` and replace the container name and working directory
 
 14. Navigate to the packages in your GitHub account and see if the container images are present.
-    ![Overview of all packages of a GitHub account](/Assets/packages.png)
+    ![Overview of all packages of a GitHub account](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/packages.png)
 
 15. When you are done, pull the changes from your GitHub repository.
 
-    ![](/Assets/2020-10-05-12-10-11.png)
+    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-12-10-11.png)
     
  Now, you can move on to the next page.
