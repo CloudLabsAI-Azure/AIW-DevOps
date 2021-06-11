@@ -37,28 +37,35 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
 
 8. Delete the content present in your yaml file.
 
-9. Go to this link ```https://github.com/CloudlabsAI-Git/code-to-cloud/blob/main/fabrikam-web``` to get the fabrikam-web.yml file updated content . Image name in yaml file should be fabrikam-web.
+9. Navigate to this link ```https://github.com/CloudlabsAI-Git/code-to-cloud/blob/main/fabrikam-web``` to get the fabrikam-web.yml file content . Copy the content of the file and paste it in your newly created `fabrikam-web.yml` file in GitHub.
 
+10. Change the name and image name to fabrikam-web. This is the name of the container image that will be pushed to the GitHub Container Registry.
+   
     ```YAML
     env:
       # TODO: Change variable to your image's name.
       IMAGE_NAME: fabrikam-web
     ```
+    
+    ![A screenshot of the GitHub Action for Publishing Docker Files](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/worksflow.png)
 
-10.  working directory in the [Build Image] and [Push image to GitHub Container Registry] step should be added as below.
+
+10. Add a working directory in the **Build Image** and **Push image to GitHub Container Registry** step should be added as below.
 
     ```YAML
             - name: Build image
-                working-directory: content-web
+                working-directory: ./content-web
                 run: docker build . --file Dockerfile --tag $IMAGE_NAME
 
             - name: Push image to GitHub Container Registry
-                working-directory: content-web
-    ```
+                working-directory: ./content-web
+     ```
 
+     ![A screenshot of the GitHub Action for Publishing Docker Files](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/worksflow.png)
+     
 
+11. Commit the file to the repository.
 
-11. Commit the file to the repository
 12. The GitHub Action is now running and automatically builds and pushes the container
 
     ![Screen that shows that the GitHub action build succeeded](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/buildsucceed.png)
