@@ -5,15 +5,15 @@ If you rather watch a video with step by step instructions, you can do that here
 
 In this task, you will use YAML to define 3 GitHub Actions workflows that builds your Docker images and pushes it to a GitHub Container Registry automatically.
 
-1. In your GitHub repository, and select the [Settings] tab.
+1. In your GitHub repository, and select the **Settings** tab.
 
-2. From the left menu, select [Secrets].
+2. From the left menu, select **Secrets**.
 
-3. Select the [New repository secret] button.
+3. Select the **New repository secret** button.
 
     ![Settings link, Secrets link, and New secret button are highlighted.](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-08-24-21-45-42.png)
 
-4. In the [New secret] form, enter the name `CR_PAT` and for the value, paste in a GitHub Personal Access Token, with the following scopes.
+4. In the **New secret** form, enter the name `CR_PAT` and for the value, paste in a GitHub Personal Access Token, with the following scopes.
 
     * repo
     * write:packages
@@ -25,7 +25,7 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
 
     ![A screen that show how to add a new secret](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/newsecret.png)
 
-5. Navigate to the GitHub Actions in your repository and select [New Workflow]
+5. Navigate to the GitHub Actions in your repository and select **New Workflow**
 
     ![A screen that shows how to start a new Workflow for GitHub Actions](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/newworkflow.png)
 
@@ -33,8 +33,10 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
 
     ![A screenshot of the GitHub Action for Publishing Docker Files](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/worksflow.png)
 
-7. Rename the file to `fabrikam-web.yml`
-8. Delete the content present in your yaml file
+7. Rename the file to `fabrikam-web.yml`.
+
+8. Delete the content present in your yaml file.
+
 9. Go to this link ```https://github.com/CloudlabsAI-Git/code-to-cloud/blob/main/fabrikam-web``` to get the fabrikam-web.yml file updated content . Image name in yaml file should be fabrikam-web.
 
     ```YAML
@@ -43,7 +45,7 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
       IMAGE_NAME: fabrikam-web
     ```
 
-9.  working directory in the [Build Image] and [Push image to GitHub Container Registry] step should be added as below.
+10.  working directory in the [Build Image] and [Push image to GitHub Container Registry] step should be added as below.
 
     ```YAML
             - name: Build image
