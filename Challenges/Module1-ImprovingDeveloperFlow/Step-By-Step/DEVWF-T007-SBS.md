@@ -47,7 +47,7 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
       IMAGE_NAME: fabrikam-web
     ```
     
-    ![A screenshot of the GitHub Action for Publishing Docker Files](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/worksflow.png)
+    ![A screenshot of the GitHub Action for Publishing Docker Files](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/fabrikamweb.png?raw=true)
 
 
 10. Add a working directory in the **Build Image** and **Push image to GitHub Container Registry** step should be added as below.
@@ -61,7 +61,7 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
                 working-directory: ./content-web
      ```
 
-     ![A screenshot of the GitHub Action for Publishing Docker Files](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/worksflow.png)
+     ![A screenshot of the GitHub Action for Publishing Docker Files](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/contentweb.png?raw=true)
      
 
 11. Commit the file to the repository.
@@ -70,9 +70,10 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
 
     ![Screen that shows that the GitHub action build succeeded](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/buildsucceed.png)
 
-13. Next, setup the `content-api` workflow and the `content-init` workflow the same way you setup for fabrikam-web.yml , copy the content from ```https://github.com/CloudlabsAI-Git/code-to-cloud/blob/main/fabrikam-web``` and replace the container name and working directory
+13. Next, setup the `content-api` workflow and the `content-init` workflow the same way you setup for fabrikam-web.yml , copy the content from ```https://github.com/CloudlabsAI-Git/code-to-cloud/blob/main/fabrikam-web``` and replace the container name and working directory.
 
 14. Navigate to the packages in your GitHub account and see if the container images are present.
+
     ![Overview of all packages of a GitHub account](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/packages.png)
 
 15. When you are done, pull the changes from your GitHub repository.
