@@ -67,6 +67,8 @@ To enable Application Insights we need an Application Insights Resource in our r
 
    To update the website from a command line run the following command:
    
+   > **Note**: Make sure to update your personal access token in the below command.
+   
    ```
    az webapp config container set `
    --docker-registry-server-password <yourgithub personal access token> `
@@ -77,14 +79,16 @@ To enable Application Insights we need an Application Insights Resource in our r
    --name $webappName `
    --resource-group $resourcegroupName 
    ```
-
+   
+   ![A screenshot of the code editor showing updates in context of the app.js file](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/redeploycontainer.png?raw=true)
+   
 2. Visit the Resource and check if Application Insights is created and you will be able to see instrumentation data.
 
-> When you do not want to type all commands try the solution Pull Request by running
+   ![A screenshot of the code editor showing updates in context of the app.js file](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/appinsights.png?raw=true)
 
-```
-Workshop-Step Solution "CLOSELOOP-T001"
-```
+   **Instrumentation data**
+   
+   ![A screenshot of the code editor showing updates in context of the app.js file](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/appinsightsoutput.png?raw=true)
 
 Now, you can move on to the next page.
 
