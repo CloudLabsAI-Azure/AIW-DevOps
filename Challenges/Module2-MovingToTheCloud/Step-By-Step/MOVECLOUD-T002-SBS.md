@@ -37,7 +37,7 @@ In this task you will run the WEB and API application as a multi-container appli
 
    ![](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/webresource.png?raw=true)
 
-5. Now on the Web Application page open the **Configuration** Blade and click on **New application setting**.
+5. Now on the Web Application page open the **Configuration** blade and click on **New application setting**.
 
    ![](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/configuration.png?raw=true)
 
@@ -52,7 +52,7 @@ In this task you will run the WEB and API application as a multi-container appli
     ```
 > **Note**: If you exited the session in which you declared values for $webappName and $resourcegroupname , you need to declare that with their name.
 
-7. In the Azure Portal, navigate back to the Web Application fabmedical-web-UniqueId and open the **Container settings** Blade. 
+7. In the Azure Portal, navigate back to the Web Application fabmedical-web-UniqueId and open the **Container settings** blade. 
 
    Fill in the following data in the Container blade:
    
