@@ -65,8 +65,26 @@ To enable Application Insights we need an Application Insights Resource in our r
 
 1. When the GitHub Action CI completed, (re)deploy the web container to the web application.
 
+   To update the website from a command line run the following command:
+   
+   ```
+   az webapp config container set `
+   --docker-registry-server-password <yourgithub personal access token> `
+   --docker-registry-server-url https://ghcr.io `
+   --docker-registry-server-user notapplicable `
+   --multicontainer-config-file docker-compose.yml `
+   --multicontainer-config-type COMPOSE `
+   --name $webappName `
+   --resource-group $resourcegroupName 
+   ```
+
 2. Visit the Resource and check if Application Insights is created and you will be able to see instrumentation data.
 
+> When you do not want to type all commands try the solution Pull Request by running
+
+```
+Workshop-Step Solution "CLOSELOOP-T001"
+```
 
 Now, you can move on to the next page.
 
