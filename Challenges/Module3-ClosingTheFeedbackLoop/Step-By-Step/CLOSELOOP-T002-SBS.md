@@ -53,22 +53,22 @@ Before performing the next steps, you will need to enable the Improved Container
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/NewGHAction.png)
 
-3. Search for **Publish Docker container** workflow  and call the new YAML file docker-publish.yml
+3. Click on **Setup a workflow yourself** and rename the new YAML file file to **docker-publish.yml**.
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/simplewf.png)
 
-  > Note: If you don't see **Publish Docker container** workflow in the page, click on **More continuous integration workflows...** and you will be able to view the Workflow.
+4. Delete the content present in your yaml file.
 
-4. Change the `name` property to [Docker Compose Build and Deploy]. And add the following code snippet below the  `- uses: actions/checkout@v2` step
+5. Navigate to this link https://raw.githubusercontent.com/CloudlabsAI-Git/code-to-cloud/main/docker-publish.yml to get the docker-publish.yml file content . Copy the content of the file and paste it in your newly created **docker-publish.yml** file in GitHub.
+
+4. In the docker-publish.yml review the following lines of code, this step logs in to your GitHub Container Registry with the CR_PAT secret that you created earlier.
 
    ```YAML
    - name: Log into GitHub Container Registry
      run: echo "${{ secrets.CR_PAT }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin
    ```
 
-This step logs in to your GitHub Container Registry with the CR_PAT secret that you created earlier
-
-5. Add a script step below the previous one that uses `docker-compose` to build and push the images to the repository
+5. Review the below lines of code, this step uses the docker-compose.yml and build.docker-compose.yml to build the containers with the Docker files and push it to the GitHub Container Registry
 
    ```YAML
    - name: Build and Push image
@@ -76,7 +76,8 @@ This step logs in to your GitHub Container Registry with the CR_PAT secret that 
        docker-compose -f docker-compose.yml -f build.docker-compose.yml build
        docker-compose -f docker-compose.yml -f build.docker-compose.yml push
    ```
-This step uses the docker-compose.yml and build.docker-compose.yml to build the containers with the Docker files and push it to the GitHub Container Registry
+   
+6.  In the docker-compose.yml scroll down to the end and replace <your abbreviation> with **<inject key="UniqueID" />**.
 
 6. Now that the containers have been built and pushed, the Azure Web Application needs to be updated. Before you can interact with Azure, you need to have access to the Azure API with the Azure CLI. Using the Azure Login Task, we can login securely in Azure using a GitHub secret.
 
@@ -102,29 +103,10 @@ This step uses the docker-compose.yml and build.docker-compose.yml to build the 
 
 Copy the complete JSON output to your clipboard.
 
-8. In your repository settings, navigate to [Secrets] and create a new secret called [AZURE_CREDENTIALS]. Paste the copied value from your clipboard to the value of the secret and save it.
+8. In your repository settings, navigate to **Secrets** and create a new secret called **AZURE_CREDENTIALS**. Paste the copied value from your clipboard to the value of the secret and save it.
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/secretAZCRED.png)
-
-9. Back in the GitHub Action workflow, add a new step that uses the [AZURE_CREDENTIALS] secret to login to Azure
-      
-   ```
-   - name: Login on Azure CLI
-     uses: azure/login@v1.1
-     with:
-       creds: ${{secrets.AZURE_CREDENTIALS}}
-    ```          
-
-10. Add a script task to the workflow, that executes the `deploy-infrastrucuture.ps1` file. Take note of the ENV variable you need to add to the stage to get access to the secret variable.
-
-    ```YAML
-      - name: Deploy Infrastructure
-        shell: pwsh
-        env:
-            CR_PAT: ${{ secrets.CR_PAT }}        
-        run: |
-          .\infrastructure\deploy-infrastructure.ps1 -studentprefix <your abbreviation here>
-    ```
+        
 
 11. Commit the workflow file. The GitHub Action will trigger.
 
