@@ -16,27 +16,28 @@ In this task you will run the WEB and API application as a multi-container appli
    ./deploy-infrastructure.ps1
    ```
     
-> **Note**: We have created required infrastructure in Azure now we will be running our docker composition for web container and api container to do that we need connection with             cosmos db and we are doing that by using connection string 
+   > **Note**: We have created required infrastructure in Azure now we will be running our docker composition for web container and api container to do that we need connection with cosmos db and we are doing that by using connection string 
     
 
 2. Add the contentdb database as part of the connectionstring and add it as as a Kubernetes secret. `....documents.azure.com:10255/contentdb?ssl=true`
 
- ```
- $mongodbConnectionString="connectionString=mongodb://xxx.documents.azure.com:10255/contentdb?ssl=true&replicaSet=globaldb"
- ```
+   ```
+   $mongodbConnectionString="connectionString=mongodb://xxx.documents.azure.com:10255/contentdb?ssl=true&replicaSet=globaldb"
+   ```
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/mongoconnstring.gif)
  
 3. Fill the cosmos DB by running the init container
 
-```
-docker run -ti  -e MONGODB_CONNECTION="mongodb://xxx.documents.azure.com:10255/contentdb?ssl=true&replicaSet=globaldb" ghcr.io/<yourgithubaccount>/fabrikam-init
-```
+   ```
+   docker run -ti  -e MONGODB_CONNECTION="mongodb://xxx.documents.azure.com:10255/contentdb?ssl=true&replicaSet=globaldb" ghcr.io/<yourgithubaccount>/fabrikam-init
+   ```
+   
 4. In the Azure Portal, navigate to the Web Application fabmedical-web-UniqueId and open the Configuration Blade. In the configuration blade, add a new Application Setting and call this MONGODB_CONNECTION. Add the MongoDB Connection String as a value and then save the settings.
 
-  ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/AppSetting.png)
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/AppSetting.png)
 
-  If you rather want to run this as code, you can use the command. You can choose to do using one of the approaches.
+   If you rather want to run this as code, you can use the command. You can choose to do using one of the approaches.
 
     ```
     az webapp config appsettings set -n $webappName -g $resourcegroupName --settings MONGODB_CONNECTION="mongodb://xxx.documents.azure.com:10255/contentdb?ssl=true&replicaSet=globaldb"
