@@ -44,7 +44,7 @@ Before we can start building the build and release pipelines, we need to setup a
 
 1. Navigate to your Azure DevOps Project that was created in the [prerequisites setup](/Challenges/Prerequisites/Readme.md). In the Project Settings, open the Service Connections Tab.
 
-   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/ServiceConnection1.png)
+   ![](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/serviceconnection1.png?raw=true)
 
 2. Create a new **Docker Registry** Service Connection, and set the values
 
