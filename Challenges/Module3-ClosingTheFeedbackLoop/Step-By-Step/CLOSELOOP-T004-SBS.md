@@ -12,7 +12,7 @@ In this challenge you are going to replace the `:latest` tag in the docker-compo
    - powershell: (gc .\docker-compose.yml) -replace ':latest',':$(Build.BuildNumber)' | set-content .\docker-compose.yml
    ```
    
-This replaces the `:latest' tag in the docker-compose.yml file with the build number. This way, the deployment of the Azure Web App will be with the latest version of the container
+   This replaces the `:latest' tag in the docker-compose.yml file with the build number. This way, the deployment of the Azure Web App will be with the latest version of the container
 
 2. In the menu under pipelines, select **Environments** and select production
 
