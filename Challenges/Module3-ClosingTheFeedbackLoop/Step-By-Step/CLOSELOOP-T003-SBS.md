@@ -120,7 +120,8 @@ Now we have all steps (checkout, build and push) complete we can focus on deploy
    - stage: DeployProd
      dependsOn: build
     ```
-
+    ![](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/stageprod.png?raw=true)
+   
 ## Adding deployment to Azure 
 
 Now that we have split the build and deployment we need to add the deployment steps to the pipeline. Before we can deploy anything to Azure, we need to create an Azure Service Connection.
