@@ -134,7 +134,9 @@ Now that we have split the build and deployment we need to add the deployment st
   
 4. Save the Service Connection.
   
-5. In your pipeline, add the following snippet in the DeployProd stage. This deploys all infrastructure
+5. In your pipeline, add the following snippet in the DeployProd stage. This deploys all infrastructure.
+   
+   **Note**: Make sure to replace abbrevation with **<inject key="UniqueID" />**.
 
    ```YAML
    - stage: DeployProd
@@ -157,7 +159,9 @@ Now that we have split the build and deployment we need to add the deployment st
                 env:
                   CR_PAT: $(CR_PAT)
     ```
-
+   
+   ![](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/prodcode.png?raw=true)
+   
 6. The deploy-infrastructure.ps1 uses an environment variable $(CR_PAT). You need to set this as secret variable in the pipeline. Press the variables button on top of the pipeline editor.
   
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/varButtron.png)
