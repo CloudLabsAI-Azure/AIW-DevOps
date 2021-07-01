@@ -77,11 +77,11 @@ Before performing the next steps, you will need to enable the Improved Container
        docker-compose -f docker-compose.yml -f build.docker-compose.yml push
    ```
    
-6.  In the docker-compose.yml scroll down to the end and replace <your abbreviation> with **<inject key="UniqueID" />**.
+6. In the docker-compose.yml scroll down to the end and replace <your abbreviation> with **<inject key="UniqueID" />**.
 
-6. Now that the containers have been built and pushed, the Azure Web Application needs to be updated. Before you can interact with Azure, you need to have access to the Azure API with the Azure CLI. Using the Azure Login Task, we can login securely in Azure using a GitHub secret.
+7. Now that the containers have been built and pushed, the Azure Web Application needs to be updated. Before you can interact with Azure, you need to have access to the Azure API with the Azure CLI. Using the Azure Login Task, we can login securely in Azure using a GitHub secret.
 
-7. Go to Environment details click on **Service principle Credentials** copy **Application id(clientId)** , **clientSecret** , **subscriptionId** and **tenantId** 
+8. Go to Environment details click on **Service principle Credentials** copy **Application id(clientId)** , **clientSecret** , **subscriptionId** and **tenantId** 
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/sp-creds-auth.png)
 
@@ -103,10 +103,10 @@ Before performing the next steps, you will need to enable the Improved Container
 
 Copy the complete JSON output to your clipboard.
 
-8. In your repository settings, navigate to **Secrets** and create a new secret called **AZURE_CREDENTIALS**. Paste the copied value from your clipboard to the value of the secret and save it.
+9. In your repository settings, navigate to **Secrets** and create a new secret called **AZURE_CREDENTIALS**. Paste the copied value from your clipboard to the value of the secret and save it.
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/secretAZCRED.png)
         
 
-11. Commit the workflow file. The GitHub Action will trigger.
+10. Commit the workflow file. The GitHub Action will trigger.
 
