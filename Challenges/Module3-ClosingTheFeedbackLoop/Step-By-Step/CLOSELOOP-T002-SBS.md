@@ -77,7 +77,7 @@ Before performing the next steps, you will need to enable the Improved Container
        docker-compose -f docker-compose.yml -f build.docker-compose.yml push
    ```
    
-6. In the docker-compose.yml scroll down to the end and replace <your abbreviation> with **<inject key="UniqueID" />**.
+6. In the docker-compose.yml scroll down to the end and replace `your abbreviation` with **<inject key="UniqueID" />**.
 
 7. Now that the containers have been built and pushed, the Azure Web Application needs to be updated. Before you can interact with Azure, you need to have access to the Azure API with the Azure CLI. Using the Azure Login Task, we can login securely in Azure using a GitHub secret.
 
