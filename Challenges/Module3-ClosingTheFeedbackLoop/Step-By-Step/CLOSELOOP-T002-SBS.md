@@ -83,7 +83,7 @@ Before performing the next steps, you will need to enable the Improved Container
 
 8. Go to Environment details click on **Service principle Credentials** copy **Application id(clientId)** , **clientSecret** , **subscriptionId** and **tenantId** 
 
-   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/sp-creds-auth.png)
+   ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/sp-creds-auth-new.png)
 
    Replace the values that you copied in below Json
    ```JSON
