@@ -95,7 +95,7 @@ To set this up, you need to perform these steps
 
 1. Log in to `https://dev.azure.com/` using the Azure credentials provided in the Environment details tab. 
 
-   ![Azure creds](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/azure-creds.png)
+   ![Azure creds](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/dev/Assets/azure-creds-new.png?raw=true)
    
 2. If you see the pop-up **Get Started with Azure Devops**, Check the Privacy Statement box and click **continue**.
 
