@@ -29,7 +29,7 @@ In this task you will run the WEB and API application as a multi-container appli
  
 3. Fill the cosmos DB by running the init container.
 
-   > **Note**: "Make sure to replace `MONGODB_CONNECTION` value with the value you copied from the previous step."
+   > **Note**: Make sure to replace `MONGODB_CONNECTION` value with the value you copied from the previous step.
 
    ```
    docker run -ti  -e MONGODB_CONNECTION="mongodb://xxx.documents.azure.com:10255/contentdb?ssl=true&replicaSet=globaldb" ghcr.io/<yourgithubaccount>/fabrikam-init
