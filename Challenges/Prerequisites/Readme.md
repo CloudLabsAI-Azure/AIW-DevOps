@@ -13,7 +13,7 @@ The workshop builds upon an existing codebase. Before you start the workshop, th
 
 1.  On the Virtual Machine provided on the left of the screen, click on Microsoft Edge and complete the initial getting started prompts. Then, sign in to the Github ``https://github.com/login`` using the **Outlook/GitHub Credential** provided under the **Environment details** tab
 
-    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/env-creds.png)
+    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/env-creds1.png)
    
 2. If prompted with the **Device Verification** dialog box, open Microsoft edge Browser in **incognito mode** ( you can open incognito mode by clicking on the three dots "..." icon  at the top right of the browser within the virtual machine and then select New InPrivate window)
 
