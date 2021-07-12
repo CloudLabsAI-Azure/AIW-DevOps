@@ -50,7 +50,7 @@ Before we can start building the build and release pipelines, we need to setup a
 
    - Docker Registry = `https://ghcr.io`
    - Docker ID = notrelevant
-   - Docker Password = <Your GitHub Personal Access Token>
+   - Docker Password = Your GitHub Personal Access Token
    - Service connection name = GitHub Container Registry
 
    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/NewServiceConnectionDetails.png)
