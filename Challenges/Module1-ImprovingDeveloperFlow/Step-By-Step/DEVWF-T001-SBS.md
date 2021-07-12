@@ -42,19 +42,25 @@ There are 2 possible scenarios for this Step by Step
 
 When you already used the Azure Boards integration, you need to manually link the GitHub repository and the Azure DevOps Project.
 
-1. Navigate back to your GitHub Repository, then go to your profile and select **Settings**. In the Settings page, navigate to the **Applications** tab on the left and choose the **Configure** Button for the Azure Boards application.
+1. On the GitHub Marketplace, navigate to the below URL:
 
-    ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-11-42-34.png)
+    ``` 
+    https://github.com/marketplace/azure-boards
+    ```
 
-2. In the **Repository Access** section, choose your repository and hit Save. If it's already saved, you can skip to Test Integration Section.
+2. On the Azure Boards page click on **grant this app access to your GitHub account**.
+
+   ![](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/dev/Assets/azureboards.png?raw=true)
+
+3. In the **Repository Access** section, choose your repository and hit Save. If it's already saved, you can skip to Test Integration Section.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-11-43-21.png)
 
-3. Log in to your Azure DevOps Organization, and select the Team Project that you created in the Prerequisite setup.
+4. Log in to your Azure DevOps Organization, and select the Team Project that you created in the Prerequisite setup.
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-11-24-19.png)
 
-4. When the integration is succeeded, you will be taken to the Azure Board. Four Work items are present and you will see a "Success" message.
+5. When the integration is succeeded, you will be taken to the Azure Board. Four Work items are present and you will see a "Success" message.
 
 ## Test Integration
 
