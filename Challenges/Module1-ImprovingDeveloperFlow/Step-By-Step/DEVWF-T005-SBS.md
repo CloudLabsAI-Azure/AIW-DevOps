@@ -35,7 +35,7 @@ In this task, you will enable the GitHub security features for your repository w
 
 9. To solve a Code Scanning issue, navigate to the Security Tab and press **View Alerts** next to Code Scanning alerts.
 
-10. Select an issue and then from the details select "Won't Fix"
+10. Select an issue and then from the dismiss option select "Won't Fix"
 
     ![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/2020-10-05-13-10-25.png)
 
