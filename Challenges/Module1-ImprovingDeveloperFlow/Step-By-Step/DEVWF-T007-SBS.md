@@ -10,6 +10,8 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
    ![Settings link, Secrets link, and New secret button are highlighted.](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/featurereview1.png?raw=true)
    
 2. On the left, select "Improved container support", then click Enable. Once the Container registry is enabled, you can publish containers to the Container registry owned by your account.
+
+   > **Note**: Ignore if already enabled.
   
    ![Settings link, Secrets link, and New secret button are highlighted.](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/previewfeature2.png?raw=true)
    
