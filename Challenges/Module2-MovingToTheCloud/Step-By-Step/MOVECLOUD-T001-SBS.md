@@ -109,7 +109,7 @@ In this section, you create and configure an App Service Plan and an Azure Web A
 
 You have already run the separate steps from the steps a number of times. The fact you can do this over and over again, is called idempotency. If you have not run all the lines in the `deploy-infrastructure.ps1` file, run it now.
 
-> Note: If you have run the previous steps, you can skip to Browse to the Azure Portal sectin
+> Note: If you have run the previous steps, you can skip to Browse to the Azure Portal section
 
 1. In your terminal window of the Codespace, open a PowerShell terminal by typing `pwsh` and run the `az login` command to login to your azure subscription
 
