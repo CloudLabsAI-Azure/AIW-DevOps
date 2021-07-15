@@ -70,6 +70,8 @@ In this task you will run the WEB and API application as a multi-container appli
    
    - **Config**: copy the content docker-compose.yml file that you created earlier, and paste in the configuration.
 
+   - Click on **Save**
+
    ![](https://github.com/CloudLabsAI-Azure/AIW-DevOps/blob/main/Assets/containerregistrysettings.png?raw=true)
  
    Here is the sample docker-compose.yml:
