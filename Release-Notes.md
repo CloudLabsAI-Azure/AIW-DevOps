@@ -1,2 +1,2 @@
 # Release Notes
-### No updates in this month till now
+### There is no new updates in this month till now
