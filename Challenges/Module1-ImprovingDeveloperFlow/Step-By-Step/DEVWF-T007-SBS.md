@@ -44,78 +44,90 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
       IMAGE_NAME: fabrikam-web
     ```
 
-9. Add a working directory to the [Build Image] and [Push image to GitHub Container Registry] step. This ensure the Docker file can be found
+9. Replace all steps below 
+   ``` yaml
+       - name: Checkout repository  
+         uses: actions/checkout@v2
+   ``` 
+   by the following:
+   ``` yaml
+       - name: Build image
+           working-directory: content-web
+           run: docker build . --file Dockerfile --tag $IMAGE_NAME
 
-    ```YAML
-    - name: Build image
-        working-directory: content-web
-        run: docker build . --file Dockerfile --tag $IMAGE_NAME
+       - name: Log into GitHub Container Registry
+           run: echo "${{ secrets.CR_PAT }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin
 
-    - name: Push image to GitHub Container Registry
-        working-directory: content-web
+       - name: Push image to GitHub Container Registry
+           working-directory: content-web
+           run: |
+             IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
+              
+             # Change all uppercase to lowercase
+             IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
+             # Strip git ref prefix from version
+             VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
+             # Strip "v" prefix from tag name
+             [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
+             # Use Docker `latest` tag convention
+             [ "$VERSION" == "main" ] && VERSION=latest
+            
+             echo IMAGE_ID=$IMAGE_ID
+             echo VERSION=$VERSION
+              
+             docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
+             docker push $IMAGE_ID:$VERSION
     ```
-
 10. The workflow for fabrikam-web should look as follows:
-    ```yaml
+    ``` yaml
     name: Fabrikam Web Build
 
     on:
-    push:
+      schedule:
+        - cron: '33 8 * * *'
+      push:
         # Publish `main` as Docker `latest` image.
-        branches:
-        - main
+        branches: [ main ]
+        tags: [ 'v*.*.*' ]
         paths:
         - 'content-web/**'
         - '.github/workflows/fabrikam-web.yml'
-
-
-        # Publish `v1.2.3` tags as releases.
-        tags:
-        - v*
-
-    # Run tests for any PRs.
-    pull_request:
+      pull_request:
+        branches: [ main ]
 
     env:
-    # TODO: Change variable to your image name.
-    IMAGE_NAME: fabrikam-web
+      # Use docker.io for Docker Hub if empty
+      REGISTRY: ghcr.io
+      # TODO: Change variable to your image name.
+      IMAGE_NAME: fabrikam-web
 
     jobs:
-    # Push image to GitHub Packages.
-    # See also https://docs.docker.com/docker-hub/builds/
-    push:
+      build:
+
         runs-on: ubuntu-latest
-        if: github.event_name == 'push'
+        permissions:
+          contents: read
+          packages: write
+          # This is used to complete the identity challenge
+          # with sigstore/fulcio when running outside of PRs.
+          id-token: write
 
         steps:
-        - uses: actions/checkout@v2
+        - name: Checkout repository
+          uses: actions/checkout@v2
 
         - name: Build image
-            working-directory: content-web
-            run: docker build . --file Dockerfile --tag $IMAGE_NAME
+          working-directory: content-web
+          run: docker build . --file Dockerfile --tag $IMAGE_NAME
 
         - name: Log into GitHub Container Registry
-            run: echo "${{ secrets.CR_PAT }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin
+          run: echo "${{ secrets.CR_PAT }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin
 
         - name: Push image to GitHub Container Registry
-            working-directory: content-web
-            run: |
+          working-directory: content-web
+          run: |
             IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
-            VERSION=${{ github.ref }}
 
-            echo IMAGE_ID=$IMAGE_ID
-            echo VERSION=$VERSION
-
-            docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
-            docker push $IMAGE_ID:$VERSION
-    ```
-
-    where the last step can be optimized by putting the image id in lowerscore letters and removing the git ref prefix from version (but this is not mandatory):
-    ```
-    - name: Push image to GitHub Container Registry
-            working-directory: content-web
-            run: |
-            IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
             # Change all uppercase to lowercase
             IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
             # Strip git ref prefix from version
@@ -124,12 +136,13 @@ In this task, you will use YAML to define 3 GitHub Actions workflows that builds
             [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
             # Use Docker `latest` tag convention
             [ "$VERSION" == "main" ] && VERSION=latest
+
             echo IMAGE_ID=$IMAGE_ID
             echo VERSION=$VERSION
+
             docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
             docker push $IMAGE_ID:$VERSION
-    ```
-
+     ```
 11. Commit the file to the repository.
 
 12. The GitHub Action is now running and automatically builds and pushes the container
