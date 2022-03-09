@@ -43,21 +43,18 @@ docker run -ti  -e MONGODB_CONNECTION="mongodb://xxx.documents.azure.com:10255/c
     ```
 > **Note**: If you exited the session in which you declared values for $webappName and $resourcegroupname , you need to declare that with their name.
 
-5. In the Azure Portal, navigate to the Web Application fabmedical-web-UniqueId and open the Container Blade. In the Container blade, select the Docker Compose Tab. Select Private Registry under Image Source. 
+5. In the Azure Portal, navigate to the Web Application fabmedical-web-UniqueId and open the Deployment Center blade. In the Deployment Center blade, select the Docker Compose under Container Type. Select Private Registry under Image Source. 
 
 Fill in the following data:
-* Server URL: https://docker.pkg.github.com
-
-```Note: if you are facing issue  due to url please use https://docker.pkg.github.com```
-
+* Server URL: https://ghcr.io
 * Login: github-cloudlabsuser-000
 * Password: Your GitHub Personal Access Token
 
 > Note: Replace 000 with the value of your GitHub account
 
-As file, copy the content  `docker-compose.yml` file that you created earlier, and paste in the configuration.
+Copy the content of the `docker-compose.yml` file that you created earlier, and paste in the configuration.
 
-![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/containerblade.png)
+![](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/deploymentcenter.png)
 
   Here is the sample docker-compose.yml:
 
@@ -65,11 +62,11 @@ As file, copy the content  `docker-compose.yml` file that you created earlier, a
 version: "3.4"
 services:
   api:
-    image: docker.pkg.github.com/github-cloudlabsuser-000/codetocloud-source/fabrikam-api:latest
+    image: ghcr.io/github-cloudlabsuser-000/fabrikam-api:latest
     ports:
       - "3001:3001"
   web:
-    image: docker.pkg.github.com/github-cloudlabsuser-000/codetocloud-source/fabrikam-web:latest
+    image: ghcr.io/github-cloudlabsuser-000/fabrikam-web:latest
     depends_on:
        - api
     environment:
@@ -78,7 +75,7 @@ services:
        - "3000:80"
 ```
 
-> Note: Replace 000 with the value of your GitHub account. Please note that we are referring to the repository docker.pkg.github.com.
+> Note: Replace 000 with the value of your GitHub account. Please note that we are referring to the repository ghcr.io.
 
 6. The Azure Web App will now create two containers in the web app. Navigate to the Web app https://$webappname.azurewebsites.net to validate if the application is working.
 

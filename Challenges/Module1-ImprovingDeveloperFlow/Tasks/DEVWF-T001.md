@@ -2,7 +2,7 @@
 
 All developers at Fabrikam work for various customers at the same time. Many of them work on customizing and deploying the customer specific websites for the conferences. During the interviews it seemed that there is no central place for all the work that needs to be done or is in progress. This makes it very hard to see the status of a specific project or, in the current context, the status of the cloud transformation.
 
-To overcome this lack of visibility the decision is made to create a separate repository for all the cloud transformation work and connect this with a KanBan board that contains all the work that needs to be done. To provide traceability between the requirements and the actual code changes, there needs to be an integration between the planned work and the commits in the Git repository.of what code changes are done
+To overcome this lack of visibility the decision is made to create a separate repository for all the cloud transformation work and connect this with a KanBan board that contains all the work that needs to be done. To provide traceability between the requirements and the actual code changes, there needs to be an integration between the planned work and the commits in the Git repository of what code changes are done.
 
 ## Challenge
 
